@@ -13,16 +13,24 @@
  */
 #}
 
-{%
-  set classes = [
-    'region',
-    'region-' ~ region|clean_class,
-  ]
-%}
+{# {{ drupal_block('securance_main_menu') }} #}
 
-{% if content %}
-	<section{{attributes.addClass(classes)}}>
-		{{ content }}
-	</section>
-{% endif %}
 
+<header>
+    <div class="container">
+    <div class="row">
+        <div class="col-3">
+            <div class="header-logo">
+                {{ drupal_block('system_branding_block', {label: 'Branding', use_site_name: false}) }}
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="header-main-menu-wrapper">
+                {{ drupal_entity('block', 'securance_main_menu') }}
+                {{ drupal_entity('block', 'securance_languageswitcher') }}
+                {{ drupal_entity('block', 'securance_searchform')}}
+            </div>
+        </div>
+    </div>
+    </div>
+</header>

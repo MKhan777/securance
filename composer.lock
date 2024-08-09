@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9502d5fcc15566e31b4a522e43964d1",
+    "content-hash": "c5bfd812a362ea422288ba44d9556ef4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1330,6 +1330,62 @@
             }
         },
         {
+            "name": "drupal/color_field",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/color_field.git",
+                "reference": "3.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/color_field-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "7a72fde925bc777b292aef7afa4ceb98d46cc0b5"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "require-dev": {
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0",
+                    "datestamp": "1671324231",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mandclu",
+                    "homepage": "https://www.drupal.org/user/52136"
+                },
+                {
+                    "name": "NickDickinsonWilde",
+                    "homepage": "https://www.drupal.org/user/3094661"
+                },
+                {
+                    "name": "targoo",
+                    "homepage": "https://www.drupal.org/user/431910"
+                }
+            ],
+            "description": "Provides a color field type to store the color value and opacity.",
+            "homepage": "https://www.drupal.org/project/color_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/color_field",
+                "error": "require-dev.drupal/feeds : invalid version constraint (Could not parse version constraint : Invalid version string \"\")"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "10.3.1",
             "source": {
@@ -1926,6 +1982,56 @@
             "homepage": "https://www.drupal.org/project/paragraphs",
             "support": {
                 "source": "https://git.drupalcode.org/project/paragraphs"
+            }
+        },
+        {
+            "name": "drupal/paragraphs_admin",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/paragraphs_admin.git",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs_admin-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "dc010c44626c67bece87602e4bfac569fd4c5a88"
+            },
+            "require": {
+                "drupal/core": "^10.1 || ^11.0",
+                "drupal/paragraphs": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1715000471",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "jannakha",
+                    "homepage": "https://www.drupal.org/user/3085703"
+                },
+                {
+                    "name": "VladimirAus",
+                    "homepage": "https://www.drupal.org/user/673120"
+                }
+            ],
+            "description": "Additional admin tools to manage paragraphs.",
+            "homepage": "https://www.drupal.org/project/paragraphs_admin",
+            "support": {
+                "source": "https://git.drupalcode.org/project/paragraphs_admin",
+                "issues": "https://www.drupal.org/project/issues/paragraphs_admin"
             }
         },
         {

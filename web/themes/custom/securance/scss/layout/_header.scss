@@ -1,0 +1,221 @@
+header {
+  box-shadow: 0 0 10px #cccccc91;
+  padding: 5px 0;
+  .row {
+    align-items: center;
+  }
+  .header-logo {
+    img {
+      max-width: 70%;
+    }
+  }
+  .header-main-menu-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    .menu--main {
+      ul.navbar-nav {
+        &::after {
+          display: none;
+        }
+        flex-direction: row;
+        gap: 20px;
+        li.nav-item {
+          padding: 19px 0;
+          a {
+            color: #000;
+          }
+          .dropdown-menu {
+            display: block;
+            visibility: hidden;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            transform: translateY(20px);
+            background: #24272b;
+            border: none;
+            padding: 45px;
+            padding-top: 15px;
+            border-radius: 0;
+            .dropdown-item {
+              background: #24272b !important;
+              a {
+                color: #fff;
+              }
+              .dropdown-toggle {
+                transition: color 0.4s;
+                display: inline-block;
+                position: relative;
+                &:before {
+                  content: "";
+                  width: 100%;
+                  height: 1px;
+                  border: none;
+                  background: #34393e;
+                  position: absolute;
+                  left: 0;
+                  top: 115%;
+                }
+                &:after {
+                  width: 20%;
+                  height: 1px;
+                  border: none;
+                  background: #992540;
+                  transition: width 0.4s;
+                  display: block;
+                  margin-left: 0;
+                  position: absolute;
+                  left: 0;
+                  top: 115%;
+                }
+                &:hover {
+                  color: #992540;
+                  &:after {
+                    width: 50%;
+                  }
+                }
+              }
+              .dropdown-menu {
+                position: static;
+                padding: 0;
+                .dropdown-item {
+                  &:before {
+                    content: "";
+                    background-color: #992540;
+                    width: 10px;
+                    height: 2px;
+                    display: inline-block;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                  }
+                }
+              }
+            }
+          }
+          &:after {
+            content: "";
+            background: #992540;
+            height: 1px;
+            width: 0;
+            transition: width 0.6s;
+            display: block;
+          }
+          .nav-link {
+            transition: all 0.6s;
+          }
+          &:hover {
+            .nav-link {
+              color: #992540;
+            }
+            &:after {
+              width: 100%;
+            }
+            & > .dropdown-menu {
+              visibility: visible;
+              transform: translateY(0);
+              opacity: 1;
+              .dropdown-item {
+                .dropdown-menu {
+                  visibility: visible;
+                }
+              }
+            }
+          }
+        }
+        li.dropdown {
+          & > .dropdown-menu {
+            transition: transform 0.3s;
+            opacity: 0;
+            .dropdown-menu {
+              opacity: 1;
+            }
+          }
+          a {
+            &::after {
+              margin-left: 10px;
+            }
+          }
+
+          &:not(:first-child) {
+            .dropdown-menu {
+              padding: 0;
+              .dropdown-item {
+                padding: 8px 25px 8px 15px;
+                transition: all 0.4s;
+                &:hover {
+                  background: #a12844 !important;
+                }
+              }
+            }
+          }
+          &:first-child {
+            & > .dropdown-menu {
+              display: flex;
+              .dropdown-menu {
+                display: block;
+                .dropdown-item {
+                  padding: 4px 16px;
+                  a {
+                    transition: color 0.4s;
+                  }
+                  &:hover {
+                    background: #24272b !important;
+                    a {
+                      color: #a12844 !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .language-switcher-language-url {
+      display: none;
+    }
+    .search-block-form {
+      padding: 0 !important;
+      position: relative;
+      .js-form-item,
+      .form-actions {
+        margin-bottom: 0 !important;
+      }
+      .js-form-item {
+        width: 208px;
+      }
+      input {
+        font-size: 14px;
+        border-radius: 0;
+        border: 1px solid #dddddd;
+        padding: 10px 15px;
+        padding-right: 40px;
+      }
+      .form-actions {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 50%;
+        right: 28px;
+        transform: translateY(-50%);
+
+        input {
+          width: 20px;
+          height: 20px;
+          opacity: 0;
+          padding: 0;
+          position: absolute;
+          inset: 0;
+        }
+        &::after {
+          content: "";
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='19' viewBox='0 0 19 19' fill='none'%3E%3Cpath d='M12.9375 7.5625C12.9375 5.55859 11.8477 3.73047 10.125 2.71094C8.36719 1.69141 6.22266 1.69141 4.5 2.71094C2.74219 3.73047 1.6875 5.55859 1.6875 7.5625C1.6875 9.60156 2.74219 11.4297 4.5 12.4492C6.22266 13.4688 8.36719 13.4688 10.125 12.4492C11.8477 11.4297 12.9375 9.60156 12.9375 7.5625ZM11.8477 13.3281C10.582 14.3125 9 14.875 7.3125 14.875C3.26953 14.875 0 11.6055 0 7.5625C0 3.55469 3.26953 0.25 7.3125 0.25C11.3203 0.25 14.625 3.55469 14.625 7.5625C14.625 9.28516 14.0273 10.8672 13.043 12.1328L17.7539 16.8086C18.0703 17.1602 18.0703 17.6875 17.7539 18.0039C17.4023 18.3555 16.875 18.3555 16.5586 18.0039L11.8477 13.3281Z' fill='currentColor' fill-opacity='0.5'/%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
