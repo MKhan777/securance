@@ -32,6 +32,7 @@ regions:
   footer_third: 'Footer third'
   footer_fourth: 'Footer fourth'
   footer_fifth: 'Footer fifth'
+  footer_sixth: 'Footer sixth'
 
 # Information added by Drupal.org packaging script on 2024-08-04
 version: '5.0.11'

@@ -1,0 +1,91 @@
+.securance-banner {
+  padding: 160px 0;
+  position: relative;
+  .securance-banner-bg {
+    .field--type-image {
+      float: none;
+      margin: 0;
+    }
+    .contextual-region {
+      position: unset;
+      .contextual {
+        position: unset;
+      }
+    }
+    .field--type-entity-reference {
+      margin: 0;
+    }
+    .field--name-field-media-image {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+    }
+  }
+  .securance-banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    * {
+      margin: 0;
+    }
+    h2 {
+      color: #24272a;
+      font-family: "Barlow-Bold";
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 45px;
+    }
+    .securance-banner-description {
+      color: #7a7a7a;
+      font-family: "Barlow-Regular";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.5;
+      max-width: 74%;
+    }
+    .securance-banner-link {
+      a {
+        font-family: "Barlow-Medium";
+        font-size: 16px;
+        line-height: 30px;
+        fill: #ffffff;
+        color: #ffffff;
+        background-color: #a12844;
+        border: 1px solid #a12844;
+        padding: 14px 24px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.3s;
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background-size: cover;
+          mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>');
+          -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>');
+          mask-size: cover;
+          -webkit-mask-size: cover;
+          background: #fff;
+        }
+        &:hover {
+          background-color: transparent;
+          color: #a12844;
+          &::after {
+            background: #a12844;
+          }
+        }
+      }
+    }
+  }
+}
