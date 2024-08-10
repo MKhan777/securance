@@ -131,7 +131,7 @@
     <footer class="site-footer">
       {% block footer %}
         <div class="{{ container }}">
-          {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
+          {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth or page.footer_fifth or page.footer_sixth %}
             <div class="site-footer__top clearfix flex row">
               <div class="col-12">
               {{ page.footer_first }}
@@ -139,14 +139,18 @@
               <div class="col-3">
               {{ page.footer_second }}
               </div>
-              <div class="col-9">
+              <div class="col-3">
               {{ page.footer_third }}
               </div>
-            </div>
-          {% endif %}
-          {% if page.footer_fifth %}
-            <div class="site-footer__bottom">
-              {{ page.footer_fifth }}
+              <div class="col-3">
+                {{ page.footer_fourth }}
+              </div>
+              <div class="col-3">
+                {{ page.footer_fifth }}
+              </div>
+              <div class="col-12">
+                {{ page.footer_sixth }}
+              </div>
             </div>
           {% endif %}
         </div>
