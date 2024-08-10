@@ -92,13 +92,14 @@
     {% endif %}
     <div id="main-wrapper" class="layout-main-wrapper clearfix">
       {% block content %}
-        <div id="main" class="{{ container }}">
+        <div id="main">
           {{ page.breadcrumb }}
+          {{ page.content }}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
               <main{{ content_attributes }}>
                 <section class="section">
                   <a href="#main-content" id="main-content" tabindex="-1"></a>
-                  {{ page.content }}
+                  
                 </section>
               </main>
             {% if sidebar_first_exists %}
@@ -136,16 +137,16 @@
               <div class="col-12">
               {{ page.footer_first }}
               </div>
-              <div class="col-3">
+              <div class="col-12 col-md-6 col-lg-3">
               {{ page.footer_second }}
               </div>
-              <div class="col-3">
+              <div class="col-12 col-md-6 col-lg-3">
               {{ page.footer_third }}
               </div>
-              <div class="col-3">
+              <div class="col-12 col-md-6 col-lg-3">
                 {{ page.footer_fourth }}
               </div>
-              <div class="col-3">
+              <div class="col-12 col-md-6 col-lg-3">
                 {{ page.footer_fifth }}
               </div>
               <div class="col-12">
