@@ -69,92 +69,92 @@
 #}
 {# see https://www.drupal.org/project/drupal/issues/953034#comment-14192130 #}
 {% set sidebar_first_exists = page.sidebar_first|render|striptags('<img><video><audio><drupal-render-placeholder>')|trim is not empty %}
-  {% set sidebar_second_exists = page.sidebar_second|render|striptags('<img><video><audio><drupal-render-placeholder>')|trim is not empty %}
-  
-  <div id="page-wrapper">
-    <div id="page">
-      {{ page.header }}
-      {% if page.highlighted %}
-        <div class="highlighted">
-          <aside class="{{ container }} section clearfix" role="complementary">
-            {{ page.highlighted }}
-          </aside>
-        </div>
-      {% endif %}
-      {% if page.featured_top %}
-        {% block featured %}
-          <div class="featured-top">
-            <aside class="featured-top__inner section {{ container }} clearfix" role="complementary">
-              {{ page.featured_top }}
-            </aside>
-          </div>
-        {% endblock %}
-      {% endif %}
-      <div id="main-wrapper" class="layout-main-wrapper clearfix">
-        {% block content %}
-          <div id="main" class="{{ container }}">
-            {{ page.breadcrumb }}
-            <div class="row row-offcanvas row-offcanvas-left clearfix">
-                <main{{ content_attributes }}>
-                  <section class="section">
-                    <a href="#main-content" id="main-content" tabindex="-1"></a>
-                    {{ page.content }}
-                  </section>
-                </main>
-              {% if sidebar_first_exists %}
-                <div{{ sidebar_first_attributes }}>
-                  <aside class="section" role="complementary">
-                    {{ page.sidebar_first }}
-                  </aside>
-                </div>
-              {% endif %}
-              {% if sidebar_second_exists %}
-                <div{{ sidebar_second_attributes }}>
-                  <aside class="section" role="complementary">
-                    {{ page.sidebar_second }}
-                  </aside>
-                </div>
-              {% endif %}
-            </div>
-          </div>
-        {% endblock %}
+{% set sidebar_second_exists = page.sidebar_second|render|striptags('<img><video><audio><drupal-render-placeholder>')|trim is not empty %}
+
+<div id="page-wrapper">
+  <div id="page">
+    {{ page.header }}
+    {% if page.highlighted %}
+      <div class="highlighted">
+        <aside class="{{ container }} section clearfix" role="complementary">
+          {{ page.highlighted }}
+        </aside>
       </div>
-      {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
-        <div class="featured-bottom">
-          <aside class="{{ container }} clearfix" role="complementary">
-            {{ page.featured_bottom_first }}
-            {{ page.featured_bottom_second }}
-            {{ page.featured_bottom_third }}
+    {% endif %}
+    {% if page.featured_top %}
+      {% block featured %}
+        <div class="featured-top">
+          <aside class="featured-top__inner section {{ container }} clearfix" role="complementary">
+            {{ page.featured_top }}
           </aside>
         </div>
-      {% endif %}
-      <footer class="site-footer">
-        {% block footer %}
-          <div class="{{ container }}">
-            {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth or page.footer_fifth or page.footer_sixth %}
-              <div class="site-footer__top clearfix flex row">
-                <div class="col-12">
-                {{ page.footer_first }}
-                </div>
-                <div class="col-3">
-                {{ page.footer_second }}
-                </div>
-                <div class="col-3">
-                {{ page.footer_third }}
-                </div>
-                <div class="col-3">
-                  {{ page.footer_fourth }}
-                </div>
-                <div class="col-3">
-                  {{ page.footer_fifth }}
-                </div>
-                <div class="col-12">
-                  {{ page.footer_sixth }}
-                </div>
+      {% endblock %}
+    {% endif %}
+    <div id="main-wrapper" class="layout-main-wrapper clearfix">
+      {% block content %}
+        <div id="main" class="{{ container }}">
+          {{ page.breadcrumb }}
+          <div class="row row-offcanvas row-offcanvas-left clearfix">
+              <main{{ content_attributes }}>
+                <section class="section">
+                  <a href="#main-content" id="main-content" tabindex="-1"></a>
+                  {{ page.content }}
+                </section>
+              </main>
+            {% if sidebar_first_exists %}
+              <div{{ sidebar_first_attributes }}>
+                <aside class="section" role="complementary">
+                  {{ page.sidebar_first }}
+                </aside>
+              </div>
+            {% endif %}
+            {% if sidebar_second_exists %}
+              <div{{ sidebar_second_attributes }}>
+                <aside class="section" role="complementary">
+                  {{ page.sidebar_second }}
+                </aside>
               </div>
             {% endif %}
           </div>
-        {% endblock %}
-      </footer>
+        </div>
+      {% endblock %}
     </div>
+    {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
+      <div class="featured-bottom">
+        <aside class="{{ container }} clearfix" role="complementary">
+          {{ page.featured_bottom_first }}
+          {{ page.featured_bottom_second }}
+          {{ page.featured_bottom_third }}
+        </aside>
+      </div>
+    {% endif %}
+    <footer class="site-footer">
+      {% block footer %}
+        <div class="{{ container }}">
+          {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth or page.footer_fifth or page.footer_sixth %}
+            <div class="site-footer__top clearfix flex row">
+              <div class="col-12">
+              {{ page.footer_first }}
+              </div>
+              <div class="col-3">
+              {{ page.footer_second }}
+              </div>
+              <div class="col-3">
+              {{ page.footer_third }}
+              </div>
+              <div class="col-3">
+                {{ page.footer_fourth }}
+              </div>
+              <div class="col-3">
+                {{ page.footer_fifth }}
+              </div>
+              <div class="col-12">
+                {{ page.footer_sixth }}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      {% endblock %}
+    </footer>
   </div>
+</div>
