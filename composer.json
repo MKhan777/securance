@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.5",
+        "drupal/block_content_template": "1.5",
         "drupal/bootstrap_barrio": "^5.5",
         "drupal/bootstrap_sass": "^5.0",
         "drupal/color_field": "3.0",
@@ -27,6 +28,7 @@
         "drupal/gin_toolbar": "dev-1.x",
         "drupal/paragraphs": "1.17",
         "drupal/paragraphs_admin": "1.6",
+        "drupal/social_media_links": "2.9",
         "drupal/twig_tweak": "^3.4",
         "drush/drush": "^12.5"
     },
