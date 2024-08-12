@@ -24,12 +24,14 @@
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
         "drupal/core-recommended": "^10.3",
+        "drupal/flickity": "3.0.2",
         "drupal/gin": "3.x-dev",
         "drupal/gin_toolbar": "dev-1.x",
         "drupal/paragraphs": "1.17",
         "drupal/paragraphs_admin": "1.6",
         "drupal/social_media_links": "2.9",
         "drupal/twig_tweak": "^3.4",
+        "drupal/views_slideshow": "5.0",
         "drush/drush": "^12.5"
     },
     "conflict": {

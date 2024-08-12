@@ -1,0 +1,31 @@
+.component-wrapper {
+    padding: 64px 0;
+    background: #000;
+    .component-image {
+        img {
+            width: 100%;
+        }
+    }
+    .component-content {
+        * {
+            color: #fff;
+            margin: 0;
+        }
+        .component-title {
+            font-family: "Barlow-Bold";
+            font-size: 32px;
+            line-height: 45px;
+        }
+        .component-description {
+            color: #f9fafb;
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: 'Barlow-Regular';
+        }
+    }
+
+}
+
+
+
+

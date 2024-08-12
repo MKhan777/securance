@@ -19,12 +19,19 @@
 <header>
     <div class="container">
     <div class="row">
-        <div class="col-3">
+        <div class="col-6 col-lg-3">
             <div class="header-logo">
                 {{ drupal_block('system_branding_block', {label: 'Branding', use_site_name: false}) }}
             </div>
         </div>
-        <div class="col-9">
+        <div class="col-6 col-lg-9">
+            <div class="mobile-btn">
+                <button>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
             <div class="header-main-menu-wrapper">
                 {{ drupal_entity('block', 'securance_main_menu') }}
                 {{ drupal_entity('block', 'securance_custommenu')}}
@@ -35,3 +42,10 @@
     </div>
     </div>
 </header>
+
+
+<script>
+document.querySelector(".mobile-btn").addEventListener("click", ()=>{
+    document.querySelector(".header-main-menu-wrapper").classList.toggle("header-menu-show")
+})
+</script>
