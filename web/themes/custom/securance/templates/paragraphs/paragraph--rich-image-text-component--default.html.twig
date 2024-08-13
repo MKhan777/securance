@@ -1,8 +1,7 @@
-<div class="component-wrapper {% if content.field_image_position['#items'].value %} component-wrapper-reverse {% endif %} ">
+<div class="component-wrapper {% if content.field_image_position['#items'].value %} component-wrapper-reverse {% endif %}">
 	<div class="container">
 		<div class="row">
-
-			<div class="col-md-6">
+			<div class="col-12 col-lg-6">
 				<div class="component-content">
 					{% if content.field_title %}
 						<h2 class="component-title">{{ content.field_title }}</h2>
@@ -11,14 +10,15 @@
 						<h3 class="component-subheading">{{ content.field_subheading }}</h3>
 					{% endif %}
 					{% if content.field_description %}
-                <div class="component-description">{{ content.field_description}}</div>
+						<div class="component-description">{{ content.field_description}}</div>
 					{% endif %}
 					{% if content.field_body %}
-						<div class="component-body">{{ content.field_body }}</div>
+						<div class="component-body">
+							{{ content.field_body }}</div>
 					{% endif %}
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-12 col-lg-6">
 				<div class="component-image">
 					{{ content.field_figure }}
 				</div>
