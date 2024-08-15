@@ -1,0 +1,64 @@
+.stat-component-wrapper {
+  padding: 96px 0;
+  @media screen and (max-width: 1024px) {
+    padding: 64px 0;
+  }
+  .heading {
+    margin-bottom: 50px;
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 1.5;
+      font-family: "Barlow-SemiBold";
+      color: #ffffff;
+      @media screen and (max-width: 1024px) {
+        font-size: 30px;
+      }
+    }
+    .banner-description {
+      font-size: 16px;
+      line-height: 1.2;
+      font-family: "Barlow-Regular";
+      color: #f9fafb;
+      @media screen and (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 2;
+      }
+    }
+  }
+}
+
+.stat-item {
+  &:not(:first-child) {
+    padding-left: 35px;
+    border-left: 2px solid #fff;
+  }
+  .stat-value {
+    font-size: 44px;
+    color: #ffffff;
+    font-family: "Barlow-Bold";
+    span {
+      color: #fecdca;
+    }
+  }
+  .stat-description {
+    font-size: 18px;
+    color: #fecdca;
+    font-family: "Barlow-Medium";
+  }
+  @media screen and (max-width: 1024px) {
+    &:nth-child(3) {
+      border-left: none;
+      padding-left: 12px;
+    }
+    width: 50%;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      border-left: none !important;
+      padding-left: 12px !important;
+      margin-bottom: 16px;
+    }
+  }
+}

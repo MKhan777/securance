@@ -1,4 +1,5 @@
-<div class="component-wrapper {% if content.field_image_position['#items'].value %} component-wrapper-reverse {% endif %}">
+
+<div class="component-wrapper {% if content.field_image_position['#items'].value %} component-wrapper-reverse {% endif %}" style="background-color: {{ content.field_background_color|render|striptags|trim }};">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-6">

@@ -1,0 +1,49 @@
+{% set unique_id = content.field_tabs['#items'][0].entity.id.value %}
+<div class="tabs-block">
+	<div class="container">
+		<div class="heading">
+			<h2>{{ content.field_title }}</h2>
+		</div>
+		<div class="tabs-wrapper">
+			<ul class="nav nav-tabs" role="tablist">
+				{% for item in content.field_tabs['#items'] %}
+					{% set tab_id = 'tab-' ~ item.entity.id.value %}
+					<li class="nav-item">
+						<a class="nav-link {% if loop.first %}active{% endif %}" id="{{ tab_id }}-tab" data-bs-toggle="tab" href="#{{ tab_id }}" role="tab" aria-controls="{{ tab_id }}" aria-selected="{% if loop.first %}true{% else %}false{% endif %}">
+							<h3>{{ item.entity.field_heading.value }}</h3>
+							<h4>{{ item.entity.field_sub_heading.value }}</h4>
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+			<div class="tab-content">
+				{% for item in content.field_tabs['#items'] %}
+					{% set tab_id = 'tab-' ~ item.entity.id.value %}
+					<div class="tab-pane fade {% if loop.first %}show active{% endif %}" id="{{ tab_id }}" role="tabpanel" aria-labelledby="{{ tab_id }}-tab">
+						<div class="row">
+							<div class="col-12 col-xl-6">
+								<div class="tab-text-content">
+									<h4>{{ item.entity.field_description_heading.value }}</h4>
+									<p>{{ item.entity.field_description.value }}</p>
+								</div>
+							</div>
+							<div class="col-12 col-xl-6">
+								<div class="tab-img-content">
+									{% if item.entity.field_figure.entity %}
+										{% set media_entity = item.entity.field_figure.entity %}
+										{% if media_entity.field_media_image.entity %}
+											{% set image = media_entity.field_media_image.entity %}
+											<div class="image-wrapper">
+												<img src="{{ image.uri.value | file_url }}" alt="{{ image.alt.value }}">
+											</div>
+										{% endif %}
+									{% endif %}
+								</div>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

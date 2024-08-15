@@ -1,10 +1,12 @@
 .component-wrapper {
   padding: 64px 0;
-  background: #363334;
   @media screen and (max-width: 991px) {
     .row {
       row-gap: 30px;
     }
+  }
+  .field--type-entity-reference{
+    margin: 0;
   }
   .component-image {
     padding: 10px;
