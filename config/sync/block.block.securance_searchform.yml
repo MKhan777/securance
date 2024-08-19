@@ -1,0 +1,21 @@
+uuid: 07d8948e-1e7a-446d-87ab-2fc255f9283a
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - securance
+id: securance_searchform
+theme: securance
+region: header
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

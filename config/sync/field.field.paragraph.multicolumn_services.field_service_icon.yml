@@ -1,0 +1,29 @@
+uuid: 9b73062b-7d0c-4dfb-82c9-e37a94d35f22
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_service_icon
+    - media.type.image
+    - paragraphs.paragraphs_type.multicolumn_services
+id: paragraph.multicolumn_services.field_service_icon
+field_name: field_service_icon
+entity_type: paragraph
+bundle: multicolumn_services
+label: 'Service icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

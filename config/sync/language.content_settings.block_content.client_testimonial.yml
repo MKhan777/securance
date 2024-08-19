@@ -1,0 +1,11 @@
+uuid: f96723e9-7fae-456c-b53a-dd16f593c331
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.client_testimonial
+id: block_content.client_testimonial
+target_entity_type_id: block_content
+target_bundle: client_testimonial
+default_langcode: site_default
+language_alterable: false

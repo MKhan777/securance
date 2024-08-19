@@ -1,0 +1,165 @@
+uuid: 0600d421-7dfd-4c75-adc2-026b2e6aea64
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - securance
+id: securance_socialmedialinks
+theme: securance
+region: footer_first
+weight: 0
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Connect With Us'
+  label_display: visible
+  provider: social_media_links
+  platforms:
+    amazon:
+      value: ''
+      description: ''
+      weight: '-10'
+    behance:
+      value: ''
+      description: ''
+      weight: '-9'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-8'
+    contact:
+      value: ''
+      description: ''
+      weight: '-7'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-6'
+    email:
+      value: ''
+      description: ''
+      weight: '-5'
+    facebook:
+      value: ''
+      description: ''
+      weight: '-4'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-3'
+    github:
+      value: ''
+      description: ''
+      weight: '-2'
+    gitlab:
+      value: ''
+      description: ''
+      weight: '-1'
+    glassdoor:
+      value: ''
+      description: ''
+      weight: '0'
+    goodreads:
+      value: ''
+      description: ''
+      weight: '1'
+    googleplay:
+      value: ''
+      description: ''
+      weight: '2'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '3'
+    instagram:
+      value: ''
+      description: ''
+      weight: '4'
+    linkedin:
+      value: company/securance-be-sure
+      description: 'Follow us on Linkedin'
+      weight: '5'
+    mastodon:
+      value: ''
+      description: ''
+      weight: '6'
+    meetup:
+      value: ''
+      description: ''
+      weight: '7'
+    patreon:
+      value: ''
+      description: ''
+      weight: '8'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '9'
+    rss:
+      value: ''
+      description: ''
+      weight: '10'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '11'
+    telegram:
+      value: ''
+      description: ''
+      weight: '12'
+    tiktok:
+      value: ''
+      description: ''
+      weight: '13'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '14'
+    twitter:
+      value: ''
+      description: ''
+      weight: '15'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '16'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '17'
+    website:
+      value: ''
+      description: ''
+      weight: '18'
+    whatsapp:
+      value: ''
+      description: ''
+      weight: '19'
+    xing:
+      value: ''
+      description: ''
+      weight: '20'
+    youtube:
+      value: ''
+      description: ''
+      weight: '21'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '22'
+  appearance:
+    orientation: h
+    show_name: 0
+    suggestion: ''
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:lg'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

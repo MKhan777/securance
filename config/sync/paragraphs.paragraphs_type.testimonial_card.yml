@@ -1,0 +1,10 @@
+uuid: 64870bc4-667b-477b-bd58-c72c5f639a7e
+langcode: nl
+status: true
+dependencies: {  }
+id: testimonial_card
+label: 'Testimonial Card'
+icon_uuid: null
+icon_default: null
+description: 'Testimonial Card paragraph type contains a image field, description, name and designation of client.'
+behavior_plugins: {  }

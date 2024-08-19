@@ -1,0 +1,22 @@
+uuid: 526755f7-9a8d-4950-8e12-77bbd9493834
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_color
+    - paragraphs.paragraphs_type.rich_image_text_component
+  module:
+    - color_field
+id: paragraph.rich_image_text_component.field_title_color
+field_name: field_title_color
+entity_type: paragraph
+bundle: rich_image_text_component
+label: 'Title Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

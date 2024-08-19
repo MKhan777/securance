@@ -1,0 +1,10 @@
+uuid: f31d3e17-3f48-4f98-a18e-52d32596b8d9
+langcode: en-gb
+status: true
+dependencies: {  }
+id: organization_service_component
+label: 'Organization Service Component'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

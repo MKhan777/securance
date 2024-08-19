@@ -1,0 +1,19 @@
+uuid: 120f76e0-92e8-4f43-b2ab-b64030c05b21
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.modal_card
+id: paragraph.modal_card.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: modal_card
+label: Title
+description: 'The title field which contains the title of card.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

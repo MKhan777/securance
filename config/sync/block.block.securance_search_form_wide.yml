@@ -1,0 +1,23 @@
+uuid: bdccbfa0-03d9-403e-a765-06b0f35fe6fe
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - securance
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: securance_search_form_wide
+theme: securance
+region: header
+weight: -3
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

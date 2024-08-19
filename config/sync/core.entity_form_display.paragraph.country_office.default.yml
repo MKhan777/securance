@@ -1,0 +1,60 @@
+uuid: c504ec96-1b19-4653-b7d0-408569f438da
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.country_office.field_address_label
+    - field.field.paragraph.country_office.field_address_line
+    - field.field.paragraph.country_office.field_country_name
+    - field.field.paragraph.country_office.field_country_zip_and_city
+    - field.field.paragraph.country_office.field_telephone
+    - paragraphs.paragraphs_type.country_office
+  module:
+    - telephone
+id: paragraph.country_office.default
+targetEntityType: paragraph
+bundle: country_office
+mode: default
+content:
+  field_address_label:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_address_line:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_country_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_country_zip_and_city:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_telephone:
+    type: telephone_default
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

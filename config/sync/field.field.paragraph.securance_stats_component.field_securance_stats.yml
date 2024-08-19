@@ -1,0 +1,58 @@
+uuid: dc1c31ad-f0f4-408f-9cfb-d2d06f62ccdd
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_securance_stats
+    - paragraphs.paragraphs_type.securance_stats_component
+    - paragraphs.paragraphs_type.stats_number
+  module:
+    - entity_reference_revisions
+id: paragraph.securance_stats_component.field_securance_stats
+field_name: field_securance_stats
+entity_type: paragraph
+bundle: securance_stats_component
+label: 'Securance Stats'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      stats_number: stats_number
+    negate: 0
+    target_bundles_drag_drop:
+      country_office:
+        weight: 9
+        enabled: false
+      hero_banner:
+        weight: 10
+        enabled: false
+      multicolumn_services:
+        weight: 13
+        enabled: false
+      organization_service_component:
+        weight: 14
+        enabled: false
+      parent_tab_component:
+        weight: 11
+        enabled: false
+      rich_image_text_component:
+        weight: 12
+        enabled: false
+      securance_stats_component:
+        weight: 13
+        enabled: false
+      social_link:
+        weight: 14
+        enabled: false
+      stats_number:
+        weight: 15
+        enabled: true
+      tab_component:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

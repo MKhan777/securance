@@ -1,0 +1,25 @@
+uuid: d1b67074-24bd-4be4-b1dd-b20156e2c4a6
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_country_column_first:2513d438-e2cd-4ebc-bf31-1fd7cba3f8d7'
+  module:
+    - block_content
+  theme:
+    - securance
+id: securance_secondcountrycolumnoffooter
+theme: securance
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'block_content:2513d438-e2cd-4ebc-bf31-1fd7cba3f8d7'
+settings:
+  id: 'block_content:2513d438-e2cd-4ebc-bf31-1fd7cba3f8d7'
+  label: 'Second Country Column of Footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

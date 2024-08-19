@@ -1,0 +1,29 @@
+uuid: d3dd6e75-661e-4dc4-82bc-ef07c177efbe
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_figure
+    - media.type.image
+    - paragraphs.paragraphs_type.testimonial_card
+id: paragraph.testimonial_card.field_figure
+field_name: field_figure
+entity_type: paragraph
+bundle: testimonial_card
+label: Figure
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

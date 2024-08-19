@@ -1,0 +1,8 @@
+uuid: 37102a1b-e79f-4d1f-a0a4-fd1051edec3a
+langcode: nl
+status: true
+dependencies: {  }
+id: client_testimonial
+label: 'Client Testimonial'
+revision: false
+description: 'A block which contains a Entity Reference Field of Client Testimonial Card and testimonial headings.'

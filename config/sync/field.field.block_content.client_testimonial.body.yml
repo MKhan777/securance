@@ -1,0 +1,24 @@
+uuid: 7baa673b-74c3-4dda-b220-295578585b3a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.client_testimonial
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.client_testimonial.body
+field_name: body
+entity_type: block_content
+bundle: client_testimonial
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

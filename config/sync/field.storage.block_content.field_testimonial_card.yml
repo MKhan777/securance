@@ -1,0 +1,21 @@
+uuid: 40e685f7-a5f1-4f81-9ea8-eeaf20509dbb
+langcode: nl
+status: true
+dependencies:
+  module:
+    - block_content
+    - entity_reference_revisions
+    - paragraphs
+id: block_content.field_testimonial_card
+field_name: field_testimonial_card
+entity_type: block_content
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: a313fe6c-2de2-4fc0-80ed-13c22802f75c
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_text
+    - paragraphs.paragraphs_type.multicolumn_services
+  module:
+    - link
+id: paragraph.multicolumn_services.field_cta_text
+field_name: field_cta_text
+entity_type: paragraph
+bundle: multicolumn_services
+label: 'CTA text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

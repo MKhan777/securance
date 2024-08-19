@@ -1,0 +1,22 @@
+uuid: f7bc1a19-a1e3-4d98-a2a7-10a6df34a779
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.country_office
+id: paragraph.country_office.status
+field_name: status
+entity_type: paragraph
+bundle: country_office
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

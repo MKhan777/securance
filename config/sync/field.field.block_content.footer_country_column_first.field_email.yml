@@ -1,0 +1,19 @@
+uuid: 21666312-b496-459e-8a74-e6b35d81646c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_country_column_first
+    - field.storage.block_content.field_email
+id: block_content.footer_country_column_first.field_email
+field_name: field_email
+entity_type: block_content
+bundle: footer_country_column_first
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

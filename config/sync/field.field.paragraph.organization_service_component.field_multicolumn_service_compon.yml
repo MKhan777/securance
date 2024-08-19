@@ -1,0 +1,58 @@
+uuid: e3482374-7299-40b0-ba91-3f2b93cc03c6
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_multicolumn_service_compon
+    - paragraphs.paragraphs_type.multicolumn_services
+    - paragraphs.paragraphs_type.organization_service_component
+  module:
+    - entity_reference_revisions
+id: paragraph.organization_service_component.field_multicolumn_service_compon
+field_name: field_multicolumn_service_compon
+entity_type: paragraph
+bundle: organization_service_component
+label: 'Multicolumn Service Component '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      multicolumn_services: multicolumn_services
+    negate: 0
+    target_bundles_drag_drop:
+      country_office:
+        weight: 11
+        enabled: false
+      hero_banner:
+        weight: 12
+        enabled: false
+      multicolumn_services:
+        weight: 13
+        enabled: true
+      organization_service_component:
+        weight: 14
+        enabled: false
+      parent_tab_component:
+        weight: 15
+        enabled: false
+      rich_image_text_component:
+        weight: 16
+        enabled: false
+      securance_stats_component:
+        weight: 17
+        enabled: false
+      social_link:
+        weight: 18
+        enabled: false
+      stats_number:
+        weight: 19
+        enabled: false
+      tab_component:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,61 @@
+uuid: 37510505-e8e8-4167-bd6a-430056b8e681
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_country_column_first
+    - field.storage.block_content.field_country_column_first
+    - paragraphs.paragraphs_type.country_office
+  module:
+    - entity_reference_revisions
+id: block_content.footer_country_column_first.field_country_column_first
+field_name: field_country_column_first
+entity_type: block_content
+bundle: footer_country_column_first
+label: 'Country Column First'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      country_office: country_office
+    negate: 0
+    target_bundles_drag_drop:
+      country_office:
+        weight: 12
+        enabled: true
+      hero_banner:
+        weight: 13
+        enabled: false
+      multicolumn_services:
+        weight: 14
+        enabled: false
+      organization_service_component:
+        weight: 15
+        enabled: false
+      parent_tab_component:
+        weight: 16
+        enabled: false
+      rich_image_text_component:
+        weight: 17
+        enabled: false
+      securance_stats_component:
+        weight: 18
+        enabled: false
+      social_link:
+        weight: 19
+        enabled: false
+      stats_number:
+        weight: 20
+        enabled: false
+      tab_component:
+        weight: 21
+        enabled: false
+      testimonial_slider:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

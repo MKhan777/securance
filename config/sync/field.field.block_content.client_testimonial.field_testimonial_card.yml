@@ -1,0 +1,67 @@
+uuid: 9260a7de-502d-4d3f-af06-d32fbacde36f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.client_testimonial
+    - field.storage.block_content.field_testimonial_card
+    - paragraphs.paragraphs_type.testimonial_card
+  module:
+    - entity_reference_revisions
+id: block_content.client_testimonial.field_testimonial_card
+field_name: field_testimonial_card
+entity_type: block_content
+bundle: client_testimonial
+label: 'Testimonial Card'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      testimonial_card: testimonial_card
+    negate: 0
+    target_bundles_drag_drop:
+      country_office:
+        weight: 14
+        enabled: false
+      hero_banner:
+        weight: 15
+        enabled: false
+      modal_card:
+        weight: 16
+        enabled: false
+      multicolumn_services:
+        weight: 17
+        enabled: false
+      organization_service_component:
+        weight: 18
+        enabled: false
+      parent_tab_component:
+        weight: 19
+        enabled: false
+      rich_image_text_component:
+        weight: 20
+        enabled: false
+      securance_stats_component:
+        weight: 21
+        enabled: false
+      social_link:
+        weight: 22
+        enabled: false
+      stats_number:
+        weight: 23
+        enabled: false
+      tab_component:
+        weight: 24
+        enabled: false
+      testimonial_card:
+        weight: 25
+        enabled: true
+      text_with_cta_section:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

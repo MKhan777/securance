@@ -1,0 +1,21 @@
+uuid: 2ad24f3a-e242-4802-b3c7-242331f4e0e4
+langcode: nl
+status: true
+dependencies:
+  module:
+    - block_content
+    - entity_reference_revisions
+    - paragraphs
+id: block_content.field_modal_card
+field_name: field_modal_card
+entity_type: block_content
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

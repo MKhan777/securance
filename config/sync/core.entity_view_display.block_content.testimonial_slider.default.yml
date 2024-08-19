@@ -1,0 +1,33 @@
+uuid: 8ca6e7de-11cc-4f46-9f46-6a939c195504
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - block_content.type.testimonial_slider
+    - field.field.block_content.testimonial_slider.body
+  module:
+    - text
+id: block_content.testimonial_slider.default
+targetEntityType: block_content
+bundle: testimonial_slider
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  our_services_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  test_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+hidden:
+  langcode: true

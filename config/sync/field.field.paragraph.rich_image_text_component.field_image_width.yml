@@ -1,0 +1,21 @@
+uuid: 8ba0762e-12f0-451f-a6b9-72b79c37edfe
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_width
+    - paragraphs.paragraphs_type.rich_image_text_component
+id: paragraph.rich_image_text_component.field_image_width
+field_name: field_image_width
+entity_type: paragraph
+bundle: rich_image_text_component
+label: 'Full Image Width'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

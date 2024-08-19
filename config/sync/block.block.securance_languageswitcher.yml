@@ -1,0 +1,20 @@
+uuid: 07265ccf-7063-4ea6-b533-7829a3230316
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - securance
+id: securance_languageswitcher
+theme: securance
+region: header
+weight: -8
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility: {  }

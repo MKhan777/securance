@@ -1,0 +1,30 @@
+uuid: 7847a036-c24a-4ecd-9eaf-ac879497a46e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - paragraphs.paragraphs_type.rich_image_text_component
+  module:
+    - text
+id: paragraph.rich_image_text_component.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: rich_image_text_component
+label: body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
+field_type: text_long

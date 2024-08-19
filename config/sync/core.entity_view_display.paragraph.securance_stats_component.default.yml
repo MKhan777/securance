@@ -1,0 +1,51 @@
+uuid: 453ab85f-6ba6-48b8-b311-9261731a8375
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.securance_stats_component.field_banner_background
+    - field.field.paragraph.securance_stats_component.field_description
+    - field.field.paragraph.securance_stats_component.field_securance_stats
+    - field.field.paragraph.securance_stats_component.field_title
+    - paragraphs.paragraphs_type.securance_stats_component
+  module:
+    - entity_reference_revisions
+id: paragraph.securance_stats_component.default
+targetEntityType: paragraph
+bundle: securance_stats_component
+mode: default
+content:
+  field_banner_background:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_securance_stats:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

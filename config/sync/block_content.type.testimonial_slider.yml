@@ -1,0 +1,8 @@
+uuid: 6be51b22-323d-4d10-a4ae-e33ef04dbaf8
+langcode: en-gb
+status: true
+dependencies: {  }
+id: testimonial_slider
+label: Slider
+revision: false
+description: 'A block contains a heading , description and referenced entity.'

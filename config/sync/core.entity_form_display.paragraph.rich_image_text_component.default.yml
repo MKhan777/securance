@@ -1,0 +1,191 @@
+uuid: 005c7cc0-aa9f-4ff6-b8ee-853ba1669ad2
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.rich_image_text_component.field_background_color
+    - field.field.paragraph.rich_image_text_component.field_body
+    - field.field.paragraph.rich_image_text_component.field_description
+    - field.field.paragraph.rich_image_text_component.field_description_color
+    - field.field.paragraph.rich_image_text_component.field_figure
+    - field.field.paragraph.rich_image_text_component.field_image_width
+    - field.field.paragraph.rich_image_text_component.field_set_image_position
+    - field.field.paragraph.rich_image_text_component.field_sub_heading
+    - field.field.paragraph.rich_image_text_component.field_sub_heading_color
+    - field.field.paragraph.rich_image_text_component.field_subheading_position
+    - field.field.paragraph.rich_image_text_component.field_title
+    - field.field.paragraph.rich_image_text_component.field_title_color
+    - paragraphs.paragraphs_type.rich_image_text_component
+  module:
+    - color_field
+    - field_group
+    - media_library
+    - text
+third_party_settings:
+  field_group:
+    group_description:
+      children:
+        - field_description
+        - field_description_color
+      label: 'Rich Image Text Description Set'
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_subheading_set:
+      children:
+        - field_sub_heading
+        - field_sub_heading_color
+        - field_subheading_position
+      label: 'Subheading Set'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_title_set:
+      children:
+        - field_title
+        - field_title_color
+      label: 'Title set'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_image_setting:
+      children:
+        - field_figure
+        - field_image_position
+        - field_image_width
+        - field_set_image_position
+      label: 'Image setting'
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+id: paragraph.rich_image_text_component.default
+targetEntityType: paragraph
+bundle: rich_image_text_component
+mode: default
+content:
+  field_background_color:
+    type: color_field_widget_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
+  field_body:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_description:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_description_color:
+    type: color_field_widget_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
+  field_figure:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_image_width:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_set_image_position:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sub_heading:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sub_heading_color:
+    type: color_field_widget_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
+  field_subheading_position:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_color:
+    type: color_field_widget_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

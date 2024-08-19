@@ -1,0 +1,19 @@
+uuid: 1df8a391-1aa6-460e-999a-56e938d9a8c3
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_heading
+    - paragraphs.paragraphs_type.organization_service_component
+id: paragraph.organization_service_component.field_sub_heading
+field_name: field_sub_heading
+entity_type: paragraph
+bundle: organization_service_component
+label: 'Sub Heading'
+description: 'The Field used for subheading it is bottom of main heading or top of heading.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

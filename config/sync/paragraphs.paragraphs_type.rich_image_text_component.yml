@@ -1,0 +1,10 @@
+uuid: 2d31bebb-827a-45c1-8fee-dc86bfb9d258
+langcode: en-gb
+status: true
+dependencies: {  }
+id: rich_image_text_component
+label: 'Rich Image Text Component'
+icon_uuid: null
+icon_default: null
+description: 'This component contains title, description , Image with left or right selection and also with background colour.'
+behavior_plugins: {  }

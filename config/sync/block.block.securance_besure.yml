@@ -1,0 +1,30 @@
+uuid: 04098be4-9ee0-43a1-b9a1-bafa25e22f95
+langcode: nl
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_block:87e09136-8665-4d1c-802c-b6de1aea2470'
+  module:
+    - block_content
+    - system
+  theme:
+    - securance
+id: securance_besure
+theme: securance
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:87e09136-8665-4d1c-802c-b6de1aea2470'
+settings:
+  id: 'block_content:87e09136-8665-4d1c-802c-b6de1aea2470'
+  label: 'Be Sure'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

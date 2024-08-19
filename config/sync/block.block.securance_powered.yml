@@ -1,0 +1,22 @@
+uuid: 0df7be8f-e584-4ee2-9577-0883383e6202
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - securance
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: securance_powered
+theme: securance
+region: header
+weight: 5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

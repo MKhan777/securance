@@ -1,0 +1,33 @@
+uuid: 2b0207c3-c23b-4118-91cf-1547de832489
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_link.field_icon
+    - field.field.paragraph.social_link.field_url
+    - paragraphs.paragraphs_type.social_link
+  module:
+    - media_library
+id: paragraph.social_link.default
+targetEntityType: paragraph
+bundle: social_link
+mode: default
+content:
+  field_icon:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_url:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,22 @@
+uuid: 6e2394cb-50c4-474c-83ee-4dd3bc241154
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_hover_background
+    - taxonomy.vocabulary.services_assurance
+  module:
+    - color_field
+id: taxonomy_term.services_assurance.field_hover_background
+field_name: field_hover_background
+entity_type: taxonomy_term
+bundle: services_assurance
+label: 'Hover background'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

@@ -1,0 +1,8 @@
+uuid: 080ebf5d-b0fe-481f-8023-bcc30571135a
+langcode: en-gb
+status: true
+dependencies: {  }
+id: basic_block
+label: 'Basic Block '
+revision: false
+description: 'A basic block with only body field.'

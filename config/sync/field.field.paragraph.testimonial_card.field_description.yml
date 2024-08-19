@@ -1,0 +1,19 @@
+uuid: 4cc6a390-acbf-4522-b320-8e65095c2554
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.testimonial_card
+id: paragraph.testimonial_card.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: testimonial_card
+label: Description
+description: 'The field description which contains the description of hero banner.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

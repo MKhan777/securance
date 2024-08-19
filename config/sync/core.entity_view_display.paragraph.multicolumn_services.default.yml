@@ -1,0 +1,54 @@
+uuid: 1d8cf87c-ce8c-489f-8fd9-45ef73425f7b
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.multicolumn_services.field_cta_text
+    - field.field.paragraph.multicolumn_services.field_service_description
+    - field.field.paragraph.multicolumn_services.field_service_icon
+    - field.field.paragraph.multicolumn_services.field_service_title
+    - paragraphs.paragraphs_type.multicolumn_services
+  module:
+    - link
+id: paragraph.multicolumn_services.default
+targetEntityType: paragraph
+bundle: multicolumn_services
+mode: default
+content:
+  field_cta_text:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_service_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_service_icon:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_service_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

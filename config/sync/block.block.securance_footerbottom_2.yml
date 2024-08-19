@@ -1,0 +1,25 @@
+uuid: 30622482-103a-4eec-a0fa-3324e2feceef
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:6663d143-adcc-440e-a33f-e87150c79ad2'
+  module:
+    - block_content
+  theme:
+    - securance
+id: securance_footerbottom_2
+theme: securance
+region: footer_sixth
+weight: 0
+provider: null
+plugin: 'block_content:6663d143-adcc-440e-a33f-e87150c79ad2'
+settings:
+  id: 'block_content:6663d143-adcc-440e-a33f-e87150c79ad2'
+  label: 'Footer Bottom'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

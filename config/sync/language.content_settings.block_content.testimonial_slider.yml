@@ -1,0 +1,11 @@
+uuid: 81811186-7502-4911-973c-079e5a69f784
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - block_content.type.testimonial_slider
+id: block_content.testimonial_slider
+target_entity_type_id: block_content
+target_bundle: testimonial_slider
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,61 @@
+uuid: 3b202c36-d32e-4d17-87ac-53b67c793e8f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_block
+    - field.storage.block_content.field_modal_card
+    - paragraphs.paragraphs_type.modal_card
+  module:
+    - entity_reference_revisions
+id: block_content.contact_block.field_modal_card
+field_name: field_modal_card
+entity_type: block_content
+bundle: contact_block
+label: 'Modal Card'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      modal_card: modal_card
+    negate: 0
+    target_bundles_drag_drop:
+      country_office:
+        weight: 12
+        enabled: false
+      hero_banner:
+        weight: 13
+        enabled: false
+      modal_card:
+        weight: 14
+        enabled: true
+      multicolumn_services:
+        weight: 15
+        enabled: false
+      organization_service_component:
+        weight: 16
+        enabled: false
+      parent_tab_component:
+        weight: 17
+        enabled: false
+      rich_image_text_component:
+        weight: 18
+        enabled: false
+      securance_stats_component:
+        weight: 19
+        enabled: false
+      social_link:
+        weight: 20
+        enabled: false
+      stats_number:
+        weight: 21
+        enabled: false
+      tab_component:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

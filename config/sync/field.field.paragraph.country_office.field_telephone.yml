@@ -1,0 +1,21 @@
+uuid: 0213b183-a1b1-4227-8ec4-699321e82984
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_telephone
+    - paragraphs.paragraphs_type.country_office
+  module:
+    - telephone
+id: paragraph.country_office.field_telephone
+field_name: field_telephone
+entity_type: paragraph
+bundle: country_office
+label: Telephone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

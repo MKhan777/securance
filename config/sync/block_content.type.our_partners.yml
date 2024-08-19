@@ -1,0 +1,8 @@
+uuid: 252b5ae1-4f83-4a5f-b433-45ad47b88e71
+langcode: en-gb
+status: true
+dependencies: {  }
+id: our_partners
+label: 'Our Partners'
+revision: false
+description: 'This block showcases our valued partners, featuring a dynamic carousel of company logos that continuously slide, highlighting the collaborations and alliances that drive our success.'

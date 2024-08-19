@@ -1,0 +1,10 @@
+uuid: 246ad194-e359-49f1-a195-a3ca3c1969a4
+langcode: en-gb
+status: true
+dependencies: {  }
+id: tab_component
+label: 'Tab Component'
+icon_uuid: null
+icon_default: null
+description: 'The Tab Component for home page.'
+behavior_plugins: {  }

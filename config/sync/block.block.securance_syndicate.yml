@@ -1,0 +1,23 @@
+uuid: 784e0d90-a8d5-4e0e-b6cc-7b6e1f46ae26
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - node
+  theme:
+    - securance
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: securance_syndicate
+theme: securance
+region: header
+weight: 6
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

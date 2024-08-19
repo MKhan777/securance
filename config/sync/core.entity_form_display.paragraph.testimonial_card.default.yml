@@ -1,0 +1,51 @@
+uuid: e681a3fc-d416-4a44-885f-3aae35f18d5e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.testimonial_card.field_client_designation
+    - field.field.paragraph.testimonial_card.field_client_name
+    - field.field.paragraph.testimonial_card.field_description
+    - field.field.paragraph.testimonial_card.field_figure
+    - paragraphs.paragraphs_type.testimonial_card
+  module:
+    - media_library
+id: paragraph.testimonial_card.default
+targetEntityType: paragraph
+bundle: testimonial_card
+mode: default
+content:
+  field_client_designation:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_client_name:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_description:
+    type: string_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_figure:
+    type: media_library_widget
+    weight: 9
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

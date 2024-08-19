@@ -1,0 +1,19 @@
+uuid: d39772d2-e442-4b93-920f-fcd8dc4e35bd
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_address_line
+    - paragraphs.paragraphs_type.country_office
+id: paragraph.country_office.field_address_line
+field_name: field_address_line
+entity_type: paragraph
+bundle: country_office
+label: 'Address line'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

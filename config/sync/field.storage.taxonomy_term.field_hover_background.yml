@@ -1,0 +1,20 @@
+uuid: a051e011-b8ab-4d98-8206-e06a49586d00
+langcode: nl
+status: true
+dependencies:
+  module:
+    - color_field
+    - taxonomy
+id: taxonomy_term.field_hover_background
+field_name: field_hover_background
+entity_type: taxonomy_term
+type: color_field_type
+settings:
+  format: '#HEXHEX'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

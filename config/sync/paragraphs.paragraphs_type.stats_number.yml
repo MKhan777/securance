@@ -1,0 +1,10 @@
+uuid: 099550c8-70b3-46d8-a041-a31acfffba1e
+langcode: en-gb
+status: true
+dependencies: {  }
+id: stats_number
+label: 'Stats Number'
+icon_uuid: null
+icon_default: null
+description: 'The Status number paragraph type shows the results of in numbers.'
+behavior_plugins: {  }

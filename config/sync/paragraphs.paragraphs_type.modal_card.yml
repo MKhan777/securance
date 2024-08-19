@@ -1,0 +1,10 @@
+uuid: 35ef0aed-9af4-4cd5-a463-6f49180bc330
+langcode: nl
+status: true
+dependencies: {  }
+id: modal_card
+label: 'Modal Card'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

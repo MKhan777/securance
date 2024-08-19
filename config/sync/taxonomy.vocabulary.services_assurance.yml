@@ -1,0 +1,9 @@
+uuid: 85cef038-572f-48ac-a9dc-30ded7631b27
+langcode: en-gb
+status: true
+dependencies: {  }
+name: 'Services Assurance'
+vid: services_assurance
+description: 'The standards of assurance provide by securance.'
+weight: 0
+new_revision: false

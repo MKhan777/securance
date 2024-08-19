@@ -1,0 +1,10 @@
+uuid: 4defe658-11ae-4fd7-a890-197632c0fd7d
+langcode: en-gb
+status: true
+dependencies: {  }
+id: parent_tab_component
+label: 'Parent Tab Component'
+icon_uuid: null
+icon_default: null
+description: 'The tab component with title and rendered paragraph type of tab component.'
+behavior_plugins: {  }

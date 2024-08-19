@@ -1,0 +1,18 @@
+uuid: bf2b5b26-9599-432a-bfb5-893b12005cf5
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.country_office
+id: paragraph.country_office.created
+field_name: created
+entity_type: paragraph
+bundle: country_office
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

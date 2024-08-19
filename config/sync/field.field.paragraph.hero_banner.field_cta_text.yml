@@ -1,0 +1,23 @@
+uuid: 7575172e-9f97-40b3-ac2a-23bca6a70d29
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_text
+    - paragraphs.paragraphs_type.hero_banner
+  module:
+    - link
+id: paragraph.hero_banner.field_cta_text
+field_name: field_cta_text
+entity_type: paragraph
+bundle: hero_banner
+label: 'CTA text'
+description: 'Hero Banner button field.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

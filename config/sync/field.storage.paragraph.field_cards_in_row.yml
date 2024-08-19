@@ -1,0 +1,30 @@
+uuid: 00a0f728-3089-4fed-b7b8-0f16184b8b19
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_cards_in_row
+field_name: field_cards_in_row
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: '2'
+    -
+      value: '2'
+      label: '3'
+    -
+      value: '3'
+      label: '4'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

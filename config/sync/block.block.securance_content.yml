@@ -1,0 +1,22 @@
+uuid: 29ee2006-35c5-47a2-a60b-b83f623e2500
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - securance
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: securance_content
+theme: securance
+region: content
+weight: -13
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

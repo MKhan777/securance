@@ -1,0 +1,21 @@
+uuid: f016abc4-2225-4f66-8a6b-e8c4ada922e5
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_services_box_shadow
+    - paragraphs.paragraphs_type.organization_service_component
+id: paragraph.organization_service_component.field_services_box_shadow
+field_name: field_services_box_shadow
+entity_type: paragraph
+bundle: organization_service_component
+label: 'Services box shadow'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

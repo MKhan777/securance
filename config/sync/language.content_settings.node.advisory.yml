@@ -1,0 +1,11 @@
+uuid: 92a142b7-7275-4c37-8528-951313b5762a
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.advisory
+id: node.advisory
+target_entity_type_id: node
+target_bundle: advisory
+default_langcode: site_default
+language_alterable: false

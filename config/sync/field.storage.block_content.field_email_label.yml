@@ -1,0 +1,21 @@
+uuid: c7288fe1-1b94-4752-b786-6459bc9e2ea3
+langcode: nl
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_email_label
+field_name: field_email_label
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

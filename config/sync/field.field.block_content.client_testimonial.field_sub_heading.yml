@@ -1,0 +1,19 @@
+uuid: 0d5dc0a8-81bb-4819-825c-17e11a3f207e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.client_testimonial
+    - field.storage.block_content.field_sub_heading
+id: block_content.client_testimonial.field_sub_heading
+field_name: field_sub_heading
+entity_type: block_content
+bundle: client_testimonial
+label: 'Sub Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: d91f0ce7-7da3-4e40-95d9-b50d200a3900
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subheading_position
+    - paragraphs.paragraphs_type.rich_image_text_component
+id: paragraph.rich_image_text_component.field_subheading_position
+field_name: field_subheading_position
+entity_type: paragraph
+bundle: rich_image_text_component
+label: 'Subheading bottom on main heading'
+description: 'The field for subheading position shown below or top of the main heading.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

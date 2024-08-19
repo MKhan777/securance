@@ -1,0 +1,21 @@
+uuid: cc01040a-a76d-479d-8143-7584df226cc4
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_set_image_position
+    - paragraphs.paragraphs_type.rich_image_text_component
+  module:
+    - options
+id: paragraph.rich_image_text_component.field_set_image_position
+field_name: field_set_image_position
+entity_type: paragraph
+bundle: rich_image_text_component
+label: 'Set Image Position'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

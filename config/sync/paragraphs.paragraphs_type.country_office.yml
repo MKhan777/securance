@@ -1,0 +1,10 @@
+uuid: a4608c69-09ca-45a6-8829-b0c703793aca
+langcode: en-gb
+status: true
+dependencies: {  }
+id: country_office
+label: 'Country Office'
+icon_uuid: null
+icon_default: null
+description: 'A Paragraph type that contains different countries Locations.'
+behavior_plugins: {  }

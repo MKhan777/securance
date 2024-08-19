@@ -1,0 +1,19 @@
+uuid: 31eb98bb-67a3-44db-af71-665a6e1525bf
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_client_designation
+    - paragraphs.paragraphs_type.testimonial_card
+id: paragraph.testimonial_card.field_client_designation
+field_name: field_client_designation
+entity_type: paragraph
+bundle: testimonial_card
+label: 'Client Designation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

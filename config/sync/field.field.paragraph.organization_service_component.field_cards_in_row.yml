@@ -1,0 +1,21 @@
+uuid: b1bf0ef1-10da-4686-90b0-4c931c493ef8
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cards_in_row
+    - paragraphs.paragraphs_type.organization_service_component
+  module:
+    - options
+id: paragraph.organization_service_component.field_cards_in_row
+field_name: field_cards_in_row
+entity_type: paragraph
+bundle: organization_service_component
+label: 'Cards in row'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,19 @@
+uuid: 5084a8ba-ab50-4e55-8b24-e8af7347db92
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.hero_banner
+id: paragraph.hero_banner.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: hero_banner
+label: Description
+description: 'The field description which contains the description of hero banner.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

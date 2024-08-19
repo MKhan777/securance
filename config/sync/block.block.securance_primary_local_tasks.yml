@@ -1,0 +1,22 @@
+uuid: f3a90633-fcd1-489f-9da0-faee861da2bb
+langcode: en-gb
+status: false
+dependencies:
+  theme:
+    - securance
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: securance_primary_local_tasks
+theme: securance
+region: header
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

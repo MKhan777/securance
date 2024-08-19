@@ -1,0 +1,51 @@
+uuid: 119c63f6-4538-4b44-bdaa-53f8ebbb1a8c
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_country_column_first
+    - field.field.block_content.footer_country_column_first.body
+    - field.field.block_content.footer_country_column_first.field_country_column_first
+    - field.field.block_content.footer_country_column_first.field_email
+    - field.field.block_content.footer_country_column_first.field_email_label
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.footer_country_column_first.default
+targetEntityType: block_content
+bundle: footer_country_column_first
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_country_column_first:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_email:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_email_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: b01b0999-69ed-4278-b941-90b1cea54a7a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.services_assurance
+id: taxonomy_term.services_assurance
+target_entity_type_id: taxonomy_term
+target_bundle: services_assurance
+default_langcode: site_default
+language_alterable: false

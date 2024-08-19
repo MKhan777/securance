@@ -1,0 +1,19 @@
+uuid: 2b239efc-6322-4010-89ba-2e90341595a9
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_country_name
+    - paragraphs.paragraphs_type.country_office
+id: paragraph.country_office.field_country_name
+field_name: field_country_name
+entity_type: paragraph
+bundle: country_office
+label: 'Country Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,30 @@
+uuid: 49652383-cb01-42a3-adc5-688f61533daf
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_stats_character
+field_name: field_stats_character
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: euro
+      label: Euro
+    -
+      value: dollar
+      label: Dollar
+    -
+      value: percentage
+      label: Percentage
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

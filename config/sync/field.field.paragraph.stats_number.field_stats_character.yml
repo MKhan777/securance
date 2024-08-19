@@ -1,0 +1,21 @@
+uuid: 367cdf9e-a1db-468c-8d02-1246812b46bc
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_stats_character
+    - paragraphs.paragraphs_type.stats_number
+  module:
+    - options
+id: paragraph.stats_number.field_stats_character
+field_name: field_stats_character
+entity_type: paragraph
+bundle: stats_number
+label: 'Stats Character'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

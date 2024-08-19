@@ -1,0 +1,61 @@
+uuid: a0441077-904c-4e4d-9771-7bb5a8e456bf
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.services_assurance.field_hover_background
+    - taxonomy.vocabulary.services_assurance
+  module:
+    - color_field
+    - path
+    - text
+id: taxonomy_term.services_assurance.default
+targetEntityType: taxonomy_term
+bundle: services_assurance
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hover_background:
+    type: color_field_widget_default
+    weight: 101
+    region: content
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

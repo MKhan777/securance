@@ -1,0 +1,21 @@
+uuid: a5e4d557-71f0-4309-bc7c-013b280414f0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_set_position_left
+    - paragraphs.paragraphs_type.hero_banner
+id: paragraph.hero_banner.field_set_position_left
+field_name: field_set_position_left
+entity_type: paragraph
+bundle: hero_banner
+label: 'Set Image Right'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
