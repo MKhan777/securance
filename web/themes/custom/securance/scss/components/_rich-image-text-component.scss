@@ -5,7 +5,7 @@
       row-gap: 30px;
     }
   }
-  .field--type-entity-reference{
+  .field--type-entity-reference {
     margin: 0;
   }
   .component-image {
@@ -28,6 +28,12 @@
     * {
       margin: 0;
     }
+    .component-subheading {
+      font-family: "Barlow-Bold";
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 1em;
+    }
     .component-title {
       font-family: "Barlow-SemiBold";
       font-size: 32px;
@@ -42,6 +48,31 @@
       font-size: 16px;
       line-height: 2;
       font-family: "Barlow-Regular";
+    }
+    .component-body {
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        li {
+          display: flex;
+          gap: 20px;
+          font-size: 18px;
+          font-family: "Barlow-Regular";
+          color: #667085;
+          &:before {
+            content: "";
+            background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20fill%3D%22none%22%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2216%22%20fill%3D%22%23A5253D%22%3E%3C/circle%3E%3Cpath%20d%3D%22M16.8403%206C14.8477%206%2013.0693%207.26849%2012.4266%209.18199L7.00582%2025.3499H8.46278V25.3714H11.8266L17.7187%206.0215L16.8403%206Z%22%20fill%3D%22white%22%3E%3C/path%3E%3Cpath%20d%3D%22M20.3916%2013.073L24.3982%2024.898H20.4558L18.6561%2018.706L20.3916%2013.073ZM20.3701%2011.6755L18.2275%2018.706L20.1559%2025.328H24.9981L20.3701%2011.6755Z%22%20fill%3D%22white%22%3E%3C/path%3E%3Cpath%20d%3D%22M19.2733%208.4516L18.4377%2010.9026L17.0879%2014.8586L18.2235%2018.7071L20.366%2011.6766L19.2733%208.4516Z%22%20fill%3D%22white%22%3E%3C/path%3E%3C/svg%3E");
+            -webkit-background-size: cover;
+            background-size: cover;
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+          }
+        }
+      }
     }
   }
   &.component-wrapper-reverse {
@@ -100,9 +131,51 @@
             }
           }
           .component-image {
+            img{
+              width: 100%!important;
+            }
             padding: 0;
           }
         }
+      }
+    }
+  }
+  &.image-position-right,&.image-position-left,&.image-position-top,&.image-position-bottom {
+    .component-image {
+      text-align: center;
+      img{
+        width: max-content;
+      }
+    }
+    .component-content {
+      .component-title {
+        max-width: 100%;
+      }
+    }
+  }
+  &.image-position-left{
+    .row{
+      flex-direction: row-reverse;
+    }
+  }
+  &.image-position-right{
+    .row{
+      flex-direction: row;
+    }
+  }
+  &.image-position-top{
+    .row{
+      flex-direction: column-reverse;
+      [class*="col-"]{
+        width: 100%;
+      }
+    }
+  }
+  &.image-position-bottom{
+    .row{
+      flex-direction: column;
+      [class*="col-"]{
+        width: 100%;
       }
     }
   }

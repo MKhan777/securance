@@ -1,4 +1,4 @@
-<div class="securance-banner">
+<div class="securance-banner {% if content.field_set_position_left['#items'].value %} advisory-banner {% endif %}">
 	<div class="securance-banner-bg">
 		{{content.field_banner_background}}
 	</div>
@@ -6,13 +6,20 @@
 		<div class="row">
 			<div class="col-12 col-md-6">
 				<div class="securance-banner-content">
+					<h6>{{content.field_sub_heading	}}</h6>
 					<h2>{{content.field_title}}</h2>
-                    <div class="securance-banner-description">{{content.field_description}}</div>
+					<div class="securance-banner-description">{{content.field_description}}</div>
 					<div class="securance-banner-link">
 						{{content.field_cta_text}}
 					</div>
 				</div>
 			</div>
+			<div class="col-12 col-md-6">
+				<div class="securance-banner-img">
+					{{content.field_figure}}
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
+

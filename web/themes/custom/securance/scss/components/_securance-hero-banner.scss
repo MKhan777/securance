@@ -43,6 +43,12 @@
     * {
       margin: 0;
     }
+    h6 {
+      color: #a12844;
+      font-size: 14px;
+      line-height: 1.5;
+      font-family: 'Barlow-Bold';
+    }
     h2 {
       color: #24272a;
       font-family: "Barlow-Bold";
@@ -102,6 +108,24 @@
           }
         }
       }
+    }
+  }
+  &.advisory-banner {
+    padding: 0;
+    .container {
+      max-width: 100%;
+      padding: 0;
+      .row {
+        align-items: center;
+        margin: 0;
+        .col-12 {
+          padding: 0;
+        }
+      }
+    }
+    .securance-banner-content {
+      padding: 75px;
+     
     }
   }
 }

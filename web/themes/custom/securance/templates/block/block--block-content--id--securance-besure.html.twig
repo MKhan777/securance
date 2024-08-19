@@ -1,0 +1,53 @@
+<div class="contact-block" style="background-image: url('{{ file_url(content.field_background_image[0]['#media'].field_media_image.entity.uri.value) }}'); background-position: center; background-size: cover;">
+	<div class="container">
+		<div class="contact-content">
+			<h2>{{ label }}</h2>
+			<div class="description">{{ content.body }}</div>
+			<div
+				class="contact-btn">
+				{{ content.field_cta_text['#items'].title }}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal-wrapper">
+	<div class="cards-wrapper">
+		<button class="close-modal-btn">
+			<span>×</span>
+		</button>
+		{% for item in content.field_modal_card['#items'] %}
+			<div class="card-outer">
+				<div class="card">
+					<div class="card-content">
+						{% if item.entity.field_icon.entity %}
+							{% set media_entity = item.entity.field_icon.entity %}
+							{% if media_entity.field_media_image.entity %}
+								{% set image = media_entity.field_media_image.entity %}
+								<div class="image-wrapper">
+									<img src="{{ image.uri.value | file_url }}" alt="{{ image.alt.value }}">
+								</div>
+							{% endif %}
+						{% endif %}
+						<h3>{{ item.entity.field_title.value }}</h3>
+						<h4>{{ item.entity.field_description.value }}</h4>
+					</div>
+					{% if item.entity.field_cta_text.value %}
+						{% set cta = item.entity.field_cta_text.value[0] %}
+						<a href="#" class="cta-button" data-toggle="modal" data-target="#cardModal{{ loop.index }}">{{ cta.title }}</a>
+					{% endif %}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+<script>
+	let modal = document.querySelector(".modal-wrapper");
+document.querySelector('.contact-btn').addEventListener('click', () => {
+modal.classList.toggle('modal-wrapper-show');
+
+});
+modal.querySelector(".close-modal-btn").addEventListener('click', () => {
+modal.classList.toggle('modal-wrapper-show');
+
+});
+</script>
