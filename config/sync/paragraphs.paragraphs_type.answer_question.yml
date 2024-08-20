@@ -1,0 +1,10 @@
+uuid: 5fb4b842-a5f4-4c62-b2d1-bb4f2ff55f0d
+langcode: en-gb
+status: true
+dependencies: {  }
+id: answer_question
+label: 'Answer & Question'
+icon_uuid: null
+icon_default: null
+description: 'Paragraph type is contains two fields one for question and other for answer.'
+behavior_plugins: {  }

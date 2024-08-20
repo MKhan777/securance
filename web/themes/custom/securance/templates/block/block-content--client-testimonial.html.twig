@@ -1,0 +1,33 @@
+<div class="client-block">
+	<div class="container">
+		<div class="heading">
+			<h6>{{content.field_sub_heading}}</h6>
+			<h2>{{content.field_heading	}}</h2>
+		</div>
+		<div class="client-wrapper">
+			<div class="row">
+				{% for item in content.field_testimonial_card['#items'] %}
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="client-card">
+							<div class="client-image">
+								{% if item.entity.field_figure.entity %}
+									{% set media_entity = item.entity.field_figure.entity %}
+									{% if media_entity.field_media_image.entity %}
+										{% set image = media_entity.field_media_image.entity %}
+										<img src="{{ image.uri.value | file_url }}" alt="{{ image.alt.value }}">
+									{% endif %}
+								{% endif %}
+							</div>
+							<div class="client-content">
+								<p>{{item.entity.field_description.value}}</p>
+								<h3>{{ item.entity.field_client_name.value }}</h3>
+								<h4>{{ item.entity.field_client_designation.value }}</h4>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+
+			</div>
+		</div>
+	</div>
+</div>

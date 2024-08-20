@@ -10,25 +10,7 @@ dependencies:
     - field.field.paragraph.text_with_cta_section.field_title
     - paragraphs.paragraphs_type.text_with_cta_section
   module:
-    - field_group
     - link
-third_party_settings:
-  field_group:
-    group_cta_setting:
-      children:
-        - field_cta_title
-        - field_cta_text
-      label: 'CTA Setting'
-      parent_name: ''
-      region: content
-      weight: 3
-      format_type: fieldset
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        label_as_html: false
-        description: ''
 id: paragraph.text_with_cta_section.default
 targetEntityType: paragraph
 bundle: text_with_cta_section
@@ -57,7 +39,7 @@ content:
     region: content
   field_cta_title:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

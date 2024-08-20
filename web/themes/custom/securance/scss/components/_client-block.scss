@@ -1,0 +1,88 @@
+.client-block {
+  padding: 64px 0;
+  @media screen and (max-width: 767px) {
+    padding: 20px 0;
+  }
+  .heading {
+    padding-bottom: 40px;
+    @media screen and (max-width: 767px) {
+      padding-bottom: 20px;
+    }
+    * {
+      margin: 0;
+    }
+    h6 {
+      font-size: 14px;
+      line-height: 1.5;
+      font-family: "Barlow-Bold";
+      color: #a12844;
+      @media screen and (max-width: 767px) {
+        font-size: 12px;
+      }
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 1.5;
+      font-family: "Barlow-SemiBold";
+      color: #000000;
+      @media screen and (max-width: 767px) {
+        font-size: 20px;
+      }
+    }
+  }
+  .row {
+    row-gap: 20px;
+  }
+  .client-card {
+    padding: 25px;
+    background: #ffffff;
+    box-shadow: 0 32px 64px 0 rgba(0, 0, 0, 0.07);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .client-image {
+      img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+    }
+
+    .client-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      * {
+        margin: 0;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: "Barlow-Regular";
+        color: #667085;
+        @media screen and (max-width: 767px) {
+          font-size: 14px;
+        }
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 1.5;
+        font-family: "Barlow-Bold";
+        color: #000000;
+        @media screen and (max-width: 767px) {
+          font-size: 16px;
+        }
+      }
+      h4 {
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: "Barlow-Regular";
+        color: #667085;
+        @media screen and (max-width: 767px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

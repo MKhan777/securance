@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.case_studies.field_assurance_standards
     - field.field.node.case_studies.field_brand_image
     - field.field.node.case_studies.field_cta_text
+    - field.field.node.case_studies.field_cta_text_2
     - field.field.node.case_studies.field_organisation
     - node.type.case_studies
   module:
@@ -35,5 +36,6 @@ hidden:
   field_assurance_standards: true
   field_brand_image: true
   field_cta_text: true
+  field_cta_text_2: true
   field_organisation: true
   langcode: true

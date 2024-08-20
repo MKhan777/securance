@@ -1,0 +1,93 @@
+.view-display-id-use_case {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .view-header {
+    h3 {
+      font-size: 40px;
+      line-height: 1.5;
+      font-family: "Barlow-SemiBold";
+      color: #000000;
+      margin: 0;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+      font-family: "Barlow-Bold";
+      color: #a12844;
+      letter-spacing: 4px;
+      margin: 0;
+    }
+  }
+  .testimonial-wrapper {
+    flex-direction: column;
+    height: 100%;
+    .testimonial-img-content {
+      width: 100%;
+      img {
+        height: 250px;
+        object-fit: cover;
+      }
+    }
+    .testimonial-content {
+      width: 100%;
+      padding: 16px;
+      background: #ffffff;
+      height: 100%;
+      justify-content: space-between;
+      h3 {
+        a {
+          color: #000;
+        }
+      }
+      .description {
+        p {
+          color: #667085;
+          font-size: 16px;
+        }
+      }
+      .organisation-content {
+        a {
+          color: #a12844;
+          font-family: "Barlow-SemiBold";
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &:empty {
+            display: none;
+          }
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 14px;
+            mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none"><path d="M9.44922 0.94928L16.4999 8L9.44922 15.0507" stroke="%23A5253D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.4999 8L1.5 8" stroke="%23A5253D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>');
+            -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none"><path d="M9.44922 0.94928L16.4999 8L9.44922 15.0507" stroke="%23A5253D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.4999 8L1.5 8" stroke="%23A5253D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>');
+            mask-size: cover;
+            -webkit-mask-size: cover;
+            background: #a12844;
+          }
+          &:hover {
+            color: #000000;
+            &::after {
+              background: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+  .flickity-viewport {
+    height: 600px !important;
+    .gallery-cell {
+      width: calc(33.33% - 12px);
+      margin-right: 12px;
+      height: 100%;
+      .views-field-nothing,
+      .field-content {
+        height: 100%;
+      }
+    }
+  }
+}

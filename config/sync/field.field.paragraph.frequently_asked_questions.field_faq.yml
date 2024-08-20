@@ -1,0 +1,76 @@
+uuid: a95e72dc-6951-42f2-b6c6-f9693e226d6d
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_faq
+    - paragraphs.paragraphs_type.answer_question
+    - paragraphs.paragraphs_type.frequently_asked_questions
+  module:
+    - entity_reference_revisions
+id: paragraph.frequently_asked_questions.field_faq
+field_name: field_faq
+entity_type: paragraph
+bundle: frequently_asked_questions
+label: FAQ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      answer_question: answer_question
+    negate: 0
+    target_bundles_drag_drop:
+      advisory_guide:
+        weight: 17
+        enabled: false
+      answer_question:
+        weight: 18
+        enabled: true
+      country_office:
+        weight: 19
+        enabled: false
+      frequently_asked_questions:
+        weight: 20
+        enabled: false
+      hero_banner:
+        weight: 21
+        enabled: false
+      modal_card:
+        weight: 22
+        enabled: false
+      multicolumn_services:
+        weight: 23
+        enabled: false
+      organization_service_component:
+        weight: 24
+        enabled: false
+      parent_tab_component:
+        weight: 25
+        enabled: false
+      rich_image_text_component:
+        weight: 26
+        enabled: false
+      securance_stats_component:
+        weight: 27
+        enabled: false
+      social_link:
+        weight: 28
+        enabled: false
+      stats_number:
+        weight: 29
+        enabled: false
+      tab_component:
+        weight: 30
+        enabled: false
+      testimonial_card:
+        weight: 31
+        enabled: false
+      text_with_cta_section:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions

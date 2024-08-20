@@ -1,0 +1,19 @@
+uuid: 08425f2a-8bd2-49dc-b9fd-083c7c81fab0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.advisory_guide
+id: paragraph.advisory_guide.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: advisory_guide
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

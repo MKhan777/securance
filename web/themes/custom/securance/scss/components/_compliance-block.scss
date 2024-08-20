@@ -1,0 +1,115 @@
+.compliance-block {
+  padding: 64px 0;
+  @media screen and (max-width: 767px) {
+    padding: 24px 0;
+  }
+  &:has(.compliance-wrapper-row) {
+    background-size: initial !important;
+    background-repeat: no-repeat;
+    background-position: 15% 50% !important;
+  }
+  .compliance-wrapper {
+    &.compliance-wrapper-row {
+      display: flex;
+      gap: 20px;
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+      .heading {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        h2 {
+          font-size: 32px;
+          line-height: 1.5;
+          font-family: "Barlow-Bold";
+          color: #000000;
+          margin: 0;
+          @media screen and (max-width: 767px) {
+            font-size: 20px;
+          }
+        }
+        .description {
+          font-size: 16px;
+          line-height: 1.5;
+          font-family: "Barlow-Regular";
+          color: #667085;
+          margin: 0;
+          @media screen and (max-width: 767px) {
+            font-size: 14px;
+          }
+        }
+      }
+      .compliance-content {
+        h2 {
+          color: #000000;
+        }
+        .field__items {
+          grid-template-columns: repeat(auto-fill, 302px);
+          @media screen and (max-width: 991px) {
+            grid-template-columns: repeat(auto-fill, 190px);
+            @media screen and (max-width: 767px) {
+              grid-template-columns: repeat(auto-fill, 100%);
+            }
+          }
+          .field__item {
+            a {
+              background: #a12844;
+              color: #ffffff;
+              border: 1px solid #a12844;
+              &:hover {
+                background: transparent;
+                color: #a12844;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .compliance-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      line-height: 1.5;
+      font-family: "Barlow-Bold";
+      color: #ffffff;
+      margin: 0;
+      @media screen and (max-width: 767px) {
+        font-size: 20px;
+      }
+    }
+    .field__items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 274px);
+      gap: 20px;
+      justify-content: center;
+      .field__item {
+        a {
+          background: #f9fafb;
+          color: #a12844;
+          font-size: 18px;
+          line-height: 1.5;
+          font-family: "Barlow-Medium";
+          padding: 20px 30px;
+          border: 1px solid #ffffff;
+          display: block;
+          text-align: center;
+          transition: all 0.3s;
+          @media screen and (max-width: 767px) {
+            padding: 15px 20px;
+          }
+          &:hover {
+            background: transparent;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

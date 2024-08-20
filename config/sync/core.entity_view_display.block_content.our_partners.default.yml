@@ -23,7 +23,7 @@ content:
     region: content
   field_logo_image:
     type: flickity_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false

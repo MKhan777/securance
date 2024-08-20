@@ -1,0 +1,10 @@
+uuid: a73a65f1-fcef-48ce-b874-3212ebcb4842
+langcode: en-gb
+status: true
+dependencies: {  }
+id: advisory_guide
+label: 'Advisory Guide'
+icon_uuid: null
+icon_default: null
+description: 'This paragraph type is used for advisory page guide component.'
+behavior_plugins: {  }

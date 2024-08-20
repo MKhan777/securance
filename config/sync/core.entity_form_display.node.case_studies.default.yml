@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.case_studies.field_assurance_standards
     - field.field.node.case_studies.field_brand_image
     - field.field.node.case_studies.field_cta_text
+    - field.field.node.case_studies.field_cta_text_2
     - field.field.node.case_studies.field_organisation
     - node.type.case_studies
   module:
@@ -55,6 +56,14 @@ content:
   field_cta_text:
     type: link_default
     weight: 11
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_cta_text_2:
+    type: link_default
+    weight: 27
     region: content
     settings:
       placeholder_url: ''

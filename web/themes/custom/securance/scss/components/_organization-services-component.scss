@@ -1,105 +1,104 @@
 .service-main-wrapper {
-    padding: 64px 0;
-    @media screen and (max-width: 1024px) {
-        padding: 64px 4px;
+  padding: 64px 0;
+  @media screen and (max-width: 1024px) {
+    padding: 64px 4px;
+  }
+  .row {
+    row-gap: 30px;
+  }
+  .service-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 70px;
+    @media screen and (max-width: 991px) {
+      margin-bottom: 40px;
     }
-    .row{
-        row-gap: 30px;
+    h6 {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0;
+      font-family: "Barlow-Bold";
+      color: #a12844;
     }
-    .service-header {
+    h2 {
+      font-size: 32px;
+      line-height: 1.5;
+      font-family: "Barlow-SemiBold";
+      margin: 0;
+      color: #54595f;
+      @media screen and (max-width: 767px) {
+        font-size: 24px;
+      }
+    }
+    .description {
+      font-size: 14px;
+      line-height: 2;
+      font-family: "Barlow-Regular";
+      color: #7a7a7a;
+      max-width: 86%;
+      @media screen and (max-width: 991px) {
+        max-width: 100%;
+      }
+    }
+  }
+  .services-body-wrapper {
+    .service-item {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      height: 100%;
+      &.services-shadow{
+        background: #ffffff;
+        padding: 24px;
+        box-shadow: 0px 32px 64px 0px
+          rgba(15.999999999999972, 23.99999999999997, 39.99999999999993, 0.07);
+      }
+      .image-wrapper {
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .service-content {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        margin-bottom: 70px;
-        @media screen and (max-width: 991px) {
-            margin-bottom: 40px;
+        gap: 20px;
+        h3.service-title {
+          font-size: 24px;
+          line-height: 1.5;
+          font-family: "Barlow-Bold";
+          color: #54595f;
+          margin: 0;
         }
-        h6 {
-            font-size: 14px;
-            line-height: 1.5;
-            margin: 0;
-            font-family: 'Barlow-Bold';
-            color: #a12844;
+        p.service-description {
+          font-size: 16px;
+          line-height: 1.5;
+          font-family: "Barlow-Regular";
+          color: #7a7a7a;
+          margin: 0;
         }
-        h2 {
-            font-size: 32px;
-            line-height: 1.5;
-            font-family: 'Barlow-SemiBold';
-            margin: 0;
-            color: #54595f;
-            @media screen and (max-width: 767px) {
-                font-size: 24px;
-            }
+        a.cta-button {
+          font-size: 16px;
+          line-height: 1.5;
+          font-family: "Barlow-SemiBold";
+          color: #a12844;
+          display: flex;
+          gap: 15px;
+          align-items: center;
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 14px;
+            mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none"><path d="M9.44922 0.94928L16.4999 8L9.44922 15.0507" stroke="%23A5253D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.4999 8L1.5 8" stroke="%23A5253D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>');
+            -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none"><path d="M9.44922 0.94928L16.4999 8L9.44922 15.0507" stroke="%23A5253D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.4999 8L1.5 8" stroke="%23A5253D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>');
+            mask-size: cover;
+            -webkit-mask-size: cover;
+            background: #a12844;
+          }
         }
-        .description{
-            font-size: 14px;
-            line-height: 2;
-            font-family: "Barlow-Regular";
-            color: #7a7a7a;
-            max-width: 86%;
-            @media screen and (max-width: 991px) {
-                max-width: 100%;
-            }
-        }
+      }
     }
-    .services-body-wrapper {
-        .service-item {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            .image-wrapper {
-                img {
-                    width: 50px;
-                    height: 50px;
-                }
-            }
-            .service-content {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                h3.service-title {
-                    font-size: 24px;
-                    line-height: 1.5;
-                    font-family: 'Barlow-Bold';
-                    color: #54595f;
-                    margin: 0;
-                }
-                p.service-description {
-                    font-size: 16px;
-                    line-height: 1.5;
-                    font-family: 'Barlow-Regular';
-                    color: #7a7a7a;
-                    margin: 0;
-                }
-                a.cta-button {
-                    font-size: 16px;
-                    line-height: 1.5;
-                    font-family: 'Barlow-SemiBold';
-                    color: #a12844;
-                    display: flex;
-                    gap: 15px;
-                    align-items: center;
-                    &::after{
-                        content: "";
-                        display: inline-block;
-                        width: 15px;
-                        height: 14px;
-                        mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none"><path d="M9.44922 0.94928L16.4999 8L9.44922 15.0507" stroke="%23A5253D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.4999 8L1.5 8" stroke="%23A5253D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>');
-                        -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none"><path d="M9.44922 0.94928L16.4999 8L9.44922 15.0507" stroke="%23A5253D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.4999 8L1.5 8" stroke="%23A5253D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>');
-                        mask-size: cover;
-                        -webkit-mask-size: cover;
-                        background: #a12844;
-                    }
-                }
-            }
-        }
-    }
+  }
 }
-
-
-
-
-
-
-
-

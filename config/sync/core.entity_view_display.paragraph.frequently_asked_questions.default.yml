@@ -1,0 +1,24 @@
+uuid: 19e56528-8035-4f0d-aa34-27fdf8deae3b
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.frequently_asked_questions.field_faq
+    - paragraphs.paragraphs_type.frequently_asked_questions
+  module:
+    - entity_reference_revisions
+id: paragraph.frequently_asked_questions.default
+targetEntityType: paragraph
+bundle: frequently_asked_questions
+mode: default
+content:
+  field_faq:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

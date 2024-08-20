@@ -8,8 +8,8 @@
 		<div class="services-body-wrapper">
 			<div class="row">
 				{% for item in content.field_multicolumn_service_compon['#items'] %}
-					<div class="col-12 {% if content.field_cards_in_row == 3 %} col-md-6 col-lg-4 {% else %} col-md-6 {% endif %}">
-						<div class="service-item">
+					<div class="col-12 {% if content.field_cards_in_row.0['#markup'] == 3 %} col-md-6 col-lg-4 {% else %} col-md-6 {% endif %}">
+						<div class="service-item {% if content.field_services_box_shadow['#items'].value %} services-shadow {% endif %}">
 							{% if item.entity.field_service_icon.entity %}
 								{% set media_entity = item.entity.field_service_icon.entity %}
 								{% if media_entity.field_media_image.entity %}
@@ -36,5 +36,3 @@
 		</div>
 	</div>
 </div>
-
-{{ content.field_cards_in_row }}
