@@ -22,6 +22,13 @@
         wrapAround: true, // Optional: allow infinite scrolling
         pageDots: true,
       });
+      var flkty = new Flickity(".view-display-id-use_case .flickity", {
+        cellAlign: "left", // Align cells to the left
+        contain: true, // Contain cells within the carousel
+        groupCells: 1, // Scroll one slide at a time
+        wrapAround: true, // Optional: allow infinite scrolling
+        pageDots: false,
+      });
     },
   };
 })(jQuery, Drupal);

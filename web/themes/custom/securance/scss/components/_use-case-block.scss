@@ -2,13 +2,74 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding: 64px 12px;
+  .view-content {
+    .flickity-button {
+      display: block !important;
+      top: -105px;
+      transform: translateY(0);
+      border: 1px solid #a12844;
+      width: 52px;
+      height: 52px;
+      transition: all 0.3s;
+      &.flickity-prev-next-button.previous {
+        left: auto;
+        right: 80px;
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        path {
+          fill: #a12844;
+          transition: all 0.3s;
+        }
+      }
+      &:hover {
+        background: #a12844;
+        svg {
+          path {
+            fill: #ffffff;
+          }
+        }
+      }
+      @media screen and (max-width: 767px) {
+        width: 38px;
+        height: 38px;
+        top: -80px;
+        &.flickity-prev-next-button.previous {
+          right: 60px;
+        }
+        svg {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      margin: 0;
+      padding-bottom: 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding: 24px 0;
+  }
   .view-header {
+    @media screen and (max-width: 1024px) {
+      padding: 0 12px;
+    }
     h3 {
       font-size: 40px;
       line-height: 1.5;
       font-family: "Barlow-SemiBold";
       color: #000000;
       margin: 0;
+      @media screen and (max-width: 767px) {
+        font-size: 20px;
+      }
     }
     p {
       font-size: 14px;
@@ -17,6 +78,10 @@
       color: #a12844;
       letter-spacing: 4px;
       margin: 0;
+      @media screen and (max-width: 767px) {
+        font-size: 12px;
+        letter-spacing: 0;
+      }
     }
   }
   .testimonial-wrapper {
@@ -80,10 +145,25 @@
   }
   .flickity-viewport {
     height: 600px !important;
+    @media screen and (max-width: 1024px) {
+      height: 660px !important;
+      @media screen and (max-width: 991px) {
+        height: 620px !important;
+        @media screen and (max-width: 767px) {
+          height: 660px !important;
+        }
+      }
+    }
     .gallery-cell {
       width: calc(33.33% - 12px);
       margin-right: 12px;
       height: 100%;
+      @media screen and (max-width: 991px) {
+        width: calc(50% - 6px);
+        @media screen and (max-width: 767px) {
+          width: 100%;
+        }
+      }
       .views-field-nothing,
       .field-content {
         height: 100%;
