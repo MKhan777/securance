@@ -1,14 +1,14 @@
-uuid: e4d587ff-6953-4232-b54e-51ffa367c4ad
-langcode: nl
+uuid: d9e08adc-5d80-4819-9f1b-1d4110ba3bda
+langcode: en-gb
 status: true
 dependencies:
   config:
-    - block_content.type.contact_block
-    - field.storage.block_content.field_background_image
+    - field.storage.paragraph.field_background_image
     - media.type.image
-id: block_content.contact_block.field_background_image
+    - paragraphs.paragraphs_type.contact_block
+id: paragraph.contact_block.field_background_image
 field_name: field_background_image
-entity_type: block_content
+entity_type: paragraph
 bundle: contact_block
 label: 'Background Image'
 description: ''

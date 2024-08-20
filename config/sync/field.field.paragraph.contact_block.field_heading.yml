@@ -1,13 +1,13 @@
-uuid: 22120da1-1ac7-4194-9da7-5525ae8ae202
+uuid: e24a85e5-4455-4f69-88ae-871168e74e7c
 langcode: en-gb
 status: true
 dependencies:
   config:
-    - block_content.type.contact_block
-    - field.storage.block_content.field_heading
-id: block_content.contact_block.field_heading
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.contact_block
+id: paragraph.contact_block.field_heading
 field_name: field_heading
-entity_type: block_content
+entity_type: paragraph
 bundle: contact_block
 label: Heading
 description: ''

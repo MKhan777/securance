@@ -1,0 +1,10 @@
+uuid: a0244d0f-8b78-4dac-bf89-ef54e9e5c201
+langcode: en-gb
+status: true
+dependencies: {  }
+id: contact_block
+label: 'Contact Block'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

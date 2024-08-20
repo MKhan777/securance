@@ -1,8 +1,0 @@
-uuid: 6572a5dd-2d92-4d6f-a434-fbe8e7d10f03
-langcode: nl
-status: true
-dependencies: {  }
-id: contact_block
-label: 'Contact Block'
-revision: false
-description: 'A Block contains a title, description and CTA text.'

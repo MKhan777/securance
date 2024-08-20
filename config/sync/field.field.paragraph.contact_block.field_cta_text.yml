@@ -1,18 +1,18 @@
-uuid: 41bb7d55-055b-4604-9c5c-0fdfba806e02
-langcode: nl
+uuid: fbf2fbe2-a9cb-4801-84bb-d34c80ce0939
+langcode: en-gb
 status: true
 dependencies:
   config:
-    - block_content.type.contact_block
-    - field.storage.block_content.field_cta_text
+    - field.storage.paragraph.field_cta_text
+    - paragraphs.paragraphs_type.contact_block
   module:
     - link
-id: block_content.contact_block.field_cta_text
+id: paragraph.contact_block.field_cta_text
 field_name: field_cta_text
-entity_type: block_content
+entity_type: paragraph
 bundle: contact_block
 label: 'CTA text'
-description: ''
+description: 'Hero Banner button field.'
 required: false
 translatable: false
 default_value: {  }

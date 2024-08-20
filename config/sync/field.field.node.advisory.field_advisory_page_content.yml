@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_advisory_page_content
     - node.type.advisory
     - paragraphs.paragraphs_type.advisory_guide
+    - paragraphs.paragraphs_type.contact_block
     - paragraphs.paragraphs_type.frequently_asked_questions
     - paragraphs.paragraphs_type.hero_banner
     - paragraphs.paragraphs_type.organization_service_component
@@ -33,6 +34,7 @@ settings:
       organization_service_component: organization_service_component
       parent_tab_component: parent_tab_component
       rich_image_text_component: rich_image_text_component
+      contact_block: contact_block
       frequently_asked_questions: frequently_asked_questions
       text_with_cta_section: text_with_cta_section
     negate: 0
@@ -43,6 +45,9 @@ settings:
       answer_question:
         weight: 18
         enabled: false
+      contact_block:
+        weight: 20
+        enabled: true
       country_office:
         weight: 13
         enabled: false

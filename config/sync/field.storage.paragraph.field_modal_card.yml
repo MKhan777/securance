@@ -1,14 +1,13 @@
-uuid: 2ad24f3a-e242-4802-b3c7-242331f4e0e4
-langcode: nl
+uuid: 78098f0d-7c24-465e-9714-a05322bc755c
+langcode: en-gb
 status: true
 dependencies:
   module:
-    - block_content
     - entity_reference_revisions
     - paragraphs
-id: block_content.field_modal_card
+id: paragraph.field_modal_card
 field_name: field_modal_card
-entity_type: block_content
+entity_type: paragraph
 type: entity_reference_revisions
 settings:
   target_type: paragraph

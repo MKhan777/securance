@@ -1,13 +1,13 @@
-uuid: 15bac9a0-c959-4b50-ad83-552b8dda6b98
-langcode: nl
+uuid: 62d47eea-c673-4ecf-994e-395aa359d91e
+langcode: en-gb
 status: true
 dependencies:
   module:
-    - block_content
     - media
-id: block_content.field_background_image
+    - paragraphs
+id: paragraph.field_background_image
 field_name: field_background_image
-entity_type: block_content
+entity_type: paragraph
 type: entity_reference
 settings:
   target_type: media

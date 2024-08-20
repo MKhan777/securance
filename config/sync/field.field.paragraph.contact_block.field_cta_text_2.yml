@@ -1,15 +1,15 @@
-uuid: 94bb1586-2108-4f74-a9c6-ea94e2b71cfc
+uuid: d9917367-e913-484b-9701-21a6c7191abd
 langcode: en-gb
 status: true
 dependencies:
   config:
-    - block_content.type.contact_block
-    - field.storage.block_content.field_cta_text_2
+    - field.storage.paragraph.field_cta_text_2
+    - paragraphs.paragraphs_type.contact_block
   module:
     - link
-id: block_content.contact_block.field_cta_text_2
+id: paragraph.contact_block.field_cta_text_2
 field_name: field_cta_text_2
-entity_type: block_content
+entity_type: paragraph
 bundle: contact_block
 label: 'CTA text 2'
 description: ''

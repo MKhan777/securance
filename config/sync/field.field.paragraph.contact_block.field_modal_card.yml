@@ -1,16 +1,16 @@
-uuid: 3b202c36-d32e-4d17-87ac-53b67c793e8f
-langcode: nl
+uuid: 2645d5dd-c3c5-4a8e-b568-bfc753e4ac64
+langcode: en-gb
 status: true
 dependencies:
   config:
-    - block_content.type.contact_block
-    - field.storage.block_content.field_modal_card
+    - field.storage.paragraph.field_modal_card
+    - paragraphs.paragraphs_type.contact_block
     - paragraphs.paragraphs_type.modal_card
   module:
     - entity_reference_revisions
-id: block_content.contact_block.field_modal_card
+id: paragraph.contact_block.field_modal_card
 field_name: field_modal_card
-entity_type: block_content
+entity_type: paragraph
 bundle: contact_block
 label: 'Modal Card'
 description: ''
@@ -25,37 +25,55 @@ settings:
       modal_card: modal_card
     negate: 0
     target_bundles_drag_drop:
-      country_office:
-        weight: 12
-        enabled: false
-      hero_banner:
-        weight: 13
-        enabled: false
-      modal_card:
-        weight: 14
-        enabled: true
-      multicolumn_services:
-        weight: 15
-        enabled: false
-      organization_service_component:
-        weight: 16
-        enabled: false
-      parent_tab_component:
-        weight: 17
-        enabled: false
-      rich_image_text_component:
+      advisory_guide:
         weight: 18
         enabled: false
-      securance_stats_component:
+      answer_question:
         weight: 19
         enabled: false
-      social_link:
+      contact_block:
         weight: 20
         enabled: false
-      stats_number:
+      country_office:
         weight: 21
         enabled: false
-      tab_component:
+      frequently_asked_questions:
         weight: 22
+        enabled: false
+      hero_banner:
+        weight: 23
+        enabled: false
+      modal_card:
+        weight: 24
+        enabled: true
+      multicolumn_services:
+        weight: 25
+        enabled: false
+      organization_service_component:
+        weight: 26
+        enabled: false
+      parent_tab_component:
+        weight: 27
+        enabled: false
+      rich_image_text_component:
+        weight: 28
+        enabled: false
+      securance_stats_component:
+        weight: 29
+        enabled: false
+      social_link:
+        weight: 30
+        enabled: false
+      stats_number:
+        weight: 31
+        enabled: false
+      tab_component:
+        weight: 32
+        enabled: false
+      testimonial_card:
+        weight: 33
+        enabled: false
+      text_with_cta_section:
+        weight: 34
         enabled: false
 field_type: entity_reference_revisions
