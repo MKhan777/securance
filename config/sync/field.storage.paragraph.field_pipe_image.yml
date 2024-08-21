@@ -1,16 +1,16 @@
-uuid: c0275dbd-1ede-44c3-8421-440136cb8f75
+uuid: 55c3a82f-0f79-4ac5-b2ad-0453ebc69f85
 langcode: en-gb
 status: true
 dependencies:
   module:
-    - block_content
-    - node
-id: node.field_contact_us_block
-field_name: field_contact_us_block
-entity_type: node
+    - media
+    - paragraphs
+id: paragraph.field_pipe_image
+field_name: field_pipe_image
+entity_type: paragraph
 type: entity_reference
 settings:
-  target_type: block_content
+  target_type: media
 module: core
 locked: false
 cardinality: 1

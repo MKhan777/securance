@@ -1,0 +1,60 @@
+uuid: ff2427e0-7cf0-4d2d-b6e1-9773b8cc62cd
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.week_schedule.field_description
+    - field.field.paragraph.week_schedule.field_title
+    - field.field.paragraph.week_schedule.field_week_background
+    - field.field.paragraph.week_schedule.field_week_number
+    - field.field.paragraph.week_schedule.field_week_topic
+    - paragraphs.paragraphs_type.week_schedule
+  module:
+    - media_library
+id: paragraph.week_schedule.default
+targetEntityType: paragraph
+bundle: week_schedule
+mode: default
+content:
+  field_description:
+    type: string_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_week_background:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_week_number:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_week_topic:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

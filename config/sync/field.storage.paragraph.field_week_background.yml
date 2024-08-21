@@ -1,18 +1,19 @@
-uuid: 0620e61b-261c-46c2-a70f-d6264c9a84cd
+uuid: ba77f160-add1-457f-80d6-ab6e4880c4b0
 langcode: en-gb
 status: true
 dependencies:
   module:
+    - media
     - paragraphs
-id: paragraph.field_description
-field_name: field_description
+id: paragraph.field_week_background
+field_name: field_week_background
 entity_type: paragraph
-type: string_long
+type: entity_reference
 settings:
-  case_sensitive: false
+  target_type: media
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

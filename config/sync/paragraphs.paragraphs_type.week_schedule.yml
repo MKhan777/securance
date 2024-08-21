@@ -1,0 +1,10 @@
+uuid: 976c97b1-8a3b-4f70-9bf8-6f99ee3a412e
+langcode: en-gb
+status: true
+dependencies: {  }
+id: week_schedule
+label: 'Week Schedule'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: 4b8eb9d8-6a7e-41e3-bff1-385c60609163
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.week_schedule
+id: paragraph.week_schedule.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: week_schedule
+label: Title
+description: 'The title field which contains the title of the hero banner.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

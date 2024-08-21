@@ -1,0 +1,10 @@
+uuid: 326de160-8463-4d32-88e4-80ed9cf00c4b
+langcode: en-gb
+status: true
+dependencies: {  }
+id: week_overview_component
+label: 'Week Overview Component'
+icon_uuid: null
+icon_default: null
+description: 'The parent component of week schedule used in readiness scan page.'
+behavior_plugins: {  }

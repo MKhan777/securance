@@ -1,18 +1,18 @@
-uuid: a95e72dc-6951-42f2-b6c6-f9693e226d6d
+uuid: 64b90a94-d0c9-477d-afc9-9aef8b6f8da6
 langcode: en-gb
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_faq
-    - paragraphs.paragraphs_type.answer_question
-    - paragraphs.paragraphs_type.frequently_asked_questions
+    - field.storage.paragraph.field_week_schedule
+    - paragraphs.paragraphs_type.week_overview_component
+    - paragraphs.paragraphs_type.week_schedule
   module:
     - entity_reference_revisions
-id: paragraph.frequently_asked_questions.field_faq
-field_name: field_faq
+id: paragraph.week_overview_component.field_week_schedule
+field_name: field_week_schedule
 entity_type: paragraph
-bundle: frequently_asked_questions
-label: 'Frequently Asked Questions'
+bundle: week_overview_component
+label: 'Week Schedule'
 description: ''
 required: false
 translatable: false
@@ -22,67 +22,67 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      answer_question: answer_question
+      week_schedule: week_schedule
     negate: 0
     target_bundles_drag_drop:
       advisory_guide:
-        weight: 17
+        weight: 21
         enabled: false
       answer_question:
-        weight: 18
-        enabled: true
+        weight: 22
+        enabled: false
       contact_block:
         weight: 23
         enabled: false
       country_office:
-        weight: 19
-        enabled: false
-      frequently_asked_questions:
-        weight: 20
-        enabled: false
-      hero_banner:
-        weight: 21
-        enabled: false
-      modal_card:
-        weight: 22
-        enabled: false
-      multicolumn_services:
-        weight: 23
-        enabled: false
-      organization_service_component:
         weight: 24
         enabled: false
-      parent_tab_component:
+      frequently_asked_questions:
         weight: 25
+        enabled: false
+      hero_banner:
+        weight: 26
+        enabled: false
+      modal_card:
+        weight: 27
+        enabled: false
+      multicolumn_services:
+        weight: 28
+        enabled: false
+      organization_service_component:
+        weight: 29
+        enabled: false
+      parent_tab_component:
+        weight: 30
         enabled: false
       readiness_scan_approach:
         weight: 31
         enabled: false
       rich_image_text_component:
-        weight: 26
+        weight: 32
         enabled: false
       securance_stats_component:
-        weight: 27
+        weight: 33
         enabled: false
       social_link:
-        weight: 28
+        weight: 34
         enabled: false
       stats_number:
-        weight: 29
+        weight: 35
         enabled: false
       tab_component:
-        weight: 30
+        weight: 36
         enabled: false
       testimonial_card:
-        weight: 31
+        weight: 37
         enabled: false
       text_with_cta_section:
-        weight: 32
+        weight: 38
         enabled: false
       week_overview_component:
         weight: 39
         enabled: false
       week_schedule:
         weight: 40
-        enabled: false
+        enabled: true
 field_type: entity_reference_revisions

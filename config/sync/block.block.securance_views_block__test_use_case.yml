@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.test
   module:
+    - system
     - views
   theme:
     - securance
@@ -21,4 +22,8 @@ settings:
   provider: views
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/advisory/compliance-services/\r\n/advisory/risk-management/\r\n/advisory/integrated-frameworks/\r\n/advisory/information-security-solutions/\r\n/advisory/privacy-solutions/"

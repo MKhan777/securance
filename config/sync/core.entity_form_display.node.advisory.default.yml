@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.advisory.body
     - field.field.node.advisory.field_advisory_page_content
-    - field.field.node.advisory.field_contact_us_block
     - node.type.advisory
   module:
     - paragraphs
@@ -49,16 +48,6 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
-    third_party_settings: {  }
-  field_contact_us_block:
-    type: entity_reference_autocomplete
-    weight: 123
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select
