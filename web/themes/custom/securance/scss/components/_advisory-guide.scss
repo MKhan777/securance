@@ -1,0 +1,94 @@
+.advisory-guide-block {
+  padding: 64px 10px;
+  @media screen and (max-width: 767px) {
+    padding: 24px 10px;
+  }
+  background-image: linear-gradient(180deg, #ffffff 50%, #faf4f5 50%);
+  .advisory-content-wrapper {
+    padding: 20px 50px;
+    border-radius: 16px;
+    @media screen and (max-width: 767px) {
+      padding: 16px;
+    }
+    .row {
+      align-items: center;
+    }
+    .advisory-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 10px;
+      h2 {
+        font-size: 32px;
+        line-height: 1.5;
+        font-family: "Barlow-SemiBold";
+        color: #f9fafb;
+        margin: 0;
+        @media screen and (max-width: 767px) {
+          font-size: 18px;
+        }
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: "Barlow-Regular";
+        color: #f9fafb;
+        margin-bottom: 30px;
+        @media screen and (max-width: 767px) {
+          font-size: 14px;
+        }
+      }
+      .advisory-btn {
+        a {
+          font-size: 18px;
+          line-height: 1.2;
+          font-family: "Barlow-Medium";
+          color: #a12844;
+          background: #ffffff;
+          padding: 20px 30px;
+          border: 1px solid #fff;
+          display: inline-flex;
+          gap: 10px;
+          align-items: center;
+          text-transform: uppercase;
+          transition: all 0.3s;
+          @media screen and (max-width: 767px) {
+            font-size: 14px;
+          }
+          svg {
+            width: 18px;
+            height: 18px;
+            @media screen and (max-width: 767px) {
+              width: 14px;
+              height: 14px;
+            }
+            path {
+              fill: #a12844;
+              transition: all 0.3s;
+            }
+          }
+          &:hover {
+            background: transparent;
+            color: #ffffff;
+            svg {
+              path {
+                fill: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .advisory-img {
+      text-align: right;
+      padding: 10px;
+      @media screen and (max-width: 767px) {
+        text-align: center;
+      }
+      img,
+      .field--name-field-figure {
+        margin: 0;
+      }
+    }
+  }
+}

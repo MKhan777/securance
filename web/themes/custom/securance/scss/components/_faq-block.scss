@@ -1,0 +1,87 @@
+.faq-block {
+  padding: 64px 10px;
+  background: #f9fafb;
+  @media screen and (max-width: 767px) {
+    padding: 24px 10px;
+  }
+  .faq-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .heading {
+      h2 {
+        font-size: 32px;
+        line-height: 1.5;
+        font-family: "Barlow-Semibold";
+        color: #000000;
+        margin: 0;
+        @media screen and (max-width: 767px) {
+          font-size: 20px;
+        }
+      }
+    }
+    .accordion {
+      border-radius: 16px;
+      box-shadow: 0 35px 35px 0 rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      .accordion-item {
+        border: none;
+        border-radius: 0;
+        &:not(:last-child) {
+          border-bottom: 1px solid #d5d8dc;
+        }
+        .accordion-header {
+          .accordion-button {
+            padding: 32px;
+            font-size: 20px;
+            line-height: 1.5;
+            font-family: "Barlow-SemiBold";
+            color: #1f2124;
+            background: none !important;
+            box-shadow: none !important;
+            justify-content: space-between;
+            gap: 10px;
+            @media screen and (max-width: 767px) {
+              padding: 12px;
+              font-size: 16px;
+            }
+            &.collapsed {
+              .open {
+                display: none;
+              }
+              .close {
+                display: block;
+              }
+            }
+            .open {
+              display: block;
+            }
+            .close {
+              display: none;
+            }
+            &:after {
+              display: none !important;
+            }
+            svg {
+              width: 25px;
+              height: 25px;
+            }
+          }
+        }
+        .accordion-collapse {
+          .accordion-body {
+            padding: 0 32px 32px;
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: "Barlow-Regular";
+            color: #667085;
+            @media screen and (max-width: 767px) {
+              padding: 0 12px 12px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
