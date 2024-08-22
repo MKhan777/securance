@@ -1,0 +1,50 @@
+<div class="readiness-block readiness-dashes-block">
+	<div class="container">
+		<div class="readiness-wrapper">
+			<div class="heading">
+				{% for item in content.field_header_section['#items'] %}
+					<h2>{{ item.entity.field_question.value }}</h2>
+					<p>{{ item.entity.field_answer.value }}</p>
+				{% endfor %}
+			</div>
+			<div class="readiness-content-wrapper">
+				{% for item in content.field_readiness_scan_approach['#items'] %}
+					<div class="readiness-card">
+						<div class="readiness-card-content">
+							<div class="card-header">
+								<div class="card-icon">
+									{% if item.entity.field_icon.entity %}
+										{% set media_entity = item.entity.field_icon.entity %}
+										{% if media_entity.field_media_image.entity %}
+											{% set image = media_entity.field_media_image.entity %}
+											<div class="image-wrapper">
+												<img src="{{ image.uri.value | file_url }}" alt="{{ image.alt.value }}">
+											</div>
+										{% endif %}
+									{% endif %}
+
+								</div>
+								<h4>
+									{% if item.entity.field_title.value is not empty %}
+										{{ item.entity.field_title.value }}
+									{% endif %}
+								</h4>
+							</div>
+							<div class="card-body">
+								{% for content_item in item.entity.field_card_content %}
+									<h4>{{ content_item.entity.field_question.value }}</h4>
+									<p>{{ content_item.entity.field_answer.value }}</p>
+								{% endfor %}
+							</div>
+						</div>
+						<div class="readiness-img-content">
+							{# <img class="solid-desktop" src="/themes/custom/securance/images/Connector-line-solid.png"> #}
+							{# <img class="solid-mobile" src="/themes/custom/securance/images/Connector-line-solid-mob.png"> #}
+							<img class="solid-desktop" src="/themes/custom/securance/images/Connector-line-dashes.svg"> <img class="solid-mobile" src="/themes/custom/securance/images/Connector-line-dashes-mob.svg">
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

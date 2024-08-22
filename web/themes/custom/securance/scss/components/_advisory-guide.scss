@@ -82,8 +82,13 @@
     .advisory-img {
       text-align: right;
       padding: 10px;
+      width: 254px;
+      height: 348px;
+      margin-left: auto;
       @media screen and (max-width: 767px) {
         text-align: center;
+        margin: auto;
+        width: auto;
       }
       img,
       .field--name-field-figure {
