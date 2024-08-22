@@ -1,0 +1,27 @@
+uuid: 51f27064-acfe-4b5e-93af-659d1958528d
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_connecter_line
+field_name: field_connecter_line
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: solid
+      label: Solid
+    -
+      value: dashes
+      label: Dashes
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

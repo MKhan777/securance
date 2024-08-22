@@ -1,0 +1,10 @@
+uuid: 66c79e71-4657-49ec-a975-ba444bf59827
+langcode: en-gb
+status: true
+dependencies: {  }
+id: multipurpose_block_reference
+label: 'Multipurpose block reference'
+icon_uuid: null
+icon_default: null
+description: 'Attach different block into our different content type to drag and drop the placement of different components.'
+behavior_plugins: {  }

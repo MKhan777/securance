@@ -1,4 +1,4 @@
-<div class="readiness-block readiness-dashes-block">
+<div class="readiness-block {% if content.field_connecter_line['#items'].value == 'dashes' %} readiness-dashes-block {% endif %} ">
 	<div class="container">
 		<div class="readiness-wrapper">
 			<div class="heading">
@@ -38,9 +38,13 @@
 							</div>
 						</div>
 						<div class="readiness-img-content">
-							{# <img class="solid-desktop" src="/themes/custom/securance/images/Connector-line-solid.png"> #}
-							{# <img class="solid-mobile" src="/themes/custom/securance/images/Connector-line-solid-mob.png"> #}
-							<img class="solid-desktop" src="/themes/custom/securance/images/Connector-line-dashes.svg"> <img class="solid-mobile" src="/themes/custom/securance/images/Connector-line-dashes-mob.svg">
+							{% if content.field_connecter_line['#items'].value == 'solid' %}
+								<img class="solid-desktop" src="/themes/custom/securance/images/Connector-line-solid.png">
+								<img class="solid-mobile" src="/themes/custom/securance/images/Connector-line-solid-mob.png">
+							{% elseif content.field_connecter_line['#items'].value == 'dashes' %}
+								<img class="solid-desktop" src="/themes/custom/securance/images/Connector-line-dashes.svg">
+								<img class="solid-mobile" src="/themes/custom/securance/images/Connector-line-dashes-mob.svg">	
+							{% endif %}
 						</div>
 					</div>
 				{% endfor %}

@@ -1,0 +1,43 @@
+uuid: 5b6d9c1c-57d3-4228-9e13-7b1cfa08c5a4
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.readiness_scan_component.field_connecter_line
+    - field.field.paragraph.readiness_scan_component.field_header_section
+    - field.field.paragraph.readiness_scan_component.field_readiness_scan_approach
+    - paragraphs.paragraphs_type.readiness_scan_component
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.readiness_scan_component.default
+targetEntityType: paragraph
+bundle: readiness_scan_component
+mode: default
+content:
+  field_connecter_line:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_header_section:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_readiness_scan_approach:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

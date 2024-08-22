@@ -5,6 +5,7 @@ dependencies:
   config:
     - block_content.type.our_partners
     - field.field.block_content.our_partners.body
+    - field.field.block_content.our_partners.field_heading
     - field.field.block_content.our_partners.field_logo_image
   module:
     - flickity_fields
@@ -20,6 +21,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
     region: content
   field_logo_image:
     type: flickity_entity_view

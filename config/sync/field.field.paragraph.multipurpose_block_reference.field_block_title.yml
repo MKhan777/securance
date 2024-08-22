@@ -1,0 +1,39 @@
+uuid: 8aca40ab-8696-445c-90c8-d6941633528f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - block_content.type.basic_block
+    - block_content.type.client_testimonial
+    - block_content.type.footer_country_column_first
+    - block_content.type.our_partners
+    - block_content.type.testimonial_slider
+    - field.storage.paragraph.field_block_title
+    - paragraphs.paragraphs_type.multipurpose_block_reference
+id: paragraph.multipurpose_block_reference.field_block_title
+field_name: field_block_title
+entity_type: paragraph
+bundle: multipurpose_block_reference
+label: 'Block Title'
+description: 'Type the name of e.g. our partners '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      basic_block: basic_block
+      client_testimonial: client_testimonial
+      basic: basic
+      footer_country_column_first: footer_country_column_first
+      our_partners: our_partners
+      testimonial_slider: testimonial_slider
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: basic_block
+field_type: entity_reference

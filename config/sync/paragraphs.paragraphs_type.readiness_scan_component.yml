@@ -1,0 +1,10 @@
+uuid: 3e9181bd-e9dc-49ff-8c08-fce2afb9078f
+langcode: en-gb
+status: true
+dependencies: {  }
+id: readiness_scan_component
+label: 'Readiness Scan Component'
+icon_uuid: null
+icon_default: null
+description: 'The main component of Readiness scan page which used for the approach used in readiness scan.'
+behavior_plugins: {  }

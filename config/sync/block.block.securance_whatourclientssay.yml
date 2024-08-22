@@ -27,4 +27,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/advisory/risk-management\r\n/advisory/compliance-services\r\n/advisory/nis2\r\n/advisory/dora\r\n/advisory/information-security-solutions\r\n/advisory/integrated-frameworks\r\n/advisory/privacy-solutions"
+    pages: "/advisory/risk-management-services\r\n/advisory/compliance-services\r\n/advisory/nis2\r\n/advisory/dora\r\n/advisory/information-security-solutions\r\n/advisory/integrated-frameworks\r\n/advisory/privacy-solutions"
