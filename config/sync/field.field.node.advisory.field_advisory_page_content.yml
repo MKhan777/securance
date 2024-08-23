@@ -7,15 +7,18 @@ dependencies:
     - node.type.advisory
     - paragraphs.paragraphs_type.advisory_guide
     - paragraphs.paragraphs_type.answer_question
+    - paragraphs.paragraphs_type.cobit_compoent
     - paragraphs.paragraphs_type.contact_block
     - paragraphs.paragraphs_type.frequently_asked_questions
     - paragraphs.paragraphs_type.hero_banner
+    - paragraphs.paragraphs_type.multi_column_with_background_ima
     - paragraphs.paragraphs_type.multipurpose_block_reference
     - paragraphs.paragraphs_type.organization_service_component
     - paragraphs.paragraphs_type.parent_tab_component
     - paragraphs.paragraphs_type.readiness_scan_approach
     - paragraphs.paragraphs_type.readiness_scan_component
     - paragraphs.paragraphs_type.rich_image_text_component
+    - paragraphs.paragraphs_type.risk_readiness_scan_component
     - paragraphs.paragraphs_type.text_with_cta_section
     - paragraphs.paragraphs_type.week_overview_component
   module:
@@ -43,10 +46,13 @@ settings:
       contact_block: contact_block
       frequently_asked_questions: frequently_asked_questions
       text_with_cta_section: text_with_cta_section
+      cobit_compoent: cobit_compoent
       readiness_scan_approach: readiness_scan_approach
       multipurpose_block_reference: multipurpose_block_reference
       readiness_scan_component: readiness_scan_component
+      multi_column_with_background_ima: multi_column_with_background_ima
       week_overview_component: week_overview_component
+      risk_readiness_scan_component: risk_readiness_scan_component
     negate: 0
     target_bundles_drag_drop:
       advisory_guide:
@@ -54,6 +60,9 @@ settings:
         enabled: true
       answer_question:
         weight: 18
+        enabled: true
+      cobit_compoent:
+        weight: 28
         enabled: true
       contact_block:
         weight: 20
@@ -67,9 +76,15 @@ settings:
       hero_banner:
         weight: 14
         enabled: true
+      image_with_caption:
+        weight: 31
+        enabled: false
       modal_card:
         weight: 15
         enabled: false
+      multi_column_with_background_ima:
+        weight: 39
+        enabled: true
       multicolumn_services:
         weight: 16
         enabled: false
@@ -91,6 +106,9 @@ settings:
       rich_image_text_component:
         weight: 19
         enabled: true
+      risk_readiness_scan_component:
+        weight: 40
+        enabled: true
       securance_stats_component:
         weight: 20
         enabled: false
@@ -109,6 +127,9 @@ settings:
       text_with_cta_section:
         weight: 24
         enabled: true
+      text_with_listing:
+        weight: 52
+        enabled: false
       week_overview_component:
         weight: 39
         enabled: true

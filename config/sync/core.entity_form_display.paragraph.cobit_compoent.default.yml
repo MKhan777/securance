@@ -1,0 +1,35 @@
+uuid: 5eb0bc70-c4a7-41fe-ab7f-9f818107c78d
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cobit_compoent.field_cobit_section
+    - paragraphs.paragraphs_type.cobit_compoent
+  module:
+    - paragraphs
+id: paragraph.cobit_compoent.default
+targetEntityType: paragraph
+bundle: cobit_compoent
+mode: default
+content:
+  field_cobit_section:
+    type: paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

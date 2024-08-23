@@ -1,0 +1,19 @@
+uuid: fc5081cf-b757-43b6-b376-c66224f74e43
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.text_with_listing
+id: paragraph.text_with_listing.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: text_with_listing
+label: Title
+description: 'The title field which contains the title of the hero banner.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

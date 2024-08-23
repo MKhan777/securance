@@ -1,0 +1,31 @@
+uuid: a9234dfe-783c-4c0b-bf72-93581268202f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_listing.field_list
+    - field.field.paragraph.text_with_listing.field_title
+    - paragraphs.paragraphs_type.text_with_listing
+  module:
+    - text
+id: paragraph.text_with_listing.default
+targetEntityType: paragraph
+bundle: text_with_listing
+mode: default
+content:
+  field_list:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

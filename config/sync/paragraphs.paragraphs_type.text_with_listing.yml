@@ -1,0 +1,10 @@
+uuid: 72b53061-ae6e-46f8-886b-480ef3d8358b
+langcode: en-gb
+status: true
+dependencies: {  }
+id: text_with_listing
+label: 'Text with listing'
+icon_uuid: null
+icon_default: null
+description: 'The paragraph type contains list with title.'
+behavior_plugins: {  }

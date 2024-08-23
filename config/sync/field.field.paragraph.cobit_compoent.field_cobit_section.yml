@@ -1,0 +1,103 @@
+uuid: fa8b3fa9-01f1-4ea0-90b9-94e13bc19bff
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cobit_section
+    - paragraphs.paragraphs_type.cobit_compoent
+    - paragraphs.paragraphs_type.image_with_caption
+  module:
+    - entity_reference_revisions
+id: paragraph.cobit_compoent.field_cobit_section
+field_name: field_cobit_section
+entity_type: paragraph
+bundle: cobit_compoent
+label: 'Cobit Section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image_with_caption: image_with_caption
+    negate: 0
+    target_bundles_drag_drop:
+      advisory_guide:
+        weight: 26
+        enabled: false
+      answer_question:
+        weight: 27
+        enabled: false
+      cobit_compoent:
+        weight: 28
+        enabled: false
+      contact_block:
+        weight: 29
+        enabled: false
+      country_office:
+        weight: 30
+        enabled: false
+      frequently_asked_questions:
+        weight: 31
+        enabled: false
+      hero_banner:
+        weight: 32
+        enabled: false
+      image_with_caption:
+        weight: 33
+        enabled: true
+      modal_card:
+        weight: 34
+        enabled: false
+      multicolumn_services:
+        weight: 35
+        enabled: false
+      multipurpose_block_reference:
+        weight: 36
+        enabled: false
+      organization_service_component:
+        weight: 37
+        enabled: false
+      parent_tab_component:
+        weight: 38
+        enabled: false
+      readiness_scan_approach:
+        weight: 39
+        enabled: false
+      readiness_scan_component:
+        weight: 40
+        enabled: false
+      rich_image_text_component:
+        weight: 41
+        enabled: false
+      risk_readiness_scan_component:
+        weight: 42
+        enabled: false
+      securance_stats_component:
+        weight: 43
+        enabled: false
+      social_link:
+        weight: 44
+        enabled: false
+      stats_number:
+        weight: 45
+        enabled: false
+      tab_component:
+        weight: 46
+        enabled: false
+      testimonial_card:
+        weight: 47
+        enabled: false
+      text_with_cta_section:
+        weight: 48
+        enabled: false
+      week_overview_component:
+        weight: 49
+        enabled: false
+      week_schedule:
+        weight: 50
+        enabled: false
+field_type: entity_reference_revisions

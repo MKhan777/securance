@@ -1,0 +1,10 @@
+uuid: 4291aafe-6d07-478b-91be-c4c5eb9a25af
+langcode: en-gb
+status: true
+dependencies: {  }
+id: image_with_caption
+label: 'Image with Caption'
+icon_uuid: null
+icon_default: null
+description: 'This paragraphe type contains a image with caption of image.'
+behavior_plugins: {  }

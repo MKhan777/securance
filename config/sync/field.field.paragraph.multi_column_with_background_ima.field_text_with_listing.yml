@@ -1,0 +1,109 @@
+uuid: 9b1712a6-a0ac-4598-a80b-28761e1fb2a1
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_with_listing
+    - paragraphs.paragraphs_type.multi_column_with_background_ima
+    - paragraphs.paragraphs_type.text_with_listing
+  module:
+    - entity_reference_revisions
+id: paragraph.multi_column_with_background_ima.field_text_with_listing
+field_name: field_text_with_listing
+entity_type: paragraph
+bundle: multi_column_with_background_ima
+label: 'Text with listing'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_with_listing: text_with_listing
+    negate: 0
+    target_bundles_drag_drop:
+      advisory_guide:
+        weight: 28
+        enabled: false
+      answer_question:
+        weight: 29
+        enabled: false
+      cobit_compoent:
+        weight: 30
+        enabled: false
+      contact_block:
+        weight: 31
+        enabled: false
+      country_office:
+        weight: 32
+        enabled: false
+      frequently_asked_questions:
+        weight: 33
+        enabled: false
+      hero_banner:
+        weight: 34
+        enabled: false
+      image_with_caption:
+        weight: 35
+        enabled: false
+      modal_card:
+        weight: 36
+        enabled: false
+      multi_column_with_background_ima:
+        weight: 39
+        enabled: false
+      multicolumn_services:
+        weight: 37
+        enabled: false
+      multipurpose_block_reference:
+        weight: 38
+        enabled: false
+      organization_service_component:
+        weight: 40
+        enabled: false
+      parent_tab_component:
+        weight: 41
+        enabled: false
+      readiness_scan_approach:
+        weight: 42
+        enabled: false
+      readiness_scan_component:
+        weight: 43
+        enabled: false
+      rich_image_text_component:
+        weight: 44
+        enabled: false
+      risk_readiness_scan_component:
+        weight: 45
+        enabled: false
+      securance_stats_component:
+        weight: 46
+        enabled: false
+      social_link:
+        weight: 47
+        enabled: false
+      stats_number:
+        weight: 48
+        enabled: false
+      tab_component:
+        weight: 49
+        enabled: false
+      testimonial_card:
+        weight: 50
+        enabled: false
+      text_with_cta_section:
+        weight: 51
+        enabled: false
+      text_with_listing:
+        weight: 52
+        enabled: true
+      week_overview_component:
+        weight: 53
+        enabled: false
+      week_schedule:
+        weight: 54
+        enabled: false
+field_type: entity_reference_revisions

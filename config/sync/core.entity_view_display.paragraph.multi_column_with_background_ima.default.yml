@@ -1,0 +1,91 @@
+uuid: e76f291c-9710-4415-9304-2190553bb93c
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.multi_column_with_background_ima.field_background_image
+    - field.field.paragraph.multi_column_with_background_ima.field_description
+    - field.field.paragraph.multi_column_with_background_ima.field_description_color
+    - field.field.paragraph.multi_column_with_background_ima.field_sub_heading
+    - field.field.paragraph.multi_column_with_background_ima.field_sub_heading_color
+    - field.field.paragraph.multi_column_with_background_ima.field_text_with_listing
+    - field.field.paragraph.multi_column_with_background_ima.field_title
+    - field.field.paragraph.multi_column_with_background_ima.field_title_color
+    - paragraphs.paragraphs_type.multi_column_with_background_ima
+  module:
+    - color_field
+    - entity_reference_revisions
+id: paragraph.multi_column_with_background_ima.default
+targetEntityType: paragraph
+bundle: multi_column_with_background_ima
+mode: default
+content:
+  field_background_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_description_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_sub_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_sub_heading_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_text_with_listing:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 15
+    region: content
+hidden: {  }

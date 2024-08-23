@@ -1,0 +1,55 @@
+uuid: b90c3c3a-1c27-4336-9fe6-c12130af000f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.risk_readiness_scan_component.field_cta_text_2
+    - field.field.paragraph.risk_readiness_scan_component.field_description
+    - field.field.paragraph.risk_readiness_scan_component.field_readiness_scan_stepper
+    - field.field.paragraph.risk_readiness_scan_component.field_title
+    - paragraphs.paragraphs_type.risk_readiness_scan_component
+  module:
+    - entity_reference_revisions
+    - link
+id: paragraph.risk_readiness_scan_component.default
+targetEntityType: paragraph
+bundle: risk_readiness_scan_component
+mode: default
+content:
+  field_cta_text_2:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_readiness_scan_stepper:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

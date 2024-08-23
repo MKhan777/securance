@@ -1,0 +1,24 @@
+uuid: b80d3420-70f8-454a-86f6-9a4f17cc6558
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cobit_compoent.field_cobit_section
+    - paragraphs.paragraphs_type.cobit_compoent
+  module:
+    - entity_reference_revisions
+id: paragraph.cobit_compoent.default
+targetEntityType: paragraph
+bundle: cobit_compoent
+mode: default
+content:
+  field_cobit_section:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

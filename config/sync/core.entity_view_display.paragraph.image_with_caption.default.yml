@@ -1,0 +1,31 @@
+uuid: 6c7cea25-cb1d-45e7-b7aa-745bcd4956f0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_with_caption.field_image
+    - field.field.paragraph.image_with_caption.field_image_caption
+    - paragraphs.paragraphs_type.image_with_caption
+id: paragraph.image_with_caption.default
+targetEntityType: paragraph
+bundle: image_with_caption
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image_caption:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: c6630c88-5c8d-448a-b481-a0efa931231d
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_color
+    - paragraphs.paragraphs_type.multi_column_with_background_ima
+  module:
+    - color_field
+id: paragraph.multi_column_with_background_ima.field_title_color
+field_name: field_title_color
+entity_type: paragraph
+bundle: multi_column_with_background_ima
+label: 'Title Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

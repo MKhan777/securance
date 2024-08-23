@@ -1,0 +1,24 @@
+uuid: 16fd5bae-0034-49e0-a6a7-932b09bd7623
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_list
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.text_with_listing
+  module:
+    - text
+id: paragraph.text_with_listing.field_list
+field_name: field_list
+entity_type: paragraph
+bundle: text_with_listing
+label: list
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

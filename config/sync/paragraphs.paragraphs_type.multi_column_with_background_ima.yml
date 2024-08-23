@@ -1,0 +1,10 @@
+uuid: 94aa5d8d-2ad1-4850-a353-3726e0d9b827
+langcode: en-gb
+status: true
+dependencies: {  }
+id: multi_column_with_background_ima
+label: 'Multi Column with Background Image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

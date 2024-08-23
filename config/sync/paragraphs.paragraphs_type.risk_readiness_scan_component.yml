@@ -1,0 +1,10 @@
+uuid: 957e843a-0f2b-4053-baf7-46b74892b850
+langcode: en-gb
+status: true
+dependencies: {  }
+id: risk_readiness_scan_component
+label: 'Risk Readiness Scan Component'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
