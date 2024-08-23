@@ -1,11 +1,28 @@
-<div class="readiness-block">
-<div class="container">
-    <div class="readiness-wrapper">
-        <div class="heading">
-            
-        </div>
-    </div>
-	{{content.field_title}}
-	{{content.field_description}}
-	{{content.field_week_schedule}}
+<div class="week-overview-block">
+	<div class="container">
+		<div class="week-overview-wrapper">
+			<div class="heading">
+				<h2>{{content.field_title.0['#context'].value}}</h2>
+				<p>{{ content.field_description.0['#context'].value }}</p>
+			</div>
+			<div class="week-overview-content-wrapper">
+				{% for item in content.field_week_schedule['#items'] %}
+					<div class="week-overview-card">
+						<div class="card-header" style="background-image: url('{{ file_url(item.entity.field_week_background.entity.field_media_image.entity.uri.value) }}'); background-position: top; background-size: contain; background-repeat: no-repeat;">
+							<div class="week-number">{{ item.entity.field_week_number.value }}</div>
+							<div class="week-topic">{{ item.entity.field_week_topic.value }}</div>
+						</div>
+						<div class="card-body">
+							<h6>{{ item.entity.field_title.value }}</h6>
+							{% if item.entity.field_description is not empty %}
+								{% for item in item.entity.field_description %}
+									<p>{{ item.value}}</p>
+								{% endfor %}
+							{% endif %}
+						</h6>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
 </div>
