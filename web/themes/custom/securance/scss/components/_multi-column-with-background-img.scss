@@ -1,0 +1,117 @@
+.multi-column-with-background-img-block {
+  background: #f9fafb;
+  padding: 64px 10px;
+  @media screen and (max-width: 767px) {
+    padding: 24px 10px;
+  }
+  .multi-column-with-background-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    .heading {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      * {
+        margin: 0;
+      }
+      h6 {
+        font-size: 14px;
+        line-height: 1.2;
+        font-family: "Barlow-Bold";
+        text-transform: uppercase;
+        @media screen and (max-width: 767px) {
+          font-size: 12px;
+        }
+      }
+      h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        font-family: "Barlow-SemiBold";
+        @media screen and (max-width: 767px) {
+          font-size: 20px;
+        }
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: "Barlow-Regular";
+        @media screen and (max-width: 767px) {
+          font-size: 14px;
+        }
+      }
+    }
+    .multi-column-card-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      //   align-items: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      .background-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: max-content;
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
+        }
+      }
+      .multi-column-card {
+        width: 370px;
+        height: 300px;
+        padding: 24px 32px;
+        background: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.05);
+        position: relative;
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @media screen and (max-width: 991px) {
+          width: 330px;
+          height: 330px;
+          @media screen and (max-width: 767px) {
+            width: 100%;
+            height: 330px;
+            padding: 16px;
+            &:nth-child(3) {
+              margin-bottom: 65px;
+            }
+            &:nth-child(4) {
+              margin-top: 65px;
+            }
+          }
+        }
+        h3 {
+          font-size: 24px;
+          line-height: 1.5;
+          font-family: "Barlow-Semibold";
+          color: #a12844;
+          margin: 0;
+          @media screen and (max-width: 767px) {
+            font-size: 20px;
+          }
+        }
+        ul {
+          padding-left: 20px;
+          margin-bottom: 0;
+          li {
+            font-size: 18px;
+            line-height: 1.5;
+            font-family: Barlow-Medium;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}

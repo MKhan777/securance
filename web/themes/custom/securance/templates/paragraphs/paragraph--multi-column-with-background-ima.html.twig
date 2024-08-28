@@ -1,0 +1,26 @@
+<div class="multi-column-with-background-img-block">
+	<div class="container">
+		<div class="multi-column-with-background-img-wrapper">
+			<div class="heading">
+				<h6 style="color: {{ content.field_sub_heading_color|render|striptags|trim }};">{{content.field_sub_heading.0['#context'].value}}</h6>
+				<h2 style="color: {{ content.field_title_color|render|striptags|trim }};">{{content.field_title.0['#context'].value}}</h2>
+				<p style="color: {{ content.field_description_color|render|striptags|trim }};">{{content.field_description.0['#context'].value}}</p>
+			</div>
+			<div class="multi-column-card-wrapper">
+				<div class="background-img">
+					<img src="{{ file_url(content.field_background_image[0]['#media'].field_media_image.entity.uri.value) }} ">
+				</div>
+				{% for item in content.field_text_with_listing['#items'] %}
+					<div class="multi-column-card">
+						{% if item.entity.field_title.value is not empty %}
+							<h3>{{ item.entity.field_title.value }}</h3>
+						{% endif %}
+						{% for list_item in item.entity.field_list %}
+							<div>{{ list_item.value|raw }}</div>
+						{% endfor %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
