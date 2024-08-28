@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "45ee6afea7d33079b35175c8c93f9fac",
+    "content-hash": "48f28d62c8a74ad4c517e166376e66a0",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2682,6 +2682,69 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/views_slideshow",
                 "issues": "https://www.drupal.org/project/issues/views_slideshow"
+            }
+        },
+        {
+            "name": "drupal/viewsreference",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/viewsreference.git",
+                "reference": "2c4db004e635a890ae033feea8f94515ac6426bf"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10 || ^11"
+            },
+            "conflict": {
+                "drupal/viewsreferennce": "*"
+            },
+            "require-dev": {
+                "drupal/views_ajax_history": "1.x-dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-beta8+14-dev",
+                    "datestamp": "1720723533",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "joekers",
+                    "homepage": "https://www.drupal.org/user/2229066"
+                },
+                {
+                    "name": "NewZeal",
+                    "homepage": "https://www.drupal.org/user/93571"
+                },
+                {
+                    "name": "scott_euser",
+                    "homepage": "https://www.drupal.org/user/3267594"
+                },
+                {
+                    "name": "seanB",
+                    "homepage": "https://www.drupal.org/user/545912"
+                }
+            ],
+            "description": "Views reference",
+            "homepage": "http://drupal.org/project/viewsreference",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/viewsreference",
+                "issues": "https://www.drupal.org/project/issues/viewsreference"
             }
         },
         {
@@ -7351,7 +7414,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "drupal/gin": 20,
-        "drupal/gin_toolbar": 20
+        "drupal/gin_toolbar": 20,
+        "drupal/viewsreference": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

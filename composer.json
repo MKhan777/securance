@@ -35,6 +35,7 @@
         "drupal/social_media_links": "2.9",
         "drupal/twig_tweak": "^3.4",
         "drupal/views_slideshow": "5.0",
+        "drupal/viewsreference": "2.x-dev",
         "drush/drush": "^12.5"
     },
     "conflict": {
