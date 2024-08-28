@@ -1,0 +1,85 @@
+@mixin heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  h2 {
+    @include h2;
+  }
+  p {
+    @include p;
+  }
+}
+@mixin h2 {
+  font-size: 32px;
+  line-height: 1.5;
+  font-family: "Barlow-Semibold";
+  margin: 0;
+  color: #000000;
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+@mixin p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Barlow-Regular";
+  margin: 0;
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+@mixin displayRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  @media screen and (max-width: 767px) {
+    gap: 15px;
+  }
+}
+@mixin displayColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@mixin securance-btn-link {
+  a {
+    font-family: "Barlow-Semibold";
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color: #a12844;
+    border: 1px solid #a12844;
+    padding: 16px 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-size: cover;
+      mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>');
+      -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>');
+      mask-size: cover;
+      -webkit-mask-size: cover;
+      background: #fff;
+    }
+    &:hover {
+      background-color: transparent;
+      color: #a12844;
+      &::after {
+        background: #a12844;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+}

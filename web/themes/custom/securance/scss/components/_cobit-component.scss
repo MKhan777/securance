@@ -1,0 +1,26 @@
+.cobit-component-block {
+  background: #faf4f5;
+  padding: 64px 10px;
+  @media screen and (max-width: 767px) {
+    padding: 24px 10px;
+  }
+  .cobit-component-row {
+    @include displayRow;
+    .cobit-component-col {
+      width: calc(50% - 15px);
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+      .cobit-component-content {
+        @include displayColumn;
+        h2 {
+          @include h2;
+        }
+        img {
+          max-width: max-content;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
