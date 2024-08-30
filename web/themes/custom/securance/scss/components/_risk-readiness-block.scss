@@ -32,26 +32,24 @@
         }
         &:nth-child(2) {
           order: 5;
-          margin-top: -12%;
         }
         &:nth-child(3) {
           order: 2;
         }
         &:nth-child(4) {
           order: 6;
-          margin-top: -12%;
         }
         &:nth-child(5) {
           order: 3;
         }
         &:nth-child(6) {
           order: 7;
-          margin-top: -12%;
         }
         &:nth-child(7) {
           order: 4;
         }
         &:nth-child(even) {
+          margin-top: -12%;
           .risk-readiness-card {
             flex-direction: column-reverse;
             .risk-readiness-content {
@@ -156,7 +154,8 @@
     }
     .risk-readiness-btn {
       text-align: center;
-      @include securance-btn-link;
+      @include securance-btn-link(#ffffff, #a12844, #a12844, #ffffff);
+
       a {
         background-color: #ffffff;
         color: #a12844;
