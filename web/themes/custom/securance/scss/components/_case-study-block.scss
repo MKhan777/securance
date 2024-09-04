@@ -1,0 +1,97 @@
+.case-study-block {
+  @include sectionSpace;
+  background: #24272a;
+  .case-study-main-wrapper {
+    @include displayColumn;
+    .heading {
+      @include heading;
+      margin-bottom: 30px;
+      align-items: flex-start;
+      h6 {
+        color: #a12844;
+      }
+      h1 {
+        color: #ffffff;
+      }
+      p {
+        color: #f9fafb;
+      }
+    }
+    .case-study-cards-wrapper {
+      .views-view-responsive-grid--horizontal {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        @media screen and (max-width: 991px) {
+          grid-template-columns: repeat(2, 1fr);
+          @media screen and (max-width: 767px) {
+            grid-template-columns: repeat(1, 1fr);
+          }
+        }
+        padding: 0;
+        .views-view-responsive-grid__item-inner,
+        .views-field {
+          height: 100%;
+        }
+        .testimonial-wrapper {
+          background: #282f35;
+          border: 1px solid #282f35;
+          flex-direction: column;
+          gap: 20px;
+          padding: 20px;
+          height: 100%;
+          justify-content: space-between;
+          .testimonial-img-content {
+            img {
+              max-width: fit-content;
+            }
+            width: 100%;
+          }
+          .testimonial-content {
+            width: 100%;
+            padding: 0;
+            background: none;
+            @media screen and (max-width: 991px) {
+              height: auto;
+            }
+            .organisation-content {
+              margin-bottom: 25px;
+              h4 {
+                @include h2;
+              }
+            }
+            .testimonial-link-wrapper {
+              a {
+                color: #282f35;
+                &::after {
+                  background: #282f35;
+                }
+              }
+            }
+          }
+          &:hover {
+            background: #24272a;
+            border: 1px solid #a12844;
+            .testimonial-content {
+              .testimonial-link-wrapper {
+                a {
+                  color: #a12844;
+                  &::after {
+                    background: #a12844;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .case-study-link-wrapper {
+      @include securance-btn-link(#a12844, #ffffff, #24272a, #ffffff);
+      a {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

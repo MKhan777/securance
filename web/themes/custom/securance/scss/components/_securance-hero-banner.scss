@@ -55,6 +55,7 @@
     }
     p {
       @include securance-banner-description;
+      white-space: pre-wrap;
     }
     .securance-banner-link {
       @include securance-btn-link(#a12844, #ffffff, #ffffff, #a12844);

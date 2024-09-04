@@ -1,0 +1,56 @@
+<div class="assurance-type-difference-block">
+	<div class="container">
+		<div class="heading">
+			<h6>{{content.field_sub_heading}}</h6>
+			<h1>{{content.field_type_1_title[0]['#context'].value}}
+				<span>and</span>
+				{{content.field_type_1_title[0]['#context'].value}}</h1>
+		</div>
+	</div>
+	<div class="assurance-type-list-wrapper header">
+		<div class="container">
+			<div class="assurance-type-list-content-wrapper">
+				<div class="assurance-type-list-content topic"></div>
+				<div class="assurance-type-list-content">
+					<h2>{{content.field_type_1_title[0]['#context'].value}}</h2>
+				</div>
+				<div class="assurance-type-list-content">
+					<h2>{{content.field_type_1_title[0]['#context'].value}}</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="assurance-type-list-main-wrapper">
+		{% for item in content.field_types_difference['#items'] %}
+			<div class="assurance-type-list-wrapper">
+				<div class="container">
+					<div class="assurance-type-list-content-wrapper">
+						<div class="assurance-type-list-content topic">
+							{% if item.entity.field_topic.value is not empty %}
+								<h6>{{ item.entity.field_topic.value }}</h6>
+							{% endif %}
+						</div>
+						<div class="assurance-type-list-content">
+							{% if item.entity.field_type_1.value is not empty %}
+								<p>{{ item.entity.field_type_1.value }}</p>
+							{% endif %}
+						</div>
+						<div class="assurance-type-list-content">
+							{% if item.entity.field_type_2.value is not empty %}
+								<p>{{ item.entity.field_type_2.value }}</p>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+		<div class="assurance-type-list-btn">
+			<button>
+				<span>Show me more differences</span>
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-double-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+					<path d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z"></path>
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,100 @@
+.assurance-type-difference-block {
+  @include sectionSpace;
+  padding-left: 0;
+  padding-right: 0;
+
+  .heading {
+    @include displayColumn;
+    align-items: flex-start;
+    h6 {
+      @include h6;
+      color: #a12844;
+    }
+    h1 {
+      @include h1;
+      font-size: 56px;
+      line-height: 1.5;
+      text-transform: uppercase;
+      font-family: "Barlow-Semibold";
+      span {
+        @include h6;
+      }
+    }
+  }
+  .assurance-type-list-main-wrapper {
+    @include displayColumn;
+    gap: 50px;
+    .assurance-type-list-btn {
+      button {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        white-space: nowrap;
+        border: none;
+        background: none;
+        color: #a12844;
+        font-size: 16px;
+        font-family: "Barlow-SemiBold";
+        text-transform: uppercase;
+        svg {
+          width: 16px;
+          height: 16px;
+          fill: #a12844;
+        }
+      }
+    }
+  }
+  .assurance-type-list-wrapper {
+    &.header {
+      border-top: 2px solid #f2f4f7;
+      border-bottom: 2px solid #f2f4f7;
+      padding: 15px 0;
+      margin: 15px 0;
+      .assurance-type-list-content {
+        &:last-child {
+          h2 {
+            color: #f36c24;
+          }
+        }
+      }
+    }
+    .assurance-type-list-content-wrapper {
+      @include displayRow;
+      align-items: center;
+      justify-content: flex-start;
+      @media screen and (max-width: 767px) {
+        align-items: flex-start;
+      }
+      .assurance-type-list-content {
+        flex: 3;
+        @media screen and (max-width: 767px) {
+          flex: unset;
+          width: calc(50% - 7.5px);
+        }
+        &.topic {
+          flex: 1;
+          @media screen and (max-width: 767px) {
+            flex: unset;
+            width: 100%;
+          }
+        }
+        h2 {
+          @include h2;
+          font-size: 36px;
+          color: #5a091f;
+        }
+        h6 {
+          @include h6;
+          font-size: 16px;
+          letter-spacing: normal;
+        }
+        p {
+          @include p;
+          color: #667085;
+          font-size: 17px;
+          line-height: 1.75;
+        }
+      }
+    }
+  }
+}
