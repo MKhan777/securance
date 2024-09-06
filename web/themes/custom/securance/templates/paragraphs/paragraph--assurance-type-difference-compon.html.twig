@@ -54,3 +54,27 @@
 		</div>
 	</div>
 </div>
+<script>
+    let assuranceTypeList = document.querySelectorAll(".assurance-type-list-main-wrapper .assurance-type-list-wrapper");
+    let showMoreButton = document.querySelector(".assurance-type-list-btn button");
+
+    assuranceTypeList.forEach((item, index) => {
+        if (index < 3) {
+            item.classList.add('default');
+        }
+    });
+
+    showMoreButton.addEventListener('click', () => {
+        assuranceTypeList.forEach(item => {
+            item.classList.toggle('show');
+        });
+
+        showMoreButton.classList.toggle('show');
+		if (showMoreButton.classList.contains('show')) {
+            showMoreButton.querySelector("span").textContent = 'Show Less';
+
+        }else{
+			showMoreButton.querySelector("span").textContent = 'Show me more differences';
+		}
+    });
+</script>

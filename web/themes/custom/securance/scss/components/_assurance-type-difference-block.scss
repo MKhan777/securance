@@ -18,12 +18,19 @@
       font-family: "Barlow-Semibold";
       span {
         @include h6;
+        color: #a12844;
       }
     }
   }
   .assurance-type-list-main-wrapper {
     @include displayColumn;
-    gap: 50px;
+    .assurance-type-list-wrapper{
+      gap: 50px;
+      display: none;
+      &.default, &.show{
+        display: block;
+      }
+    }
     .assurance-type-list-btn {
       button {
         display: flex;
@@ -36,6 +43,12 @@
         font-size: 16px;
         font-family: "Barlow-SemiBold";
         text-transform: uppercase;
+        transition: transform .3s;
+        &.show{
+          svg{
+            transform: scale(-1);
+          }
+        }
         svg {
           width: 16px;
           height: 16px;

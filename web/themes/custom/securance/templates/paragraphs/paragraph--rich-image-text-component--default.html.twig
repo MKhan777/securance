@@ -11,11 +11,11 @@
 {% endif %}
 
 
-<div class="component-wrapper {{image_position_class}} {% if content.field_image_width['#items'].value %} component-wrapper-reverse {% endif %} " style="background-color: {{ content.field_background_color|render|striptags|trim }};">
+<div class="component-wrapper {{image_position_class}} {% if content.field_image_width['#items'].value %} component-wrapper-full-width {% endif %} " style="background-color: {{ content.field_background_color|render|striptags|trim }};">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-6">
-				<div class="component-content">
+				<div class="component-content {% if content.field_adjust_content['#items'].value %}component-content-adjustment{% endif %}">
 					{% if content.field_sub_heading  %}
 						<h3 class="component-subheading" style="color: {{ content.field_sub_heading_color.0['#markup']|striptags|trim }};">
 							{{ content.field_sub_heading }}
