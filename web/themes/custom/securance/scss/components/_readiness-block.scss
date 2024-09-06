@@ -1,37 +1,20 @@
 .readiness-block {
   background: #faf4f5;
-  padding: 64px 10px;
-  @media screen and (max-width: 767px) {
-    padding: 24px 10px;
-  }
+  @include sectionSpace;
   .readiness-wrapper {
     display: flex;
     flex-direction: column;
     gap: 60px;
     .heading {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      * {
-        margin: 0;
-      }
-      h2 {
-        font-size: 32px;
-        line-height: 1.2;
-        font-family: "Barlow-SemiBold";
-        color: #000000;
-        @media screen and (max-width: 767px) {
-          font-size: 20px;
-        }
+      @include heading;
+      align-items: flex-start;
+      h6 {
+        color: #a12844;
+        letter-spacing: normal;
+        font-family: "Barlow-Semibold";
       }
       p {
-        font-size: 16px;
-        line-height: 1.5;
-        font-family: "Barlow-Regular";
         color: #667085;
-        @media screen and (max-width: 767px) {
-          font-size: 14px;
-        }
       }
     }
     .readiness-content-wrapper {

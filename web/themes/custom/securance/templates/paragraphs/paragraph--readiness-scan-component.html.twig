@@ -2,6 +2,9 @@
 	<div class="container">
 		<div class="readiness-wrapper">
 			<div class="heading">
+				{% if content.field_sub_heading.0['#context'].value %}
+					<h6>{{ content.field_sub_heading.0['#context'].value}}</h6>
+				{% endif %}
 				{% for item in content.field_header_section['#items'] %}
 					<h2>{{ item.entity.field_question.value }}</h2>
 					<p>{{ item.entity.field_answer.value }}</p>
@@ -12,7 +15,7 @@
 					<div class="readiness-card">
 						<div class="readiness-card-content">
 							<div class="card-header">
-								<div class="card-icon">
+									<div class="{% if content.field_connecter_line['#items'].value == 'solid' %}card-icon{% endif %}">
 									{% if item.entity.field_icon.entity %}
 										{% set media_entity = item.entity.field_icon.entity %}
 										{% if media_entity.field_media_image.entity %}
@@ -24,17 +27,30 @@
 									{% endif %}
 
 								</div>
-								<h4>
+								{% if content.field_connecter_line['#items'].value == 'solid' %}
 									{% if item.entity.field_title.value is not empty %}
-										{{ item.entity.field_title.value }}
+										<h4>{{ item.entity.field_title.value }}</h4>
 									{% endif %}
-								</h4>
+								{% endif %}
 							</div>
 							<div class="card-body">
-								{% for content_item in item.entity.field_card_content %}
-									<h4>{{ content_item.entity.field_question.value }}</h4>
-									<p>{{ content_item.entity.field_answer.value }}</p>
-								{% endfor %}
+								{% if content.field_connecter_line['#items'].value == 'solid' %}
+									{% for content_item in item.entity.field_card_content %}
+										{% if content_item.entity.field_question.value is not empty %}
+											<h4>{{ content_item.entity.field_question.value }}</h4>
+										{% endif %}
+										{% if content_item.entity.field_answer.value is not empty %}
+											<p>{{ content_item.entity.field_answer.value }}</p>
+										{% endif %}
+									{% endfor %}
+								{% elseif content.field_connecter_line['#items'].value == 'dashes' %}
+									{% if item.entity.field_title.value is not empty %}
+										<h4>{{ item.entity.field_title.value }}</h4>
+									{% endif %}
+									{% if item.entity.field_description.value is not empty %}
+										<p>{{ item.entity.field_description.value }}</p>
+									{% endif %}
+								{% endif %}
 							</div>
 						</div>
 						<div class="readiness-img-content">
