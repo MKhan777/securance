@@ -1,0 +1,95 @@
+.approach-step-block {
+  background: #faf4f5;
+  @include sectionSpace;
+  .approach-step-main-wrapper {
+    @include displayColumn;
+    gap: 50px;
+    @media screen and (max-width: 767px) {
+      gap: 15px !important;
+    }
+  }
+  .heading {
+    @include heading;
+    text-align: center;
+    p {
+      color: #202020;
+    }
+  }
+  .approach-step-wrapper {
+    @include displayRow;
+    gap: 10px !important;
+    @media screen and (max-width: 767px) {
+      gap: 30px !important;
+    }
+    .approach-step-img {
+      margin-top: 40px;
+      flex: 1;
+      @media screen and (max-width: 991px) {
+        flex: unset;
+        width: 40px;
+        @media screen and (max-width: 767px) {
+          width: 50%;
+          margin-top: 0;
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .approach-step-card {
+      @include displayColumn;
+      align-items: unset;
+      flex: 1;
+      text-align: center;
+      @media screen and (max-width: 991px) {
+        flex: unset;
+        width: 100%;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+      }
+      .approach-step-header {
+        @include centerContent;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        @media screen and (max-width: 767px) {
+          width: 40%;
+        }
+        .approach-header-content {
+          width: 70%;
+          aspect-ratio: 1;
+          @include centerContent;
+          flex-direction: column;
+          background: #fff;
+          border-radius: 100%;
+          gap: 6px;
+          h5 {
+            @include h5;
+          }
+        }
+      }
+      .approach-step-body {
+        @include displayColumn;
+        @media screen and (max-width: 767px) {
+          width: 60%;
+          gap: 6px;
+          align-items: flex-start;
+        }
+        h6 {
+          @include h6;
+          font-size: 12px;
+          letter-spacing: normal;
+        }
+        p {
+          @include p;
+          font-size: 12px;
+          color: #000;
+        }
+      }
+    }
+  }
+  .approach-step-link {
+    @include securance-btn-link(#a12844, #fff, #fff, #a12844);
+    text-align: center;
+  }
+}

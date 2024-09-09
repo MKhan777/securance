@@ -121,4 +121,21 @@
       }
     }
   }
+  &.cybersecurity{
+    .advisory-content {
+      .advisory-btn{
+        a{
+          background: transparent!important;
+          padding-inline: 0;
+          border: none;
+          color: #a12844 !important;
+          svg{
+            path{
+              fill: #a12844!important;
+            }
+          }
+        }
+      }
+    }
+  }
 }

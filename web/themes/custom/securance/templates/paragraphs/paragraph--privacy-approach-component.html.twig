@@ -1,0 +1,52 @@
+<div class="approach-step-block">
+	<div class="container">
+        <div class="approach-step-main-wrapper">
+		<div class="heading">
+			<h2>{{content.field_heading.0['#context'].value}}</h2>
+			<p>{{content.field_description.0['#context'].value}}</p>
+		</div>
+		<div class="approach-step-wrapper">
+			<div class="approach-step-img">
+				<img src="/themes/custom/securance/images/approach-step-img1.png" alt="approach-step-img">
+			</div>
+			{% for item in content.field_approach_steps['#items'] %}
+				<div class="approach-step-card">
+					<div class="approach-step-header" style="background-image: conic-gradient( #a12844 calc(20% * {{loop.index}}), #da8b9d calc(20% * {{loop.index}}),#da8b9d 100%);">
+						<div
+							class="approach-header-content">
+							{# {{item.entity.field_select_icon}} #}
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+								<g clip-path="url(#clip0_68_1754)">
+									<mask id="mask0_68_1754" style="mask-type:luminance" maskunits="userSpaceOnUse" x="-1" y="0" width="33" height="32">
+										<path d="M-0.00390625 1.90735e-06H31.9961V32H-0.00390625V1.90735e-06Z" fill="white"></path>
+									</mask>
+									<g mask="url(#mask0_68_1754)">
+										<path d="M31.0586 17.875V14.125L28.932 13.8669C28.5981 11.8381 27.8027 9.96737 26.6497 8.3635L27.9285 6.71919L25.2769 4.06763L23.6327 5.34644C22.0287 4.19338 20.158 3.398 18.1292 3.06419L17.8711 0.937502H14.1211L13.863 3.06419C11.8342 3.398 9.96347 4.19338 8.35953 5.34644L6.71528 4.06763L4.06366 6.71919L5.34259 8.3635C4.18947 9.96737 3.39409 11.8381 3.06022 13.8669L0.933594 14.125V17.875L3.06022 18.1331C3.39409 20.1619 4.18947 22.0326 5.34259 23.6366L4.06366 25.2807L6.71528 27.9324L8.35953 26.6536C9.96347 27.8066 11.8342 28.602 13.863 28.9358L14.1211 31.0625H17.8711L18.1292 28.9358C20.158 28.602 22.0287 27.8066 23.6327 26.6536L25.2769 27.9324L27.9285 25.2807L26.6497 23.6366C27.8027 22.0326 28.5981 20.1619 28.932 18.1331L31.0586 17.875Z" stroke="#A12844" stroke-width="1.2" stroke-miterlimit="10"></path>
+										<path d="M15.9961 25.375C10.827 25.375 6.62109 21.1691 6.62109 16C6.62109 10.8309 10.827 6.625 15.9961 6.625C21.1652 6.625 25.3711 10.8309 25.3711 16C25.3711 21.1691 21.1652 25.375 15.9961 25.375Z" stroke="#A12844" stroke-width="1.2" stroke-miterlimit="10"></path>
+										<path d="M12.2461 15.0625L15.0586 17.875L19.7461 13.1875" stroke="#A12844" stroke-width="1.2" stroke-miterlimit="10"></path>
+									</g>
+								</g>
+								<defs>
+									<clipPath id="clip0_68_1754">
+										<rect width="32" height="32" fill="white"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+							<h5>{{item.entity.field_step_number.value}}</h5>
+						</div>
+					</div>
+					<div class="approach-step-body">
+						<h6>{{item.entity.field_step_heading.value}}</h6>
+						<p>{{item.entity.field_step_description.value}}</p>
+					</div>
+				</div>
+			{% endfor %}
+			<div class="approach-step-img">
+				<img src="/themes/custom/securance/images/approach-step-img2.png" alt="approach-step-img">
+			</div>
+		</div>
+		<div class="approach-step-link">
+			{{content.field_cta_text_2}}
+		</div>
+	</div>
+</div>
