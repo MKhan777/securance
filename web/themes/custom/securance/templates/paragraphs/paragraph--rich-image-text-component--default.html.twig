@@ -1,13 +1,13 @@
 {% set image_position_class = '' %}
 
 {% if content.field_set_image_position['#items'].value == 'top' %}
-    {% set image_position_class = 'image-position-top' %}
+	{% set image_position_class = 'image-position-top' %}
 {% elseif content.field_set_image_position['#items'].value == 'left' %}
-    {% set image_position_class = 'image-position-left' %}
+	{% set image_position_class = 'image-position-left' %}
 {% elseif content.field_set_image_position['#items'].value == 'right' %}
-    {% set image_position_class = 'image-position-right' %}
+	{% set image_position_class = 'image-position-right' %}
 {% elseif content.field_set_image_position['#items'].value == 'bottom' %}
-    {% set image_position_class = 'image-position-bottom' %}
+	{% set image_position_class = 'image-position-bottom' %}
 {% endif %}
 
 
@@ -18,30 +18,37 @@
 				<div class="component-content {% if content.field_adjust_content['#items'].value %}component-content-adjustment{% endif %}">
 					{% if content.field_sub_heading  %}
 						<h3 class="component-subheading" style="color: {{ content.field_sub_heading_color.0['#markup']|striptags|trim }};">
-							{{ content.field_sub_heading }}
+							{{ content.field_sub_heading.0['#context'].value }}
 						</h3>
 					{% endif %}
 					{% if content.field_title %}
 						<h2 class="component-title" style="color: {{ content.field_title_color.0['#markup']|striptags|trim }};">
-							{{ content.field_title }}
+							{{ content.field_title.0['#context'].value }}
 						</h2>
 					{% endif %}
 
 					{% if content.field_description %}
-						<div class="component-description" style="color: {{ content.field_description_color.0['#markup']|striptags|trim }};">
-							{{ content.field_description}}
-						</div>
+						<p class="component-description" style="color: {{ content.field_description_color.0['#markup']|striptags|trim }};">
+							{{ content.field_description.0['#context'].value}}
+						</p>
 					{% endif %}
 					{% if content.field_body %}
-						<div class="component-body">
-							{{ content.field_body }}
+						<div class="component-body">{{ content.field_body }}</div>
+					{% endif %}
+					{% if content.field_cta_text_2['#items'].title %}
+						<div class="component-content-link">
+							<a href="{{ content.field_cta_text_2['#items'].uri }}">{{ content.field_cta_text_2['#items'].title }}
+								<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+									<path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path>
+								</svg>
+							</a>
 						</div>
 					{% endif %}
 				</div>
 			</div>
 			<div class="col-12 col-lg-6">
 				<div class="component-image">
-					{{ content.field_figure }}
+					<img src="{{file_url(content.field_figure[0]['#media'].field_media_image.entity.uri.value)}}" alt="component-image">
 				</div>
 			</div>
 		</div>

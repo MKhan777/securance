@@ -49,6 +49,9 @@
       line-height: 2;
       font-family: "Barlow-Regular";
     }
+    .component-body:empty{
+      display: none;
+    }
     .component-body {
       ul {
         list-style: none;
@@ -74,6 +77,22 @@
         }
       }
     }
+    .component-content-link {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: "Barlow-SemiBold";
+        color: #a12844;
+        svg {
+          width: 15px;
+          height: 15px;
+          fill: #a12844;
+        }
+      }
+    }
   }
   &.component-wrapper-full-width {
     background: none;
@@ -91,10 +110,10 @@
               padding: 40px 40px 40px 20px;
               margin-left: 15%;
               background: #f9fafb;
-              box-shadow: 2px 2px 10px 0px #D4D8DD;
+              box-shadow: 2px 2px 10px 0px #d4d8dd;
               height: 100%;
               justify-content: center;
-          }
+            }
             @media screen and (max-width: 1024px) {
               padding: 20px;
               padding-bottom: 0;
@@ -112,6 +131,9 @@
               color: #667085;
             }
             .component-body {
+              &:has(:empty){
+                display: none;
+              }
               ul {
                 list-style: none;
                 padding: 0;
@@ -138,8 +160,8 @@
             }
           }
           .component-image {
-            img{
-              width: 100%!important;
+            img {
+              width: 100% !important;
             }
             padding: 0;
           }
@@ -147,10 +169,13 @@
       }
     }
   }
-  &.image-position-right,&.image-position-left,&.image-position-top,&.image-position-bottom {
+  &.image-position-right,
+  &.image-position-left,
+  &.image-position-top,
+  &.image-position-bottom {
     .component-image {
       text-align: center;
-      img{
+      img {
         width: max-content;
       }
     }
@@ -160,28 +185,28 @@
       }
     }
   }
-  &.image-position-left{
-    .row{
+  &.image-position-left {
+    .row {
       flex-direction: row-reverse;
     }
   }
-  &.image-position-right{
-    .row{
+  &.image-position-right {
+    .row {
       flex-direction: row;
     }
   }
-  &.image-position-top{
-    .row{
+  &.image-position-top {
+    .row {
       flex-direction: column-reverse;
-      [class*="col-"]{
+      [class*="col-"] {
         width: 100%;
       }
     }
   }
-  &.image-position-bottom{
-    .row{
+  &.image-position-bottom {
+    .row {
       flex-direction: column;
-      [class*="col-"]{
+      [class*="col-"] {
         width: 100%;
       }
     }
