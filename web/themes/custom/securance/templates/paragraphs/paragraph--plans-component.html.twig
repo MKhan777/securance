@@ -1,0 +1,58 @@
+<div class="plans-block">
+	<div class="container">
+		<div class="plans-main-wrapper">
+			<div class="heading">
+				{% if content.field_sub_heading.0['#context'].value %}
+					<h6 style="color: {{content.field_sub_heading_color.0['#markup']|striptags|trim }}">{{content.field_sub_heading.0['#context'].value}}</h6>
+				{% endif %}
+				{% if content.field_title.0['#context'].value %}
+					<h2 style="color: {{content.field_title_color.0['#markup']|striptags|trim }}">{{content.field_title.0['#context'].value}}</h2>
+				{% endif %}
+				{% if content.field_description.0['#context'].value  %}
+					<p style="color: {{content.field_description_color.0['#markup']|striptags|trim }}">{{content.field_description.0['#context'].value}}</p>
+				{% endif %}
+			</div>
+			<div class="plans-card-wrapper">
+				{% for item in content.field_plans['#items'] %}
+					<div class="plans-card" style="background-color: {{ item.entity.field_background_color.0.color }};">
+						<div class="card-header">
+							<div class="header-tag"  style="visibility: {% if item.entity.field_show_popular_tag.value %}visible{% else %}hidden{% endif %}">Popular{{ item.entity.field_show_popular_tag.value }}</div>
+							<h6 style="color: {% if item.entity.field_show_popular_tag.value %}#ffffff{% else %}#a12844{% endif %}">{{ item.entity.field_title.value }}</h6>
+						</div>
+                        <hr>
+						<div class="card-body">
+							<ul>
+								{% for listItem in item.entity.field_plan_list %}
+									<li>
+										<div class="list-content">
+											<div class="list-icon">
+												{% if listItem.entity.field_checked.value %}
+													<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+														<path d="M10 0C4.49 0 0 4.49 0 10C0 15.51 4.49 20 10 20C15.51 20 20 15.51 20 10C20 4.49 15.51 0 10 0ZM14.78 7.7L9.11 13.37C8.97 13.51 8.78 13.59 8.58 13.59C8.38 13.59 8.19 13.51 8.05 13.37L5.22 10.54C4.93 10.25 4.93 9.77 5.22 9.48C5.51 9.19 5.99 9.19 6.28 9.48L8.58 11.78L13.72 6.64C14.01 6.35 14.49 6.35 14.78 6.64C15.07 6.93 15.07 7.4 14.78 7.7Z" fill="{% if item.entity.field_show_popular_tag.value %}#ffffff{% else %}#A12844{% endif %}"></path>
+													</svg>
+												{% else %}
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+														<g id="x-03">
+															<path id="Icon" d="M16 8L8 16M16 16L8 8" stroke="#FFABAB" stroke-width="2" stroke-linecap="round"></path>
+														</g>
+													</svg>
+												{% endif %}
+											</div>
+											<span style="color: {% if item.entity.field_show_popular_tag.value %}#ffffff{% else %}#555555{% endif %}">{{ listItem.entity.field_text.value }}</span>
+										</div>
+									</li>
+								{% endfor %}
+							</ul>
+						</div>
+                        <hr>
+						<div class="card-footer">
+							<div class="card-link {% if item.entity.field_show_popular_tag.value %}card-link2{% endif %}">
+								<a href="{{ item.entity.field_cta_text_2.0.uri }}">{{ item.entity.field_cta_text_2.0.title }}</a>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,111 @@
+.plans-block {
+  @include sectionSpace;
+  .plans-main-wrapper {
+    @include displayColumn;
+    gap: 50px;
+    .heading {
+      @include heading;
+      gap: 10px;
+      align-items: flex-start;
+      width: 100%;
+    }
+    .plans-card-wrapper {
+      @include displayRow;
+      width: 100%;
+      gap: 0;
+      @media screen and (max-width: 991px) {
+        gap: 20px;
+      }
+      .plans-card {
+        @include displayColumn;
+        align-items: flex-start;
+        width: 33.33%;
+        padding: 15px 10px;
+        @media screen and (max-width: 991px) {
+          width: 100%;
+        }
+        hr {
+          border-top: 2px solid #ff9aad45;
+          opacity: 1;
+          margin: 5px 0;
+          width: 100%;
+        }
+        .card-header {
+          @include displayColumn;
+          align-items: flex-start;
+          .header-tag {
+            padding: 8px 15px 8px 10px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #c06677;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1;
+            font-style: italic;
+            font-family: "Barlow-Regular";
+            color: #fff;
+            margin-left: 5px;
+          }
+          h6 {
+            @include h5;
+            letter-spacing: normal;
+          }
+        }
+        .card-body {
+          ul {
+            list-style: none;
+            padding-left: 0;
+            @include displayColumn;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 0;
+            li {
+              .list-content {
+                @include displayRow;
+                justify-content: flex-start;
+                gap: 10px;
+                @media screen and (max-width: 991px) {
+                  flex-wrap: nowrap;
+                }
+                span{
+                    @include p;
+                }
+              }
+            }
+          }
+        }
+        .card-footer {
+          width: 100%;
+          text-align: center;
+          .card-link {
+            margin-top: -15px;
+            margin-bottom: 25px;
+            @include securance-btn-link(
+              transparent,
+              #a12844,
+              transparent,
+              #a12844
+            );
+            a {
+              padding: 8px 24px;
+              font-size: 16px;
+            }
+            &.card-link2 {
+              @include securance-btn-link(
+                transparent,
+                #ffffff,
+                transparent,
+                #ffffff
+              );
+              a {
+                padding: 8px 24px;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

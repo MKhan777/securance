@@ -63,6 +63,9 @@
           background: #fff;
           border-radius: 100%;
           gap: 6px;
+          img{
+            width: 24px;
+          }
           h5 {
             @include h5;
           }

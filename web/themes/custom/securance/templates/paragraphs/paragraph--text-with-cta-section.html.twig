@@ -1,14 +1,21 @@
 <div class="compliance-block" style="background-image: url('{{ file_url(content.field_banner_background[0]['#media'].field_media_image.entity.uri.value) }}'); background-position: center; background-size: cover;">
 	<div class="container">
-		<div class="compliance-wrapper {% if content.field_description['#items'].value  %} compliance-wrapper-row {% endif %} ">
+		<div class="compliance-wrapper {% if file_url(content.field_figure[0]['#media'].field_media_image.entity.uri.value) %}compliance-wrapper-with-img{% endif %} {% if content.field_description['#items'].value  %} compliance-wrapper-row {% endif %} ">
+			{% if file_url(content.field_figure[0]['#media'].field_media_image.entity.uri.value) %}
+				<div class="compliance-img-content">
+					<img src="{{ file_url(content.field_figure[0]['#media'].field_media_image.entity.uri.value) }}" alt="compliance-img-content">
+				</div>
+			{% endif %}
 			<div class="heading">
-				<h2>{{content.field_title}}</h2>
-                <div class="description">{{content.field_description}}</div>
+				<h2>{{content.field_title.0['#context'].value}}</h2>
+				<p class="description">{{content.field_description.0['#context'].value}}</p>
 			</div>
-			<div class="compliance-content">
-				<h2>{{content.field_cta_title}}</h2>
-				{{content.field_cta_text}}
-			</div>
+			{% if content.field_cta_title.0['#context'].value %}
+				<div class="compliance-content">
+					<h2>{{content.field_cta_title.0['#context'].value}}</h2>
+					{{content.field_cta_text}}
+				</div>
+			{% endif %}
 		</div>
 	</div>
 </div>

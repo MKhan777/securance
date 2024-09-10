@@ -1,44 +1,54 @@
 .compliance-block {
-  padding: 64px 0;
-  @media screen and (max-width: 767px) {
-    padding: 24px 0;
-  }
+  @include sectionSpace;
   &:has(.compliance-wrapper-row) {
     background-size: initial !important;
     background-repeat: no-repeat;
     background-position: 15% 50% !important;
   }
+  &:has(.compliance-wrapper-with-img) {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: top !important;
+  }
   .compliance-wrapper {
+    &.compliance-wrapper-with-img {
+      .heading {
+        max-width: 760px;
+        h2 {
+          color: #a12844 !important;
+        }
+      }
+      .compliance-img-content {
+        padding: 10px;
+        max-width: 150px;
+        @media screen and (max-width: 991px) {
+          max-width: 25%;
+          width: 100%;
+          @media screen and (max-width: 767px) {
+            max-width: 100%;
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
     &.compliance-wrapper-row {
       display: flex;
       gap: 20px;
       @media screen and (max-width: 767px) {
         flex-direction: column;
       }
+
       .heading {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        @include heading;
+        align-items: flex-start;
         padding: 10px;
         h2 {
-          font-size: 32px;
-          line-height: 1.5;
-          font-family: "Barlow-Bold";
           color: #000000;
-          margin: 0;
-          @media screen and (max-width: 767px) {
-            font-size: 20px;
-          }
         }
         .description {
-          font-size: 16px;
-          line-height: 1.5;
-          font-family: "Barlow-Regular";
           color: #667085;
-          margin: 0;
-          @media screen and (max-width: 767px) {
-            font-size: 14px;
-          }
         }
       }
       .compliance-content {
