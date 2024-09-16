@@ -1,0 +1,22 @@
+.landing-banner{
+    @include sectionSpace;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-position: unset!important;
+    background-size: unset!important;
+    .heading{
+        @include heading;
+        align-items: flex-start;
+        h6{
+            color: #ffc2ce;
+            word-spacing: 3px;
+        }
+        h2{
+            color: #ffffff;
+        }
+        p{
+            color: #f9fafb;
+            line-height: 2;
+        }
+    }
+}

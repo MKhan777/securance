@@ -1,0 +1,18 @@
+.paragraph-body-block {
+  @include sectionSpace;
+  .paragraph-body-content {
+    .field--name-field-body {
+      @include heading;
+      align-items: flex-start;
+      blockquote{
+        p{
+            font-size: 20px;
+            border-left:4px solid #D07F91;
+            padding-left: 10px;
+            line-height: 2;
+            font-family: "Barlow-Medium";
+        }
+      }
+    }
+  }
+}
