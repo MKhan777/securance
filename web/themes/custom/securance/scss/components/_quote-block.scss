@@ -1,0 +1,11 @@
+.quote-block {
+  @include sectionSpace;
+  .quote-content {
+    blockquote {
+      p {
+        @include h3;
+        color: #ffffff;
+      }
+    }
+  }
+}

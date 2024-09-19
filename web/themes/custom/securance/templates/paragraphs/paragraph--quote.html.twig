@@ -1,0 +1,8 @@
+<div class="quote-block"  style="background-color: {{ content.field_background_color|render|striptags|trim }};">
+	<div class="container">
+		<div class="quote-content">
+            {{content.field_quote}}
+        </div>
+	</div>
+</div>
+{# {{dump(content.field_quote.0["#text"].value)}} #}
