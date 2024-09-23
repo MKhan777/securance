@@ -1,0 +1,54 @@
+.achievement-block {
+  @include sectionSpace;
+  .achievement-main-wrapper {
+    @include displayColumn;
+    gap: 40px;
+    .row {
+      width: 100%;
+      @media screen and (max-width: 991px) {
+        width: auto;
+        row-gap: 20px;
+      }
+    }
+    align-items: flex-start;
+    .heading {
+      @include heading;
+      align-items: flex-start;
+      h6 {
+        color: #a5253d;
+        letter-spacing: normal;
+        font-family: "Barlow-Semibold";
+      }
+      p {
+        color: #667085;
+        font-size: 14px;
+        line-height: 2;
+      }
+    }
+    .acvievement-card {
+      @include displayColumn;
+      .acvievement-count {
+        width: 170px;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .acvievement-count-value {
+          width: 70%;
+          aspect-ratio: 1;
+          background: #ffffff;
+          border-radius: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include h3;
+        }
+      }
+      p {
+        @include h6;
+        letter-spacing: normal;
+      }
+    }
+  }
+}
