@@ -1,0 +1,12 @@
+<div class="career-card">
+	<ul>
+		{% for item in content.field_job_overview['#items'] %}
+			<li>
+				<div class="career-content">
+					<img src="{{file_url(item.entity.field_figure.entity.field_media_image.entity.uri.value)}}" alt="career-job">
+					<span>{{item.entity.field_text.value}}</span>
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

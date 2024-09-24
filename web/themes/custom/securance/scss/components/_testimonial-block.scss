@@ -1,10 +1,11 @@
-.view-test {
+.view-test{
   max-width: 1200px;
   margin: auto;
   padding: 0 12px;
 }
 .view-content {
-  padding-bottom: 70px;
+  padding: 70px 0;
+  row-gap: 40px;
   &:has(.testimonial-wrapper) {
     .flickity-button {
       display: none;
@@ -118,6 +119,78 @@
           font-family: "Barlow-Regular";
           color: #fecdca;
         }
+      }
+    }
+  }
+}
+.view-career {
+  max-width: 810px;
+  margin: auto;
+  padding: 0 12px;
+  .view-job-card {
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+    @include centerContent;
+    .view-job-content {
+      width: 70%;
+      @include displayColumn;
+      align-items: flex-start;
+      padding: 10px;
+      .job-heading {
+        @include heading;
+        align-items: flex-start;
+        gap: 8px;
+        * {
+          margin: 0;
+        }
+        h6 {
+          color: #a12844;
+          text-transform: uppercase;
+          letter-spacing: normal;
+          font-family: 'Barlow-Semibold';
+        }
+        h3 {
+          font-size: 28px;
+          font-family: 'Barlow-Semibold';
+          a {
+            color: #000;
+          }
+        }
+        p {
+          color: #667085;
+        }
+      }
+      .job-type-wrapper {
+        @include displayColumn;
+        align-items: flex-start;
+        gap: 10px;
+        .job-type{
+          @include displayRow;
+          align-items: center;
+          gap: 10px;
+          @include h5;
+          color: #a12844;
+  
+          &:before{
+            content: '';
+            background-image: url(/themes/custom/securance/images/time-icon.svg);
+            background-size: cover;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    .view-job-link {
+      width: 30%;
+      padding: 10px;
+      text-align: right;
+      @include securance-btn-link(transparent, #a12844, transparent, #a12844);
+      a{
+        font-size: 16px;
+        padding: 12px 24px;
+        letter-spacing: normal;
       }
     }
   }

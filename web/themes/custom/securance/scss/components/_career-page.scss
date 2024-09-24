@@ -1,0 +1,74 @@
+.career-page {
+  @include sectionSpace;
+  padding-inline: 0;
+  @include displayColumn;
+  gap: 60px;
+  .page-header {
+    .heading {
+      @include heading;
+      text-align: center;
+      h6 {
+        color: #a12844;
+        letter-spacing: normal;
+        font-family: "Barlow-Medium";
+        text-transform: uppercase;
+      }
+      p {
+        color: #667085;
+      }
+      .heading-btn {
+        @include displayRow;
+        gap: 16px;
+        button {
+          color: #a12844;
+          background: #fff4f7;
+          border-radius: 10px;
+          border: none;
+          @include h5;
+          font-family: "Barlow-Medium";
+          padding: 2px 20px;
+        }
+      }
+    }
+  }
+  .career-body {
+    width: 100%;
+    @include displayColumn;
+    gap: 60px;
+    .career-img-banner {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .field--name-body {
+      @include heading;
+      align-items: flex-start;
+    }
+    .career-card {
+        padding: 25px 16px;
+        border-top: 10px solid #a12844;
+        box-shadow: 0 0 10px #cccccc6e;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        @include displayColumn;
+        align-items: flex-start;
+      }
+      .career-content {
+        @include centerContent;
+        justify-content: flex-start;
+        gap: 10px;
+        @include p;
+        font-family: "Barlow-medium";
+        color: #475467;
+        img {
+          width: 20px;
+          height: 20px;
+          opacity: .5;
+        }
+      }
+    }
+  }
+}

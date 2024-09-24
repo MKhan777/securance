@@ -1,0 +1,36 @@
+<div class="career-page">
+	<div class="page-header">
+		<div class="container">
+			<div class="heading">
+				<h2>{{content.field_job_title.0['#context'].value}}</h2>
+				<h6>{{content.field_department.0['#context'].value}}</h6>
+				<p>{{content.field_description.0['#context'].value}}</p>
+				<div class="heading-btn">
+					<button>{{content.field_job_type.0['#context'].value}}</button>
+					<button>{{content.field_location.0['#context'].value}}</button>
+					<button>{{content.field_department.0['#context'].value}}</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="career-body">
+		<div class="career-img-banner">
+			<img src="{{ file_url(content.field_career_image[0]['#media'].field_media_image.entity.uri.value) }}" alt="career-img-banner">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-8">
+					{{content.body}}
+					{{content.field_career_application}}
+				</div>
+				<div class="col-4">
+                    {{content.field_job_overview_card}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{# {{content.field_career_image}}
+{{content.body}}
+{{content.field_job_overview_card}} #}
+{# {{content.field_career_application}} #}
