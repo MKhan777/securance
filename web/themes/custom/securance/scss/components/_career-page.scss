@@ -1,6 +1,10 @@
 .career-page {
   @include sectionSpace;
   padding-inline: 0;
+  @media screen and (max-width: 767px) {
+    padding-inline: 0;
+    gap: 30px;
+  }
   @include displayColumn;
   gap: 60px;
   .page-header {
@@ -35,6 +39,9 @@
     width: 100%;
     @include displayColumn;
     gap: 60px;
+    @media screen and (max-width: 767px) {
+      gap: 30px;
+    }
     .career-img-banner {
       width: 100%;
       img {
@@ -45,10 +52,42 @@
       @include heading;
       align-items: flex-start;
     }
+    .field--name-field-career-application {
+      .webform-submission-form {
+        .js-form-item {
+          margin-bottom: 18px !important;
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          label {
+            font-size: 14px;
+            line-height: 1.5;
+          }
+          input {
+            background-color: #f5f8fa !important;
+            border: 1px solid #cbd6e2 !important;
+            border-radius: 3px !important;
+            padding: 7px 15px !important;
+          }
+          .webform-element-description {
+            font-size: 11px;
+            color: #516383de;
+          }
+        }
+        .form-actions {
+          .webform-button--submit {
+            background: #a12844 !important;
+            border: 1px solid #a12844 !important;
+            width: auto;
+          }
+        }
+      }
+    }
+
     .career-card {
-        padding: 25px 16px;
-        border-top: 10px solid #a12844;
-        box-shadow: 0 0 10px #cccccc6e;
+      padding: 25px 16px;
+      border-top: 10px solid #a12844;
+      box-shadow: 0 0 10px #cccccc6e;
       ul {
         list-style: none;
         padding: 0;
@@ -66,7 +105,7 @@
         img {
           width: 20px;
           height: 20px;
-          opacity: .5;
+          opacity: 0.5;
         }
       }
     }
