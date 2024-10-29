@@ -1,0 +1,29 @@
+.news-tabs-block{
+	.tabs {
+		margin-bottom: 0;
+		.nav-tabs {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			gap: 20px;
+            border-bottom: none;
+			.nav-link {
+				display: block;
+				padding: 8px;
+				text-decoration: none;
+				color: #69727d;
+				border: none;
+                border-top: 3px solid transparent;
+				border-radius: 0;
+                font-family: 'Barlow-Bold';
+                text-transform: uppercase;
+				&.active {
+					color: #a12844;
+					background: none;
+                    border-top: 3px solid #a12844;
+
+				}
+			}
+		}
+	}
+}

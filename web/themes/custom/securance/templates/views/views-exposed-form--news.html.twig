@@ -1,55 +1,24 @@
-<style>
-	.tabs {
-		margin-bottom: 20px;
-	}
-
-	.nav-tabs {
-		list-style: none;
-		padding: 0;
-		display: flex;
-		border-bottom: 1px solid #ddd;
-	}
-
-	.nav-tabs .nav-item {
-		margin-right: 10px;
-	}
-
-	.nav-tabs .nav-link {
-		display: block;
-		padding: 10px 15px;
-		text-decoration: none;
-		color: #007bff;
-		border: 1px solid transparent;
-		border-radius: 4px 4px 0 0;
-	}
-
-	.nav-tabs .nav-link.active {
-		color: #fff;
-		background-color: #007bff;
-		border-color: #ddd #ddd #fff;
-	}
-</style>
-
-
-<div class="tabs">
-	<ul
-		class="nav nav-tabs">
-		{# Assuming 'tid' is the filter you want to display as tabs #}
-		{% if form.tid %}
-			{% for option_value, option_label in form.tid['#options'] %}
-				<li class="nav-item">
-					<a class="nav-link {{ form.tid['#value'] == option_value ? 'active' : '' }}" href="#" data-value="{{ option_value }}">
-						{% if option_label == '- Any -' %}
-							All
-						{% else %}
-							{{ option_label }}
-						{% endif %}
-					</a>
-				</li>
-			{% endfor %}
-		{% endif %}
-	</ul>
+<div class="news-tabs-block">
+	<div class="tabs">
+		<ul
+			class="nav nav-tabs">
+			{% if form.tid %}
+				{% for option_value, option_label in form.tid['#options'] %}
+					<li class="nav-item">
+						<a class="nav-link {{ form.tid['#value'] == option_value ? 'active' : '' }}" href="#" data-value="{{ option_value }}">
+							{% if option_label == '- Any -' %}
+								All
+							{% else %}
+								{{ option_label }}
+							{% endif %}
+						</a>
+					</li>
+				{% endfor %}
+			{% endif %}
+		</ul>
+	</div>
 </div>
+
 
 
 <script>
