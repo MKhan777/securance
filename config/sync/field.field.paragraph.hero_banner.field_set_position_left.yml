@@ -9,7 +9,7 @@ id: paragraph.hero_banner.field_set_position_left
 field_name: field_set_position_left
 entity_type: paragraph
 bundle: hero_banner
-label: 'Set Image Right'
+label: 'Banner Full Width'
 description: ''
 required: false
 translatable: false

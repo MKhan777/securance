@@ -295,6 +295,9 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      title: ''
+      defaults:
+        title: false
       display_extenders: {  }
       block_description: 'Our Services Carousel'
     cache_metadata:

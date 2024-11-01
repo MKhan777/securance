@@ -1,0 +1,21 @@
+uuid: 69081038-1571-4135-8576-6b8d1ff0ec09
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_service_type
+    - paragraphs.paragraphs_type.advisory_guide
+  module:
+    - options
+id: paragraph.advisory_guide.field_service_type
+field_name: field_service_type
+entity_type: paragraph
+bundle: advisory_guide
+label: 'Service Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,31 @@
+uuid: c5021070-adba-44e3-8e53-b2fdeae46dbc
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.value_with_description.field_stats_description
+    - field.field.paragraph.value_with_description.field_value
+    - paragraphs.paragraphs_type.value_with_description
+id: paragraph.value_with_description.default
+targetEntityType: paragraph
+bundle: value_with_description
+mode: default
+content:
+  field_stats_description:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_value:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

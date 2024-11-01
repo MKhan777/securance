@@ -1,0 +1,18 @@
+uuid: 76a0c133-793b-402c-85c1-646e96991723
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.assurance_type_difference_compon
+id: paragraph.assurance_type_difference_compon.created
+field_name: created
+entity_type: paragraph
+bundle: assurance_type_difference_compon
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

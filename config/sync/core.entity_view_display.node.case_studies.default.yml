@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.case_studies.body
     - field.field.node.case_studies.field_assurance_standards
     - field.field.node.case_studies.field_brand_image
+    - field.field.node.case_studies.field_brand_logo
     - field.field.node.case_studies.field_cta_text
     - field.field.node.case_studies.field_cta_text_2
     - field.field.node.case_studies.field_organisation
@@ -42,6 +43,15 @@ content:
       link: false
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_brand_logo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 108
     region: content
   field_cta_text:
     type: link

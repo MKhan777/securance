@@ -1,0 +1,25 @@
+uuid: cd49e384-a528-4acb-9a74-0f1219dd6b12
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_career_application
+    - node.type.ca
+  module:
+    - webform
+id: node.ca.field_career_application
+field_name: field_career_application
+entity_type: node
+bundle: ca
+label: 'Career Application'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

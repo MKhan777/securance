@@ -1,0 +1,18 @@
+uuid: 7993a327-6b88-4a86-9580-8e24b74ad091
+langcode: sv
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.landing_banner
+id: paragraph.landing_banner.created
+field_name: created
+entity_type: paragraph
+bundle: landing_banner
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

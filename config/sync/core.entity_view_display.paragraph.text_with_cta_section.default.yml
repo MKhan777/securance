@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.text_with_cta_section.field_cta_text
     - field.field.paragraph.text_with_cta_section.field_cta_title
     - field.field.paragraph.text_with_cta_section.field_description
+    - field.field.paragraph.text_with_cta_section.field_figure
     - field.field.paragraph.text_with_cta_section.field_title
     - paragraphs.paragraphs_type.text_with_cta_section
   module:
@@ -51,6 +52,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_figure:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 7
     region: content
   field_title:
     type: string

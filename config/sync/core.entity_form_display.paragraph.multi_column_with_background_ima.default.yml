@@ -3,6 +3,7 @@ langcode: en-gb
 status: true
 dependencies:
   config:
+    - field.field.paragraph.multi_column_with_background_ima.field_background_color
     - field.field.paragraph.multi_column_with_background_ima.field_background_image
     - field.field.paragraph.multi_column_with_background_ima.field_description
     - field.field.paragraph.multi_column_with_background_ima.field_description_color
@@ -66,6 +67,14 @@ targetEntityType: paragraph
 bundle: multi_column_with_background_ima
 mode: default
 content:
+  field_background_color:
+    type: color_field_widget_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
   field_background_image:
     type: media_library_widget
     weight: 0
@@ -138,6 +147,11 @@ content:
     settings:
       placeholder_color: ''
       placeholder_opacity: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

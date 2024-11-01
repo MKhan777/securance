@@ -1,0 +1,22 @@
+uuid: 159bbc99-264f-4fd4-ad1b-78026acff5ae
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.week_overview_component
+id: paragraph.week_overview_component.status
+field_name: status
+entity_type: paragraph
+bundle: week_overview_component
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

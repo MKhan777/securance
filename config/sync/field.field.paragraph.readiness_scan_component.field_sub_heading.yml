@@ -1,0 +1,19 @@
+uuid: 39948f82-7e14-4f2f-9154-fb85f4849b27
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_heading
+    - paragraphs.paragraphs_type.readiness_scan_component
+id: paragraph.readiness_scan_component.field_sub_heading
+field_name: field_sub_heading
+entity_type: paragraph
+bundle: readiness_scan_component
+label: 'Sub Heading'
+description: 'The Field used for subheading it is bottom of main heading or top of heading.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

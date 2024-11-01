@@ -1,0 +1,24 @@
+uuid: 6e9953e3-4bbd-4667-af9e-c50dc3ac2492
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.job_card.field_job_overview
+    - paragraphs.paragraphs_type.job_card
+  module:
+    - entity_reference_revisions
+id: paragraph.job_card.default
+targetEntityType: paragraph
+bundle: job_card
+mode: default
+content:
+  field_job_overview:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

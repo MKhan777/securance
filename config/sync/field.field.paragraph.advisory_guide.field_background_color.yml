@@ -1,0 +1,22 @@
+uuid: cd70138a-6ff0-4f9c-9fb5-0dc788ed3c08
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_color
+    - paragraphs.paragraphs_type.advisory_guide
+  module:
+    - color_field
+id: paragraph.advisory_guide.field_background_color
+field_name: field_background_color
+entity_type: paragraph
+bundle: advisory_guide
+label: 'Background Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

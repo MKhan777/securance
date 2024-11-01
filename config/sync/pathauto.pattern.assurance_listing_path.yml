@@ -1,0 +1,22 @@
+uuid: 7be714c9-9120-4d05-8511-20e1bad89dc0
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: assurance_listing_path
+label: 'Cyber Security Listing Path'
+type: 'canonical_entities:node'
+pattern: '/[node:content-type]/[node:title]'
+selection_criteria:
+  313b1446-ef27-4b78-8607-27ab1b9da213:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 313b1446-ef27-4b78-8607-27ab1b9da213
+    context_mapping:
+      node: node
+    bundles:
+      cyber_security: cyber_security
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,21 @@
+uuid: ebe6c260-008f-43f2-93ed-e84d9b49b1e9
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_space_around
+    - paragraphs.paragraphs_type.advisory_guide
+id: paragraph.advisory_guide.field_space_around
+field_name: field_space_around
+entity_type: paragraph
+bundle: advisory_guide
+label: 'Space Around'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,21 @@
+uuid: 0633d498-7641-48d3-9408-b4853d3cb82e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_right_column_width
+    - paragraphs.paragraphs_type.hero_banner
+id: paragraph.hero_banner.field_right_column_width
+field_name: field_right_column_width
+entity_type: paragraph
+bundle: hero_banner
+label: 'Right Column width'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

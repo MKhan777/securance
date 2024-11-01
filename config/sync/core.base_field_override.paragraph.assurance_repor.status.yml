@@ -1,0 +1,22 @@
+uuid: 1ab0073c-1d25-4301-8dc6-25201eddd833
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.assurance_repor
+id: paragraph.assurance_repor.status
+field_name: status
+entity_type: paragraph
+bundle: assurance_repor
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -3,6 +3,7 @@ langcode: en-gb
 status: true
 dependencies:
   config:
+    - field.field.paragraph.multi_column_with_background_ima.field_background_color
     - field.field.paragraph.multi_column_with_background_ima.field_background_image
     - field.field.paragraph.multi_column_with_background_ima.field_description
     - field.field.paragraph.multi_column_with_background_ima.field_description_color
@@ -20,6 +21,15 @@ targetEntityType: paragraph
 bundle: multi_column_with_background_ima
 mode: default
 content:
+  field_background_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_background_image:
     type: entity_reference_entity_view
     label: hidden

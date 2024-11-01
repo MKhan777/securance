@@ -1,0 +1,20 @@
+uuid: 1e759e4f-f7f3-48ad-a324-da8a1ebda398
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - color_field
+    - paragraphs
+id: paragraph.field_background_overlay
+field_name: field_background_overlay
+entity_type: paragraph
+type: color_field_type
+settings:
+  format: '#HEXHEX'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

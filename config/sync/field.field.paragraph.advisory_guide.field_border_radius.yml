@@ -1,0 +1,21 @@
+uuid: 83035bd6-12ca-4aff-9b02-01b551a2fea1
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_border_radius
+    - paragraphs.paragraphs_type.advisory_guide
+id: paragraph.advisory_guide.field_border_radius
+field_name: field_border_radius
+entity_type: paragraph
+bundle: advisory_guide
+label: 'Border Radius'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

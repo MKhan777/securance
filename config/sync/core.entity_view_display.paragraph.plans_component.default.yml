@@ -1,0 +1,81 @@
+uuid: b8a8e216-33b8-483f-bb6d-1b21622097db
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.plans_component.field_description
+    - field.field.paragraph.plans_component.field_description_color
+    - field.field.paragraph.plans_component.field_plans
+    - field.field.paragraph.plans_component.field_sub_heading
+    - field.field.paragraph.plans_component.field_sub_heading_color
+    - field.field.paragraph.plans_component.field_title
+    - field.field.paragraph.plans_component.field_title_color
+    - paragraphs.paragraphs_type.plans_component
+  module:
+    - color_field
+    - entity_reference_revisions
+id: paragraph.plans_component.default
+targetEntityType: paragraph
+bundle: plans_component
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_description_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_plans:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_sub_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sub_heading_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

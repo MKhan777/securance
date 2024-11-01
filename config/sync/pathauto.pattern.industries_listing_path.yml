@@ -1,0 +1,22 @@
+uuid: 3963d9c6-78c9-4cce-8730-6d371343bdac
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: industries_listing_path
+label: 'Industries Listing Path'
+type: 'canonical_entities:node'
+pattern: '/[node:content-type]/[node:title]'
+selection_criteria:
+  1d986fd3-023c-453d-beae-671c468c40ad:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 1d986fd3-023c-453d-beae-671c468c40ad
+    context_mapping:
+      node: node
+    bundles:
+      industries: industries
+selection_logic: and
+weight: -5
+relationships: {  }

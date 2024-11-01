@@ -1,0 +1,166 @@
+uuid: d6fcc5c8-48f1-4115-ada8-fdbbef6bae79
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_achievements
+    - paragraphs.paragraphs_type.heading_with_description
+    - paragraphs.paragraphs_type.value_with_description
+  module:
+    - entity_reference_revisions
+id: paragraph.heading_with_description.field_achievements
+field_name: field_achievements
+entity_type: paragraph
+bundle: heading_with_description
+label: Achievements
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      value_with_description: value_with_description
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_with_subheading:
+        weight: 47
+        enabled: false
+      advisory_guide:
+        weight: 48
+        enabled: false
+      answer_question:
+        weight: 49
+        enabled: false
+      assurance_case_study_component:
+        weight: 50
+        enabled: false
+      assurance_repor:
+        weight: 51
+        enabled: false
+      assurance_type_difference_compon:
+        weight: 52
+        enabled: false
+      body:
+        weight: 53
+        enabled: false
+      cobit_compoent:
+        weight: 54
+        enabled: false
+      contact_block:
+        weight: 55
+        enabled: false
+      country_office:
+        weight: 56
+        enabled: false
+      frequently_asked_questions:
+        weight: 57
+        enabled: false
+      heading_with_description:
+        weight: 58
+        enabled: false
+      hero_banner:
+        weight: 59
+        enabled: false
+      image_with_caption:
+        weight: 60
+        enabled: false
+      landing_banner:
+        weight: 61
+        enabled: false
+      modal_card:
+        weight: 62
+        enabled: false
+      multi_column_with_background_ima:
+        weight: 65
+        enabled: false
+      multicolumn_services:
+        weight: 63
+        enabled: false
+      multipurpose_block_reference:
+        weight: 64
+        enabled: false
+      organization_service_component:
+        weight: 66
+        enabled: false
+      parent_tab_component:
+        weight: 67
+        enabled: false
+      plans_card:
+        weight: 68
+        enabled: false
+      plans_component:
+        weight: 69
+        enabled: false
+      privacy_approach_component:
+        weight: 70
+        enabled: false
+      privacy_approach_steps:
+        weight: 71
+        enabled: false
+      quote:
+        weight: 72
+        enabled: false
+      readiness_scan_approach:
+        weight: 73
+        enabled: false
+      readiness_scan_component:
+        weight: 74
+        enabled: false
+      reference_a_view:
+        weight: 75
+        enabled: false
+      rich_image_text_component:
+        weight: 76
+        enabled: false
+      risk_readiness_scan_component:
+        weight: 77
+        enabled: false
+      securance_stats_component:
+        weight: 78
+        enabled: false
+      share_option:
+        weight: 79
+        enabled: false
+      social_link:
+        weight: 80
+        enabled: false
+      stats_number:
+        weight: 81
+        enabled: false
+      tab_component:
+        weight: 83
+        enabled: false
+      tabular_difference:
+        weight: 82
+        enabled: false
+      testimonial_card:
+        weight: 84
+        enabled: false
+      text_with_background_color:
+        weight: 85
+        enabled: false
+      text_with_boolean:
+        weight: 86
+        enabled: false
+      text_with_cta_section:
+        weight: 87
+        enabled: false
+      text_with_listing:
+        weight: 88
+        enabled: false
+      two_column_component:
+        weight: 89
+        enabled: false
+      value_with_description:
+        weight: 90
+        enabled: true
+      week_overview_component:
+        weight: 91
+        enabled: false
+      week_schedule:
+        weight: 92
+        enabled: false
+field_type: entity_reference_revisions

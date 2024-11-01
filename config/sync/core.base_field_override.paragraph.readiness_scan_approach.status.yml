@@ -1,0 +1,22 @@
+uuid: 7c826203-aa20-47d8-a080-8c14ac2ba706
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.readiness_scan_approach
+id: paragraph.readiness_scan_approach.status
+field_name: status
+entity_type: paragraph
+bundle: readiness_scan_approach
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

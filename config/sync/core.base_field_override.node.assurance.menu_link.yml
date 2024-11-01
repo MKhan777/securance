@@ -1,0 +1,20 @@
+uuid: e8777cf5-fad0-471f-9774-950268f29bbe
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.assurance
+id: node.assurance.menu_link
+field_name: menu_link
+entity_type: node
+bundle: assurance
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

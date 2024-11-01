@@ -1,0 +1,22 @@
+uuid: c9963b6f-2190-4b90-a9b8-683c96f8179c
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_heading_color
+    - paragraphs.paragraphs_type.plans_component
+  module:
+    - color_field
+id: paragraph.plans_component.field_sub_heading_color
+field_name: field_sub_heading_color
+entity_type: paragraph
+bundle: plans_component
+label: 'Sub Heading Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

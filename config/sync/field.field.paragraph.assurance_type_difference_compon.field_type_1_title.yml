@@ -1,0 +1,19 @@
+uuid: 728fab6a-6cb9-4965-b17b-683a636c2a9f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_type_1_title
+    - paragraphs.paragraphs_type.assurance_type_difference_compon
+id: paragraph.assurance_type_difference_compon.field_type_1_title
+field_name: field_type_1_title
+entity_type: paragraph
+bundle: assurance_type_difference_compon
+label: 'Type 1 Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

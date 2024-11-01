@@ -1,0 +1,31 @@
+uuid: 46239b7f-7a3f-4958-a6c8-2a0d8381a895
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.value_with_description.field_stats_description
+    - field.field.paragraph.value_with_description.field_value
+    - paragraphs.paragraphs_type.value_with_description
+id: paragraph.value_with_description.default
+targetEntityType: paragraph
+bundle: value_with_description
+mode: default
+content:
+  field_stats_description:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_value:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

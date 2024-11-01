@@ -1,0 +1,22 @@
+uuid: 787ca366-bb2b-4818-a8a0-221db1fe2dee
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.advisory
+id: node.advisory.promote
+field_name: promote
+entity_type: node
+bundle: advisory
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

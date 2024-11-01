@@ -1,0 +1,18 @@
+uuid: a1f399fe-f914-4e25-814a-1e7168852b2f
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_show_copy_link
+field_name: field_show_copy_link
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

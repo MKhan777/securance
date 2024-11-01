@@ -1,0 +1,142 @@
+uuid: 20ecf268-2b90-4f2b-93e6-80a30b3d1011
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_with_background
+    - paragraphs.paragraphs_type.text_with_background_color
+    - paragraphs.paragraphs_type.two_column_component
+  module:
+    - entity_reference_revisions
+id: paragraph.two_column_component.field_text_with_background
+field_name: field_text_with_background
+entity_type: paragraph
+bundle: two_column_component
+label: 'Text with Background '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_with_background_color: text_with_background_color
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_with_subheading:
+        weight: 39
+        enabled: false
+      advisory_guide:
+        weight: 40
+        enabled: false
+      answer_question:
+        weight: 41
+        enabled: false
+      assurance_case_study_component:
+        weight: 42
+        enabled: false
+      assurance_repor:
+        weight: 43
+        enabled: false
+      assurance_type_difference_compon:
+        weight: 44
+        enabled: false
+      cobit_compoent:
+        weight: 45
+        enabled: false
+      contact_block:
+        weight: 46
+        enabled: false
+      country_office:
+        weight: 47
+        enabled: false
+      frequently_asked_questions:
+        weight: 48
+        enabled: false
+      hero_banner:
+        weight: 49
+        enabled: false
+      image_with_caption:
+        weight: 50
+        enabled: false
+      modal_card:
+        weight: 51
+        enabled: false
+      multi_column_with_background_ima:
+        weight: 54
+        enabled: false
+      multicolumn_services:
+        weight: 52
+        enabled: false
+      multipurpose_block_reference:
+        weight: 53
+        enabled: false
+      organization_service_component:
+        weight: 55
+        enabled: false
+      parent_tab_component:
+        weight: 56
+        enabled: false
+      privacy_approach_component:
+        weight: 57
+        enabled: false
+      privacy_approach_steps:
+        weight: 58
+        enabled: false
+      readiness_scan_approach:
+        weight: 59
+        enabled: false
+      readiness_scan_component:
+        weight: 60
+        enabled: false
+      reference_a_view:
+        weight: 61
+        enabled: false
+      rich_image_text_component:
+        weight: 62
+        enabled: false
+      risk_readiness_scan_component:
+        weight: 63
+        enabled: false
+      securance_stats_component:
+        weight: 64
+        enabled: false
+      share_option:
+        weight: 65
+        enabled: false
+      social_link:
+        weight: 66
+        enabled: false
+      stats_number:
+        weight: 67
+        enabled: false
+      tab_component:
+        weight: 69
+        enabled: false
+      tabular_difference:
+        weight: 68
+        enabled: false
+      testimonial_card:
+        weight: 70
+        enabled: false
+      text_with_background_color:
+        weight: 71
+        enabled: true
+      text_with_cta_section:
+        weight: 72
+        enabled: false
+      text_with_listing:
+        weight: 73
+        enabled: false
+      two_column_component:
+        weight: 74
+        enabled: false
+      week_overview_component:
+        weight: 75
+        enabled: false
+      week_schedule:
+        weight: 76
+        enabled: false
+field_type: entity_reference_revisions

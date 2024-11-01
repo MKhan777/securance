@@ -1,0 +1,18 @@
+uuid: b7f2f4ed-ead9-4ceb-8c28-378c5df07508
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.cyber_security
+id: node.cyber_security.created
+field_name: created
+entity_type: node
+bundle: cyber_security
+label: 'Authored on'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

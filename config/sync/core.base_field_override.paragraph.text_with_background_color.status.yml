@@ -1,0 +1,22 @@
+uuid: 3325b6b9-9dee-444a-92db-68c72af36588
+langcode: sv
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.text_with_background_color
+id: paragraph.text_with_background_color.status
+field_name: status
+entity_type: paragraph
+bundle: text_with_background_color
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

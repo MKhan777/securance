@@ -1,0 +1,21 @@
+uuid: 1919e038-7e84-413f-b1f5-2321c8df1ffc
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_increase_content_width
+    - paragraphs.paragraphs_type.advisory_guide
+id: paragraph.advisory_guide.field_increase_content_width
+field_name: field_increase_content_width
+entity_type: paragraph
+bundle: advisory_guide
+label: 'Increase Content Width'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,118 @@
+uuid: a9501e11-e1a9-4ee3-907b-ac1579eafb0b
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_faq
+    - paragraphs.paragraphs_type.accordion_with_subheading
+    - paragraphs.paragraphs_type.answer_question
+  module:
+    - entity_reference_revisions
+id: paragraph.accordion_with_subheading.field_faq
+field_name: field_faq
+entity_type: paragraph
+bundle: accordion_with_subheading
+label: 'Frequently Asked Questions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      answer_question: answer_question
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_with_subheading:
+        weight: 31
+        enabled: false
+      advisory_guide:
+        weight: 17
+        enabled: false
+      answer_question:
+        weight: 18
+        enabled: true
+      assurance_repor:
+        weight: 34
+        enabled: false
+      cobit_compoent:
+        weight: 35
+        enabled: false
+      contact_block:
+        weight: 23
+        enabled: false
+      country_office:
+        weight: 19
+        enabled: false
+      frequently_asked_questions:
+        weight: 20
+        enabled: false
+      hero_banner:
+        weight: 21
+        enabled: false
+      image_with_caption:
+        weight: 40
+        enabled: false
+      modal_card:
+        weight: 22
+        enabled: false
+      multi_column_with_background_ima:
+        weight: 44
+        enabled: false
+      multicolumn_services:
+        weight: 23
+        enabled: false
+      multipurpose_block_reference:
+        weight: 43
+        enabled: false
+      organization_service_component:
+        weight: 24
+        enabled: false
+      parent_tab_component:
+        weight: 25
+        enabled: false
+      readiness_scan_approach:
+        weight: 31
+        enabled: false
+      readiness_scan_component:
+        weight: 48
+        enabled: false
+      reference_a_view:
+        weight: 49
+        enabled: false
+      rich_image_text_component:
+        weight: 26
+        enabled: false
+      risk_readiness_scan_component:
+        weight: 51
+        enabled: false
+      securance_stats_component:
+        weight: 27
+        enabled: false
+      social_link:
+        weight: 28
+        enabled: false
+      stats_number:
+        weight: 29
+        enabled: false
+      tab_component:
+        weight: 30
+        enabled: false
+      testimonial_card:
+        weight: 31
+        enabled: false
+      text_with_cta_section:
+        weight: 32
+        enabled: false
+      text_with_listing:
+        weight: 58
+        enabled: false
+      week_overview_component:
+        weight: 39
+        enabled: false
+      week_schedule:
+        weight: 40
+        enabled: false
+field_type: entity_reference_revisions

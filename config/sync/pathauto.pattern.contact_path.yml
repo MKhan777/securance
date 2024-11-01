@@ -1,0 +1,22 @@
+uuid: 175d9aa3-d4b3-4980-aaa2-2d57869be10b
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: contact_path
+label: 'Contact Path'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  f4414430-8cba-4917-afaa-9e2e3372ea09:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: f4414430-8cba-4917-afaa-9e2e3372ea09
+    context_mapping:
+      node: node
+    bundles:
+      contact: contact
+selection_logic: and
+weight: -5
+relationships: {  }

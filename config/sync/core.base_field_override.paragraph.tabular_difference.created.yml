@@ -1,0 +1,18 @@
+uuid: 5ad78d49-b966-4e0b-9d03-1499f82756d0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.tabular_difference
+id: paragraph.tabular_difference.created
+field_name: created
+entity_type: paragraph
+bundle: tabular_difference
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

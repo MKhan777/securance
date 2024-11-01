@@ -1,0 +1,24 @@
+uuid: a89bb96f-af3b-493b-92fa-9a547bfbca27
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.cyber_security
+  module:
+    - text
+id: node.cyber_security.body
+field_name: body
+entity_type: node
+bundle: cyber_security
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

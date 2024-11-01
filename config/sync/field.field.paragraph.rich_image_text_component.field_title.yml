@@ -12,7 +12,7 @@ bundle: rich_image_text_component
 label: Title
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

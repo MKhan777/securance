@@ -1,0 +1,22 @@
+uuid: 9d4d29fd-d4f4-4328-8653-42f1833d431e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_color
+    - paragraphs.paragraphs_type.plans_component
+  module:
+    - color_field
+id: paragraph.plans_component.field_description_color
+field_name: field_description_color
+entity_type: paragraph
+bundle: plans_component
+label: 'Description Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

@@ -1,0 +1,136 @@
+uuid: 605a40f9-ffbe-47fb-a052-a01c764a8920
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_approach_steps
+    - paragraphs.paragraphs_type.privacy_approach_component
+    - paragraphs.paragraphs_type.privacy_approach_steps
+  module:
+    - entity_reference_revisions
+id: paragraph.privacy_approach_component.field_approach_steps
+field_name: field_approach_steps
+entity_type: paragraph
+bundle: privacy_approach_component
+label: 'Approach Steps'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      privacy_approach_steps: privacy_approach_steps
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_with_subheading:
+        weight: 37
+        enabled: false
+      advisory_guide:
+        weight: 38
+        enabled: false
+      answer_question:
+        weight: 39
+        enabled: false
+      assurance_case_study_component:
+        weight: 40
+        enabled: false
+      assurance_repor:
+        weight: 41
+        enabled: false
+      assurance_type_difference_compon:
+        weight: 42
+        enabled: false
+      cobit_compoent:
+        weight: 43
+        enabled: false
+      contact_block:
+        weight: 44
+        enabled: false
+      country_office:
+        weight: 45
+        enabled: false
+      frequently_asked_questions:
+        weight: 46
+        enabled: false
+      hero_banner:
+        weight: 47
+        enabled: false
+      image_with_caption:
+        weight: 48
+        enabled: false
+      modal_card:
+        weight: 49
+        enabled: false
+      multi_column_with_background_ima:
+        weight: 52
+        enabled: false
+      multicolumn_services:
+        weight: 50
+        enabled: false
+      multipurpose_block_reference:
+        weight: 51
+        enabled: false
+      organization_service_component:
+        weight: 53
+        enabled: false
+      parent_tab_component:
+        weight: 54
+        enabled: false
+      privacy_approach_component:
+        weight: 55
+        enabled: false
+      privacy_approach_steps:
+        weight: 56
+        enabled: true
+      readiness_scan_approach:
+        weight: 57
+        enabled: false
+      readiness_scan_component:
+        weight: 58
+        enabled: false
+      reference_a_view:
+        weight: 59
+        enabled: false
+      rich_image_text_component:
+        weight: 60
+        enabled: false
+      risk_readiness_scan_component:
+        weight: 61
+        enabled: false
+      securance_stats_component:
+        weight: 62
+        enabled: false
+      share_option:
+        weight: 63
+        enabled: false
+      social_link:
+        weight: 64
+        enabled: false
+      stats_number:
+        weight: 65
+        enabled: false
+      tab_component:
+        weight: 67
+        enabled: false
+      tabular_difference:
+        weight: 66
+        enabled: false
+      testimonial_card:
+        weight: 68
+        enabled: false
+      text_with_cta_section:
+        weight: 69
+        enabled: false
+      text_with_listing:
+        weight: 70
+        enabled: false
+      week_overview_component:
+        weight: 71
+        enabled: false
+      week_schedule:
+        weight: 72
+        enabled: false
+field_type: entity_reference_revisions

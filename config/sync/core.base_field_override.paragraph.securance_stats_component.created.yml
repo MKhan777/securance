@@ -1,0 +1,18 @@
+uuid: e7123fae-8ab9-4a54-98d5-13002bbf60f9
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.securance_stats_component
+id: paragraph.securance_stats_component.created
+field_name: created
+entity_type: paragraph
+bundle: securance_stats_component
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,18 @@
+uuid: 13566e87-b212-493b-9a4e-fd77a5ce08cf
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.reference_a_view
+id: paragraph.reference_a_view.created
+field_name: created
+entity_type: paragraph
+bundle: reference_a_view
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

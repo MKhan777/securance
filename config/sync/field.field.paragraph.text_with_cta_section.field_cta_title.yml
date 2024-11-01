@@ -12,7 +12,7 @@ bundle: text_with_cta_section
 label: 'CTA Title'
 description: 'CTA title field is used for the heading of the multiple clickable links.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

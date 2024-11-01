@@ -24,10 +24,5 @@ content:
     third_party_settings: {  }
     weight: 10
     region: content
-  test_entity_view_1:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 10
-    region: content
 hidden:
   langcode: true

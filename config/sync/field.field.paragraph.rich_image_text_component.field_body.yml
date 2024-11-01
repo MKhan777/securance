@@ -18,7 +18,7 @@ bundle: rich_image_text_component
 label: body
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

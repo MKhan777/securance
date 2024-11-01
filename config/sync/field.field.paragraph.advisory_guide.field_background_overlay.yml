@@ -1,0 +1,22 @@
+uuid: 3f0c5ca1-17a5-41ef-b139-99ebd5b1081f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_overlay
+    - paragraphs.paragraphs_type.advisory_guide
+  module:
+    - color_field
+id: paragraph.advisory_guide.field_background_overlay
+field_name: field_background_overlay
+entity_type: paragraph
+bundle: advisory_guide
+label: 'Background Overlay'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

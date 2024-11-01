@@ -1,0 +1,10 @@
+uuid: 3ab9c773-a34a-4681-9544-0f0195a703a5
+langcode: en-gb
+status: true
+dependencies: {  }
+id: value_with_description
+label: 'value with description'
+icon_uuid: null
+icon_default: null
+description: 'This paragraph type contains a value of achievements with description.'
+behavior_plugins: {  }

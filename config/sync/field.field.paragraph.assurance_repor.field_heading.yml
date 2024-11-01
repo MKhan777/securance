@@ -1,0 +1,19 @@
+uuid: d74491c0-eb61-4fcc-ae95-14b17f2d86f0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.assurance_repor
+id: paragraph.assurance_repor.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: assurance_repor
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

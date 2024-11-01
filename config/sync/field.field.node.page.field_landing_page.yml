@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.hero_banner
     - paragraphs.paragraphs_type.organization_service_component
     - paragraphs.paragraphs_type.parent_tab_component
+    - paragraphs.paragraphs_type.reference_a_view
     - paragraphs.paragraphs_type.rich_image_text_component
     - paragraphs.paragraphs_type.securance_stats_component
   module:
@@ -33,6 +34,7 @@ settings:
       rich_image_text_component: rich_image_text_component
       securance_stats_component: securance_stats_component
       contact_block: contact_block
+      reference_a_view: reference_a_view
     negate: 0
     target_bundles_drag_drop:
       advisory_guide:
@@ -40,6 +42,9 @@ settings:
         enabled: false
       answer_question:
         weight: 19
+        enabled: false
+      cobit_compoent:
+        weight: 31
         enabled: false
       contact_block:
         weight: 20
@@ -53,11 +58,20 @@ settings:
       hero_banner:
         weight: 12
         enabled: true
+      image_with_caption:
+        weight: 36
+        enabled: false
       modal_card:
         weight: 24
         enabled: false
+      multi_column_with_background_ima:
+        weight: 40
+        enabled: false
       multicolumn_services:
         weight: 13
+        enabled: false
+      multipurpose_block_reference:
+        weight: 39
         enabled: false
       organization_service_component:
         weight: 14
@@ -65,9 +79,21 @@ settings:
       parent_tab_component:
         weight: 15
         enabled: true
+      readiness_scan_approach:
+        weight: 43
+        enabled: false
+      readiness_scan_component:
+        weight: 44
+        enabled: false
+      reference_a_view:
+        weight: 45
+        enabled: true
       rich_image_text_component:
         weight: 16
         enabled: true
+      risk_readiness_scan_component:
+        weight: 47
+        enabled: false
       securance_stats_component:
         weight: 17
         enabled: true
@@ -85,5 +111,14 @@ settings:
         enabled: false
       text_with_cta_section:
         weight: 34
+        enabled: false
+      text_with_listing:
+        weight: 54
+        enabled: false
+      week_overview_component:
+        weight: 55
+        enabled: false
+      week_schedule:
+        weight: 56
         enabled: false
 field_type: entity_reference_revisions

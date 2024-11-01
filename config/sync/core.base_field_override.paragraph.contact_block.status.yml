@@ -1,0 +1,22 @@
+uuid: ed014405-311e-44cf-8e78-f8c44f4ca7ff
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.contact_block
+id: paragraph.contact_block.status
+field_name: status
+entity_type: paragraph
+bundle: contact_block
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

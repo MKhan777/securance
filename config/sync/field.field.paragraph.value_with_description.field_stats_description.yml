@@ -1,0 +1,19 @@
+uuid: a7e598c2-d9d3-4440-80ce-16828afb9c08
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_stats_description
+    - paragraphs.paragraphs_type.value_with_description
+id: paragraph.value_with_description.field_stats_description
+field_name: field_stats_description
+entity_type: paragraph
+bundle: value_with_description
+label: 'Stats Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

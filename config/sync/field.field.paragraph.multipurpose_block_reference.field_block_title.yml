@@ -18,7 +18,7 @@ bundle: multipurpose_block_reference
 label: 'Block Title'
 description: 'Type the name of e.g. our partners '
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

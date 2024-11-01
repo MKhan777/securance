@@ -1,0 +1,22 @@
+uuid: ae6d3987-b10c-4f0f-918a-648ed588dbbf
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.securance_stats_component
+id: paragraph.securance_stats_component.status
+field_name: status
+entity_type: paragraph
+bundle: securance_stats_component
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

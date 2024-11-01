@@ -1,0 +1,19 @@
+uuid: 6d1ed3ca-b55c-4011-8a3e-737b0a026509
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_heading
+    - paragraphs.paragraphs_type.accordion_with_subheading
+id: paragraph.accordion_with_subheading.field_sub_heading
+field_name: field_sub_heading
+entity_type: paragraph
+bundle: accordion_with_subheading
+label: 'Sub Heading'
+description: 'The Field used for subheading it is bottom of main heading or top of heading.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

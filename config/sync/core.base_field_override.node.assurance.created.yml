@@ -1,0 +1,18 @@
+uuid: 5bc40a0f-6b8b-446a-b390-7a0bd6927991
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.assurance
+id: node.assurance.created
+field_name: created
+entity_type: node
+bundle: assurance
+label: 'Authored on'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

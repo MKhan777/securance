@@ -3,6 +3,7 @@ langcode: en-gb
 status: true
 dependencies:
   config:
+    - field.field.paragraph.organization_service_component.field_background_color
     - field.field.paragraph.organization_service_component.field_cards_in_row
     - field.field.paragraph.organization_service_component.field_description
     - field.field.paragraph.organization_service_component.field_heading
@@ -11,6 +12,7 @@ dependencies:
     - field.field.paragraph.organization_service_component.field_sub_heading
     - paragraphs.paragraphs_type.organization_service_component
   module:
+    - color_field
     - entity_reference_revisions
     - options
 id: paragraph.organization_service_component.default
@@ -18,6 +20,15 @@ targetEntityType: paragraph
 bundle: organization_service_component
 mode: default
 content:
+  field_background_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_cards_in_row:
     type: list_default
     label: above

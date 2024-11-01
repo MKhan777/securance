@@ -1,0 +1,10 @@
+uuid: 24441e6c-4ae0-4d66-9ee5-3e157e30b881
+langcode: en-gb
+status: true
+dependencies: {  }
+id: text_with_boolean
+label: 'Text with Boolean'
+icon_uuid: null
+icon_default: null
+description: 'The module which is used to show the tick or cross with text.'
+behavior_plugins: {  }

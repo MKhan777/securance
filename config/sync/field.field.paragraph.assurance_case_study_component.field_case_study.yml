@@ -1,0 +1,30 @@
+uuid: 1dd38a0f-22d6-4233-bcb7-42edeacf8c5f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_case_study
+    - paragraphs.paragraphs_type.assurance_case_study_component
+  module:
+    - viewsreference
+id: paragraph.assurance_case_study_component.field_case_study
+field_name: field_case_study
+entity_type: paragraph
+bundle: assurance_case_study_component
+label: 'case study'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+  preselect_views:
+    test: test
+  enabled_settings: {  }
+field_type: viewsreference

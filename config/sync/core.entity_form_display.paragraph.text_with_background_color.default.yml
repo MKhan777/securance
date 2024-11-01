@@ -1,0 +1,43 @@
+uuid: 0d5ccbeb-d24f-4981-8c7b-5fb9f2b8a8a4
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_background_color.field_background_color
+    - field.field.paragraph.text_with_background_color.field_description
+    - field.field.paragraph.text_with_background_color.field_heading
+    - paragraphs.paragraphs_type.text_with_background_color
+  module:
+    - color_field
+id: paragraph.text_with_background_color.default
+targetEntityType: paragraph
+bundle: text_with_background_color
+mode: default
+content:
+  field_background_color:
+    type: color_field_widget_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
+  field_description:
+    type: string_textarea
+    weight: 7
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

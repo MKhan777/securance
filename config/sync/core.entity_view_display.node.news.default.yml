@@ -4,14 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_cta_text_2
     - field.field.node.news.field_news_image
-    - field.field.node.news.field_news_link
     - field.field.node.news.field_news_title
-    - field.field.node.news.field_share_this_blog
+    - field.field.node.news.field_service_type
     - node.type.news
   module:
     - link
-    - social_media_links_field
     - text
     - user
 id: node.news.default
@@ -26,16 +25,7 @@ content:
     third_party_settings: {  }
     weight: 6
     region: content
-  field_news_image:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  field_news_link:
+  field_cta_text_2:
     type: link
     label: hidden
     settings:
@@ -45,7 +35,16 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 5
+    weight: 107
+    region: content
+  field_news_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_news_title:
     type: string
@@ -55,12 +54,11 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
-  field_share_this_blog:
-    type: social_media_links_field_default
-    label: above
+  field_service_type:
+    type: entity_reference_label
+    label: hidden
     settings:
-      appearance: {  }
-      link_attributes: {  }
+      link: true
     third_party_settings: {  }
     weight: 7
     region: content

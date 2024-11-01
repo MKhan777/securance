@@ -1,0 +1,70 @@
+uuid: 459c3e05-966d-494a-8b41-2581ff0c7880
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.assurance_repor.field_background_image
+    - field.field.paragraph.assurance_repor.field_description
+    - field.field.paragraph.assurance_repor.field_figure
+    - field.field.paragraph.assurance_repor.field_heading
+    - field.field.paragraph.assurance_repor.field_tabs
+    - paragraphs.paragraphs_type.assurance_repor
+  module:
+    - media_library
+    - paragraphs
+id: paragraph.assurance_repor.default
+targetEntityType: paragraph
+bundle: assurance_repor
+mode: default
+content:
+  field_background_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_description:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_figure:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tabs:
+    type: paragraphs
+    weight: 3
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

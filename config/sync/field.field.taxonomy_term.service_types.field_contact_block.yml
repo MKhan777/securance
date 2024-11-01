@@ -1,0 +1,151 @@
+uuid: 9506cdf1-1cbb-4c02-a11a-9029eda60c78
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_contact_block
+    - paragraphs.paragraphs_type.contact_block
+    - taxonomy.vocabulary.service_types
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.service_types.field_contact_block
+field_name: field_contact_block
+entity_type: taxonomy_term
+bundle: service_types
+label: 'Contact Block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      contact_block: contact_block
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_with_subheading:
+        weight: 42
+        enabled: false
+      advisory_guide:
+        weight: 43
+        enabled: false
+      answer_question:
+        weight: 44
+        enabled: false
+      assurance_case_study_component:
+        weight: 45
+        enabled: false
+      assurance_repor:
+        weight: 46
+        enabled: false
+      assurance_type_difference_compon:
+        weight: 47
+        enabled: false
+      cobit_compoent:
+        weight: 48
+        enabled: false
+      contact_block:
+        weight: 49
+        enabled: true
+      country_office:
+        weight: 50
+        enabled: false
+      frequently_asked_questions:
+        weight: 51
+        enabled: false
+      hero_banner:
+        weight: 52
+        enabled: false
+      image_with_caption:
+        weight: 53
+        enabled: false
+      modal_card:
+        weight: 54
+        enabled: false
+      multi_column_with_background_ima:
+        weight: 57
+        enabled: false
+      multicolumn_services:
+        weight: 55
+        enabled: false
+      multipurpose_block_reference:
+        weight: 56
+        enabled: false
+      organization_service_component:
+        weight: 58
+        enabled: false
+      parent_tab_component:
+        weight: 59
+        enabled: false
+      plans_card:
+        weight: 60
+        enabled: false
+      plans_component:
+        weight: 61
+        enabled: false
+      privacy_approach_component:
+        weight: 62
+        enabled: false
+      privacy_approach_steps:
+        weight: 63
+        enabled: false
+      readiness_scan_approach:
+        weight: 64
+        enabled: false
+      readiness_scan_component:
+        weight: 65
+        enabled: false
+      reference_a_view:
+        weight: 66
+        enabled: false
+      rich_image_text_component:
+        weight: 67
+        enabled: false
+      risk_readiness_scan_component:
+        weight: 68
+        enabled: false
+      securance_stats_component:
+        weight: 69
+        enabled: false
+      share_option:
+        weight: 70
+        enabled: false
+      social_link:
+        weight: 71
+        enabled: false
+      stats_number:
+        weight: 72
+        enabled: false
+      tab_component:
+        weight: 74
+        enabled: false
+      tabular_difference:
+        weight: 73
+        enabled: false
+      testimonial_card:
+        weight: 75
+        enabled: false
+      text_with_background_color:
+        weight: 76
+        enabled: false
+      text_with_boolean:
+        weight: 77
+        enabled: false
+      text_with_cta_section:
+        weight: 78
+        enabled: false
+      text_with_listing:
+        weight: 79
+        enabled: false
+      two_column_component:
+        weight: 80
+        enabled: false
+      week_overview_component:
+        weight: 81
+        enabled: false
+      week_schedule:
+        weight: 82
+        enabled: false
+field_type: entity_reference_revisions

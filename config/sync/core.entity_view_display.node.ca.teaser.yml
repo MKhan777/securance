@@ -1,0 +1,53 @@
+uuid: 430a26d9-7846-49f3-96b2-68fb7d865f14
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ca.body
+    - field.field.node.ca.field_career_application
+    - field.field.node.ca.field_career_image
+    - field.field.node.ca.field_cta_text_2
+    - field.field.node.ca.field_department
+    - field.field.node.ca.field_description
+    - field.field.node.ca.field_job_overview_card
+    - field.field.node.ca.field_job_title
+    - field.field.node.ca.field_job_type
+    - field.field.node.ca.field_job_work_location
+    - field.field.node.ca.field_location
+    - field.field.node.ca.field_short_description
+    - node.type.ca
+  module:
+    - text
+    - user
+id: node.ca.teaser
+targetEntityType: node
+bundle: ca
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_career_application: true
+  field_career_image: true
+  field_cta_text_2: true
+  field_department: true
+  field_description: true
+  field_job_overview_card: true
+  field_job_title: true
+  field_job_type: true
+  field_job_work_location: true
+  field_location: true
+  field_short_description: true
+  langcode: true

@@ -1,0 +1,37 @@
+uuid: e6354344-c85f-44f8-9408-0dbc81add6d6
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tabular_difference.field_topic
+    - field.field.paragraph.tabular_difference.field_type_1
+    - field.field.paragraph.tabular_difference.field_type_2
+    - paragraphs.paragraphs_type.tabular_difference
+id: paragraph.tabular_difference.default
+targetEntityType: paragraph
+bundle: tabular_difference
+mode: default
+content:
+  field_topic:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_type_1:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_type_2:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

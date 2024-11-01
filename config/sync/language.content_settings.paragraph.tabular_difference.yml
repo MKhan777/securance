@@ -1,0 +1,18 @@
+uuid: edf5f82d-7416-4513-90d3-8b41429c7b1c
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.tabular_difference
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: paragraph.tabular_difference
+target_entity_type_id: paragraph
+target_bundle: tabular_difference
+default_langcode: site_default
+language_alterable: true

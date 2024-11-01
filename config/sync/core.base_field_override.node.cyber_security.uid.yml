@@ -1,0 +1,20 @@
+uuid: 6554fda3-d131-471e-bcc4-c9a4b0a38e5f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.cyber_security
+id: node.cyber_security.uid
+field_name: uid
+entity_type: node
+bundle: cyber_security
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

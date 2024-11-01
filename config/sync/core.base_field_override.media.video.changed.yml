@@ -1,0 +1,18 @@
+uuid: 544197e2-3f4c-41b9-b611-f365ede131ce
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - media.type.video
+id: media.video.changed
+field_name: changed
+entity_type: media
+bundle: video
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

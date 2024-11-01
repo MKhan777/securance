@@ -1,0 +1,22 @@
+uuid: a0abf141-a947-4e8d-af67-c50f066b201a
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_color
+    - paragraphs.paragraphs_type.advisory_guide
+  module:
+    - color_field
+id: paragraph.advisory_guide.field_title_color
+field_name: field_title_color
+entity_type: paragraph
+bundle: advisory_guide
+label: 'Title Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

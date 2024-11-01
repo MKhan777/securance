@@ -1,0 +1,18 @@
+uuid: 74fba96e-c67d-4469-bb71-ad31b27be642
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.frequently_asked_questions
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: paragraph.frequently_asked_questions
+target_entity_type_id: paragraph
+target_bundle: frequently_asked_questions
+default_langcode: site_default
+language_alterable: true

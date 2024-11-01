@@ -3,8 +3,10 @@ langcode: en-gb
 status: true
 dependencies:
   config:
+    - field.field.paragraph.rich_image_text_component.field_adjust_content
     - field.field.paragraph.rich_image_text_component.field_background_color
     - field.field.paragraph.rich_image_text_component.field_body
+    - field.field.paragraph.rich_image_text_component.field_cta_text_2
     - field.field.paragraph.rich_image_text_component.field_description
     - field.field.paragraph.rich_image_text_component.field_description_color
     - field.field.paragraph.rich_image_text_component.field_figure
@@ -18,6 +20,7 @@ dependencies:
     - paragraphs.paragraphs_type.rich_image_text_component
   module:
     - color_field
+    - link
     - options
     - text
 id: paragraph.rich_image_text_component.default
@@ -25,6 +28,16 @@ targetEntityType: paragraph
 bundle: rich_image_text_component
 mode: default
 content:
+  field_adjust_content:
+    type: boolean
+    label: hidden
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 17
+    region: content
   field_background_color:
     type: color_field_formatter_text
     label: hidden
@@ -41,6 +54,18 @@ content:
     third_party_settings: {  }
     weight: 12
     region: content
+  field_cta_text_2:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 13
+    region: content
   field_description:
     type: basic_string
     label: hidden
@@ -50,7 +75,7 @@ content:
     region: content
   field_description_color:
     type: color_field_formatter_text
-    label: above
+    label: hidden
     settings:
       format: hex
       opacity: true
@@ -68,7 +93,7 @@ content:
     region: content
   field_image_width:
     type: boolean
-    label: above
+    label: hidden
     settings:
       format: default
       format_custom_false: ''
@@ -78,7 +103,7 @@ content:
     region: content
   field_set_image_position:
     type: list_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 13
@@ -93,7 +118,7 @@ content:
     region: content
   field_sub_heading_color:
     type: color_field_formatter_text
-    label: above
+    label: hidden
     settings:
       format: hex
       opacity: true
@@ -120,7 +145,7 @@ content:
     region: content
   field_title_color:
     type: color_field_formatter_text
-    label: above
+    label: hidden
     settings:
       format: hex
       opacity: true

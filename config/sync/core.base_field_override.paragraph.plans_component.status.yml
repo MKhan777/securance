@@ -1,0 +1,22 @@
+uuid: 16b746f4-18f9-4d71-a030-12cb926e9cb0
+langcode: sv
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.plans_component
+id: paragraph.plans_component.status
+field_name: status
+entity_type: paragraph
+bundle: plans_component
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

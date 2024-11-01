@@ -1,0 +1,22 @@
+uuid: 3b03cc3a-7a94-4682-8102-52c1e6caa09e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.organization_service_component
+id: paragraph.organization_service_component.status
+field_name: status
+entity_type: paragraph
+bundle: organization_service_component
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

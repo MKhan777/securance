@@ -1,0 +1,22 @@
+uuid: 2fc3067c-7bd4-4b2d-9894-403639aa7418
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.text_with_cta_section
+id: paragraph.text_with_cta_section.status
+field_name: status
+entity_type: paragraph
+bundle: text_with_cta_section
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

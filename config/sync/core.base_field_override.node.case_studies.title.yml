@@ -1,0 +1,18 @@
+uuid: 7fb7b8ce-d42e-45df-9845-7c5b501b5a03
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.case_studies
+id: node.case_studies.title
+field_name: title
+entity_type: node
+bundle: case_studies
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

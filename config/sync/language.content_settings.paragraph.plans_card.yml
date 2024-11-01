@@ -1,0 +1,18 @@
+uuid: f6b65538-adb7-458c-9224-aa33b6f034bb
+langcode: sv
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.plans_card
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: paragraph.plans_card
+target_entity_type_id: paragraph
+target_bundle: plans_card
+default_langcode: site_default
+language_alterable: true

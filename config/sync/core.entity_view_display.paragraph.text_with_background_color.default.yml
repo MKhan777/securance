@@ -1,0 +1,41 @@
+uuid: f51e52c7-19ba-4ac8-a55f-b740b42765f0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_background_color.field_background_color
+    - field.field.paragraph.text_with_background_color.field_description
+    - field.field.paragraph.text_with_background_color.field_heading
+    - paragraphs.paragraphs_type.text_with_background_color
+  module:
+    - color_field
+id: paragraph.text_with_background_color.default
+targetEntityType: paragraph
+bundle: text_with_background_color
+mode: default
+content:
+  field_background_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

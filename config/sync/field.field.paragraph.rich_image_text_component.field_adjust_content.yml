@@ -1,0 +1,21 @@
+uuid: 69b75353-10ce-4652-829d-f8332d5984a7
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_adjust_content
+    - paragraphs.paragraphs_type.rich_image_text_component
+id: paragraph.rich_image_text_component.field_adjust_content
+field_name: field_adjust_content
+entity_type: paragraph
+bundle: rich_image_text_component
+label: 'Adjust Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

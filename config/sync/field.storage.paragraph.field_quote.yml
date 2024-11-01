@@ -1,0 +1,19 @@
+uuid: 6957c668-0b29-4025-9930-e86bf06e87f3
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_quote
+field_name: field_quote
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

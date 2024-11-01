@@ -1,0 +1,22 @@
+uuid: b8ca3ba6-aff2-4b77-bed6-e9a0bd0b657f
+langcode: sv
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.landing_banner
+id: paragraph.landing_banner.status
+field_name: status
+entity_type: paragraph
+bundle: landing_banner
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

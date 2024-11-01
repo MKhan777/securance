@@ -1,0 +1,24 @@
+uuid: 5df65d19-fdb9-40d7-b76c-c9e1de940e5f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_column_component.field_text_with_background
+    - paragraphs.paragraphs_type.two_column_component
+  module:
+    - entity_reference_revisions
+id: paragraph.two_column_component.default
+targetEntityType: paragraph
+bundle: two_column_component
+mode: default
+content:
+  field_text_with_background:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

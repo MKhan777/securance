@@ -1,0 +1,18 @@
+uuid: bbc5382f-a925-4580-b1bf-6711c0e7e115
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.answer_question
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: paragraph.answer_question
+target_entity_type_id: paragraph
+target_bundle: answer_question
+default_langcode: site_default
+language_alterable: true

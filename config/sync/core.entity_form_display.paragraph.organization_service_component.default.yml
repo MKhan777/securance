@@ -3,6 +3,7 @@ langcode: en-gb
 status: true
 dependencies:
   config:
+    - field.field.paragraph.organization_service_component.field_background_color
     - field.field.paragraph.organization_service_component.field_cards_in_row
     - field.field.paragraph.organization_service_component.field_description
     - field.field.paragraph.organization_service_component.field_heading
@@ -11,12 +12,21 @@ dependencies:
     - field.field.paragraph.organization_service_component.field_sub_heading
     - paragraphs.paragraphs_type.organization_service_component
   module:
+    - color_field
     - paragraphs
 id: paragraph.organization_service_component.default
 targetEntityType: paragraph
 bundle: organization_service_component
 mode: default
 content:
+  field_background_color:
+    type: color_field_widget_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_color: ''
+      placeholder_opacity: ''
+    third_party_settings: {  }
   field_cards_in_row:
     type: options_select
     weight: 7
@@ -71,6 +81,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

@@ -1,0 +1,22 @@
+uuid: 916322a7-d9e9-4368-a918-c1163b60a1df
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: assurance_listings_path
+label: 'Assurance Listing Path'
+type: 'canonical_entities:node'
+pattern: '/[node:content-type]/[node:title]'
+selection_criteria:
+  056e6bcd-9f2d-4061-8f2f-7c390af8d04e:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 056e6bcd-9f2d-4061-8f2f-7c390af8d04e
+    context_mapping:
+      node: node
+    bundles:
+      assurance: assurance
+selection_logic: and
+weight: -5
+relationships: {  }

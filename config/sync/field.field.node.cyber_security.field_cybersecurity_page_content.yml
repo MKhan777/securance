@@ -1,0 +1,169 @@
+uuid: 20e04b35-55e3-4234-8692-cb66a15f8707
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cybersecurity_page_content
+    - node.type.cyber_security
+    - paragraphs.paragraphs_type.advisory_guide
+    - paragraphs.paragraphs_type.contact_block
+    - paragraphs.paragraphs_type.hero_banner
+    - paragraphs.paragraphs_type.multi_column_with_background_ima
+    - paragraphs.paragraphs_type.organization_service_component
+    - paragraphs.paragraphs_type.plans_component
+    - paragraphs.paragraphs_type.readiness_scan_component
+    - paragraphs.paragraphs_type.rich_image_text_component
+    - paragraphs.paragraphs_type.text_with_cta_section
+    - paragraphs.paragraphs_type.two_column_component
+  module:
+    - entity_reference_revisions
+id: node.cyber_security.field_cybersecurity_page_content
+field_name: field_cybersecurity_page_content
+entity_type: node
+bundle: cyber_security
+label: 'CyberSecurity Page Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      advisory_guide: advisory_guide
+      contact_block: contact_block
+      hero_banner: hero_banner
+      multi_column_with_background_ima: multi_column_with_background_ima
+      organization_service_component: organization_service_component
+      readiness_scan_component: readiness_scan_component
+      rich_image_text_component: rich_image_text_component
+      plans_component: plans_component
+      text_with_cta_section: text_with_cta_section
+      two_column_component: two_column_component
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_with_subheading:
+        weight: 35
+        enabled: false
+      advisory_guide:
+        weight: 36
+        enabled: true
+      answer_question:
+        weight: 37
+        enabled: false
+      assurance_case_study_component:
+        weight: 38
+        enabled: false
+      assurance_repor:
+        weight: 39
+        enabled: false
+      assurance_type_difference_compon:
+        weight: 40
+        enabled: false
+      cobit_compoent:
+        weight: 41
+        enabled: false
+      contact_block:
+        weight: 42
+        enabled: true
+      country_office:
+        weight: 43
+        enabled: false
+      frequently_asked_questions:
+        weight: 44
+        enabled: false
+      hero_banner:
+        weight: 45
+        enabled: true
+      image_with_caption:
+        weight: 46
+        enabled: false
+      modal_card:
+        weight: 47
+        enabled: false
+      multi_column_with_background_ima:
+        weight: 50
+        enabled: true
+      multicolumn_services:
+        weight: 48
+        enabled: false
+      multipurpose_block_reference:
+        weight: 49
+        enabled: false
+      organization_service_component:
+        weight: 51
+        enabled: true
+      parent_tab_component:
+        weight: 52
+        enabled: false
+      plans_card:
+        weight: 60
+        enabled: false
+      plans_component:
+        weight: 61
+        enabled: true
+      privacy_approach_component:
+        weight: 57
+        enabled: false
+      privacy_approach_steps:
+        weight: 58
+        enabled: false
+      readiness_scan_approach:
+        weight: 53
+        enabled: false
+      readiness_scan_component:
+        weight: 54
+        enabled: true
+      reference_a_view:
+        weight: 55
+        enabled: false
+      rich_image_text_component:
+        weight: 56
+        enabled: true
+      risk_readiness_scan_component:
+        weight: 57
+        enabled: false
+      securance_stats_component:
+        weight: 58
+        enabled: false
+      share_option:
+        weight: 59
+        enabled: false
+      social_link:
+        weight: 60
+        enabled: false
+      stats_number:
+        weight: 61
+        enabled: false
+      tab_component:
+        weight: 62
+        enabled: false
+      tabular_difference:
+        weight: 63
+        enabled: false
+      testimonial_card:
+        weight: 64
+        enabled: false
+      text_with_background_color:
+        weight: 71
+        enabled: false
+      text_with_boolean:
+        weight: 77
+        enabled: false
+      text_with_cta_section:
+        weight: 65
+        enabled: true
+      text_with_listing:
+        weight: 66
+        enabled: false
+      two_column_component:
+        weight: 74
+        enabled: true
+      week_overview_component:
+        weight: 67
+        enabled: false
+      week_schedule:
+        weight: 68
+        enabled: false
+field_type: entity_reference_revisions

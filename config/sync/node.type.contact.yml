@@ -1,0 +1,18 @@
+uuid: b5489e1b-ed15-4348-8c08-27167e6b9571
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Contact
+type: contact
+description: 'This content type is only used for contact page.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

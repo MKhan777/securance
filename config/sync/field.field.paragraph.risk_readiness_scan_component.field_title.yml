@@ -12,7 +12,7 @@ bundle: risk_readiness_scan_component
 label: Title
 description: 'The title field which contains the title of the hero banner.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

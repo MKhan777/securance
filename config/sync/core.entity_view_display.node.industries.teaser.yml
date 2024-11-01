@@ -1,0 +1,45 @@
+uuid: 98f81af4-b47e-4fc5-af99-e20c2015dbfb
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.industries.body
+    - field.field.node.industries.field_banner_image
+    - field.field.node.industries.field_hubspot_data
+    - field.field.node.industries.field_industries_image
+    - field.field.node.industries.field_industries_list
+    - field.field.node.industries.field_our_satisfied_customer
+    - field.field.node.industries.field_sub_title
+    - field.field.node.industries.field_title
+    - node.type.industries
+  module:
+    - text
+    - user
+id: node.industries.teaser
+targetEntityType: node
+bundle: industries
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_banner_image: true
+  field_hubspot_data: true
+  field_industries_image: true
+  field_industries_list: true
+  field_our_satisfied_customer: true
+  field_sub_title: true
+  field_title: true
+  langcode: true

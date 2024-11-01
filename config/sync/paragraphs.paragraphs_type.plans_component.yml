@@ -1,0 +1,10 @@
+uuid: 7cdf6166-d3a1-4ef2-89ea-99161802bd0b
+langcode: en-gb
+status: true
+dependencies: {  }
+id: plans_component
+label: 'Plans Component'
+icon_uuid: null
+icon_default: null
+description: 'The Component which shows the Plans that fit your scale.'
+behavior_plugins: {  }

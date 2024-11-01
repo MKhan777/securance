@@ -1,0 +1,21 @@
+uuid: c97d7e0a-0c50-4d99-82fc-add35cb8e87c
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_checked
+    - paragraphs.paragraphs_type.text_with_boolean
+id: paragraph.text_with_boolean.field_checked
+field_name: field_checked
+entity_type: paragraph
+bundle: text_with_boolean
+label: Checked
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

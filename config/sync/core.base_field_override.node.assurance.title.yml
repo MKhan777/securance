@@ -1,0 +1,18 @@
+uuid: a8096242-54ce-4da6-bf2e-6716bed2c9cb
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.assurance
+id: node.assurance.title
+field_name: title
+entity_type: node
+bundle: assurance
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 9a9d064c-1018-40cc-be7b-ac87132adca0
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_adjust_content
+field_name: field_adjust_content
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

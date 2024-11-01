@@ -1,0 +1,69 @@
+uuid: 1a7f78a4-bf8e-4153-9ecc-bbb91d4f824f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.plans_card.field_background_color
+    - field.field.paragraph.plans_card.field_cta_text_2
+    - field.field.paragraph.plans_card.field_plan_list
+    - field.field.paragraph.plans_card.field_show_popular_tag
+    - field.field.paragraph.plans_card.field_title
+    - paragraphs.paragraphs_type.plans_card
+  module:
+    - color_field
+    - entity_reference_revisions
+    - link
+id: paragraph.plans_card.default
+targetEntityType: paragraph
+bundle: plans_card
+mode: default
+content:
+  field_background_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_cta_text_2:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_plan_list:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_show_popular_tag:
+    type: boolean
+    label: hidden
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

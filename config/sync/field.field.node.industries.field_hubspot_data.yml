@@ -1,0 +1,172 @@
+uuid: 074c3319-b546-49f0-bd00-d51797db7fe4
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hubspot_data
+    - node.type.industries
+    - paragraphs.paragraphs_type.hubspot_data
+  module:
+    - entity_reference_revisions
+id: node.industries.field_hubspot_data
+field_name: field_hubspot_data
+entity_type: node
+bundle: industries
+label: 'Hubspot Data'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      hubspot_data: hubspot_data
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_with_subheading:
+        weight: 49
+        enabled: false
+      advisory_guide:
+        weight: 50
+        enabled: false
+      answer_question:
+        weight: 51
+        enabled: false
+      assurance_case_study_component:
+        weight: 52
+        enabled: false
+      assurance_repor:
+        weight: 53
+        enabled: false
+      assurance_type_difference_compon:
+        weight: 54
+        enabled: false
+      body:
+        weight: 55
+        enabled: false
+      cobit_compoent:
+        weight: 56
+        enabled: false
+      contact_block:
+        weight: 57
+        enabled: false
+      country_office:
+        weight: 58
+        enabled: false
+      frequently_asked_questions:
+        weight: 59
+        enabled: false
+      heading_with_description:
+        weight: 60
+        enabled: false
+      hero_banner:
+        weight: 61
+        enabled: false
+      hubspot_data:
+        weight: 62
+        enabled: true
+      image_with_caption:
+        weight: 63
+        enabled: false
+      job_card:
+        weight: 64
+        enabled: false
+      landing_banner:
+        weight: 65
+        enabled: false
+      modal_card:
+        weight: 66
+        enabled: false
+      multi_column_with_background_ima:
+        weight: 69
+        enabled: false
+      multicolumn_services:
+        weight: 67
+        enabled: false
+      multipurpose_block_reference:
+        weight: 68
+        enabled: false
+      organization_service_component:
+        weight: 70
+        enabled: false
+      parent_tab_component:
+        weight: 71
+        enabled: false
+      plans_card:
+        weight: 72
+        enabled: false
+      plans_component:
+        weight: 73
+        enabled: false
+      privacy_approach_component:
+        weight: 74
+        enabled: false
+      privacy_approach_steps:
+        weight: 75
+        enabled: false
+      quote:
+        weight: 76
+        enabled: false
+      readiness_scan_approach:
+        weight: 77
+        enabled: false
+      readiness_scan_component:
+        weight: 78
+        enabled: false
+      reference_a_view:
+        weight: 79
+        enabled: false
+      rich_image_text_component:
+        weight: 80
+        enabled: false
+      risk_readiness_scan_component:
+        weight: 81
+        enabled: false
+      securance_stats_component:
+        weight: 82
+        enabled: false
+      share_option:
+        weight: 83
+        enabled: false
+      social_link:
+        weight: 84
+        enabled: false
+      stats_number:
+        weight: 85
+        enabled: false
+      tab_component:
+        weight: 87
+        enabled: false
+      tabular_difference:
+        weight: 86
+        enabled: false
+      testimonial_card:
+        weight: 88
+        enabled: false
+      text_with_background_color:
+        weight: 89
+        enabled: false
+      text_with_boolean:
+        weight: 90
+        enabled: false
+      text_with_cta_section:
+        weight: 91
+        enabled: false
+      text_with_listing:
+        weight: 92
+        enabled: false
+      two_column_component:
+        weight: 93
+        enabled: false
+      value_with_description:
+        weight: 94
+        enabled: false
+      week_overview_component:
+        weight: 95
+        enabled: false
+      week_schedule:
+        weight: 96
+        enabled: false
+field_type: entity_reference_revisions

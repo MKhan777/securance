@@ -1,0 +1,29 @@
+uuid: 7b0002e4-a1c7-466a-bfb9-8b4bec57b45f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_brand_logo
+    - media.type.image
+    - node.type.case_studies
+id: node.case_studies.field_brand_logo
+field_name: field_brand_logo
+entity_type: node
+bundle: case_studies
+label: 'Brand Logo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,124 @@
+uuid: c9f46f42-ddb1-4e46-bc9c-8730780925b2
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_types_difference
+    - paragraphs.paragraphs_type.assurance_type_difference_compon
+    - paragraphs.paragraphs_type.tabular_difference
+  module:
+    - entity_reference_revisions
+id: paragraph.assurance_type_difference_compon.field_types_difference
+field_name: field_types_difference
+entity_type: paragraph
+bundle: assurance_type_difference_compon
+label: 'Types Difference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      tabular_difference: tabular_difference
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_with_subheading:
+        weight: 33
+        enabled: false
+      advisory_guide:
+        weight: 34
+        enabled: false
+      answer_question:
+        weight: 35
+        enabled: false
+      assurance_repor:
+        weight: 36
+        enabled: false
+      assurance_type_difference_compon:
+        weight: 37
+        enabled: false
+      cobit_compoent:
+        weight: 38
+        enabled: false
+      contact_block:
+        weight: 39
+        enabled: false
+      country_office:
+        weight: 40
+        enabled: false
+      frequently_asked_questions:
+        weight: 41
+        enabled: false
+      hero_banner:
+        weight: 42
+        enabled: false
+      image_with_caption:
+        weight: 43
+        enabled: false
+      modal_card:
+        weight: 44
+        enabled: false
+      multi_column_with_background_ima:
+        weight: 47
+        enabled: false
+      multicolumn_services:
+        weight: 45
+        enabled: false
+      multipurpose_block_reference:
+        weight: 46
+        enabled: false
+      organization_service_component:
+        weight: 48
+        enabled: false
+      parent_tab_component:
+        weight: 49
+        enabled: false
+      readiness_scan_approach:
+        weight: 50
+        enabled: false
+      readiness_scan_component:
+        weight: 51
+        enabled: false
+      reference_a_view:
+        weight: 52
+        enabled: false
+      rich_image_text_component:
+        weight: 53
+        enabled: false
+      risk_readiness_scan_component:
+        weight: 54
+        enabled: false
+      securance_stats_component:
+        weight: 55
+        enabled: false
+      social_link:
+        weight: 56
+        enabled: false
+      stats_number:
+        weight: 57
+        enabled: false
+      tab_component:
+        weight: 59
+        enabled: false
+      tabular_difference:
+        weight: 58
+        enabled: true
+      testimonial_card:
+        weight: 60
+        enabled: false
+      text_with_cta_section:
+        weight: 61
+        enabled: false
+      text_with_listing:
+        weight: 62
+        enabled: false
+      week_overview_component:
+        weight: 63
+        enabled: false
+      week_schedule:
+        weight: 64
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,10 @@
+uuid: a7d7d1ca-a0ba-40a0-a557-2d70d626c17d
+langcode: en-gb
+status: true
+dependencies: {  }
+id: landing_banner
+label: 'Landing Banner'
+icon_uuid: null
+icon_default: null
+description: 'This banner is used for taxonomy pages and also for about us or privacy pages.'
+behavior_plugins: {  }

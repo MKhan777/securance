@@ -1,0 +1,45 @@
+uuid: 088793aa-41f6-438d-bea3-32d31bd65622
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.share_option.field_show_copy_link
+    - field.field.paragraph.share_option.field_show_linkedin_share
+    - field.field.paragraph.share_option.field_show_x_share
+    - paragraphs.paragraphs_type.share_option
+id: paragraph.share_option.default
+targetEntityType: paragraph
+bundle: share_option
+mode: default
+content:
+  field_show_copy_link:
+    type: boolean
+    label: hidden
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_show_linkedin_share:
+    type: boolean
+    label: hidden
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_show_x_share:
+    type: boolean
+    label: hidden
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

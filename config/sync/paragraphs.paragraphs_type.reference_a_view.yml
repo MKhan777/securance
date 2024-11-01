@@ -1,0 +1,10 @@
+uuid: ec8c50b5-e1fd-4f20-940d-d47c432e273c
+langcode: de
+status: true
+dependencies: {  }
+id: reference_a_view
+label: 'Reference a view'
+icon_uuid: null
+icon_default: null
+description: 'This paragraph type contains a field which reference a view.'
+behavior_plugins: {  }

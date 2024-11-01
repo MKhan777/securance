@@ -1,0 +1,22 @@
+uuid: ceae3526-c2d3-4fc7-aacf-f465004ffff1
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.tab_component
+id: paragraph.tab_component.status
+field_name: status
+entity_type: paragraph
+bundle: tab_component
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

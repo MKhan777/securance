@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.readiness_scan_component.field_connecter_line
     - field.field.paragraph.readiness_scan_component.field_header_section
     - field.field.paragraph.readiness_scan_component.field_readiness_scan_approach
+    - field.field.paragraph.readiness_scan_component.field_sub_heading
     - paragraphs.paragraphs_type.readiness_scan_component
   module:
     - paragraphs
@@ -55,6 +56,14 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
+    third_party_settings: {  }
+  field_sub_heading:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true

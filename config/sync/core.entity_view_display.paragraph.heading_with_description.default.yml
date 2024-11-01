@@ -1,0 +1,50 @@
+uuid: f8a817a9-daa4-4a36-8b92-01871b896a39
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.heading_with_description.field_achievements
+    - field.field.paragraph.heading_with_description.field_description
+    - field.field.paragraph.heading_with_description.field_heading
+    - field.field.paragraph.heading_with_description.field_sub_heading
+    - paragraphs.paragraphs_type.heading_with_description
+  module:
+    - entity_reference_revisions
+id: paragraph.heading_with_description.default
+targetEntityType: paragraph
+bundle: heading_with_description
+mode: default
+content:
+  field_achievements:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sub_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

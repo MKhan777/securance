@@ -1,0 +1,35 @@
+uuid: 056e4432-75b0-4545-ac2b-5be3e7180d0e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.cyber_security.body
+    - field.field.node.cyber_security.field_cybersecurity_page_content
+    - field.field.node.cyber_security.field_icon
+    - node.type.cyber_security
+  module:
+    - entity_reference_revisions
+    - user
+id: node.cyber_security.default
+targetEntityType: node
+bundle: cyber_security
+mode: default
+content:
+  field_cybersecurity_page_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_icon: true
+  langcode: true

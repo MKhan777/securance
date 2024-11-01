@@ -1,0 +1,22 @@
+uuid: bcfe32e3-84c4-411d-80a5-af1e1ade1f0e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_heading_color
+    - paragraphs.paragraphs_type.advisory_guide
+  module:
+    - color_field
+id: paragraph.advisory_guide.field_sub_heading_color
+field_name: field_sub_heading_color
+entity_type: paragraph
+bundle: advisory_guide
+label: 'Sub Heading Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

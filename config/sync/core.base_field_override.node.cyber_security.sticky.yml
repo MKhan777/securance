@@ -1,0 +1,22 @@
+uuid: 5dddba5f-0cbe-436a-995d-102aa3ec395f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.cyber_security
+id: node.cyber_security.sticky
+field_name: sticky
+entity_type: node
+bundle: cyber_security
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

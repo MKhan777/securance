@@ -1,0 +1,19 @@
+uuid: 622ad692-b117-4791-aaf7-477ab5685101
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_region
+    - paragraphs.paragraphs_type.hubspot_data
+id: paragraph.hubspot_data.field_region
+field_name: field_region
+entity_type: paragraph
+bundle: hubspot_data
+label: Region
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

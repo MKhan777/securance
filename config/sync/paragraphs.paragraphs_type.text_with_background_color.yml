@@ -1,0 +1,10 @@
+uuid: c1789263-2a06-4b34-bf89-e8b5771f2d1b
+langcode: en-gb
+status: true
+dependencies: {  }
+id: text_with_background_color
+label: 'Text with Background Color'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

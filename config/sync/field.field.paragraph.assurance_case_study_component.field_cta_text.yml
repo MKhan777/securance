@@ -1,0 +1,23 @@
+uuid: 429263e1-99e3-4753-a0ab-f661f8332718
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_text
+    - paragraphs.paragraphs_type.assurance_case_study_component
+  module:
+    - link
+id: paragraph.assurance_case_study_component.field_cta_text
+field_name: field_cta_text
+entity_type: paragraph
+bundle: assurance_case_study_component
+label: 'CTA text'
+description: 'Hero Banner button field.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

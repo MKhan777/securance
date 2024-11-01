@@ -1,0 +1,22 @@
+uuid: 140e94fe-5442-4b25-8289-39333f5d4d07
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.assurance_type_difference_compon
+id: paragraph.assurance_type_difference_compon.status
+field_name: status
+entity_type: paragraph
+bundle: assurance_type_difference_compon
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

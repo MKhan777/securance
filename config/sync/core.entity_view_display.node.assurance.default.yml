@@ -1,0 +1,35 @@
+uuid: 1cb8bbcd-7c8e-485a-bf9a-2004532e81d3
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.assurance.body
+    - field.field.node.assurance.field_assurance_page_content
+    - field.field.node.assurance.field_icon
+    - node.type.assurance
+  module:
+    - entity_reference_revisions
+    - user
+id: node.assurance.default
+targetEntityType: node
+bundle: assurance
+mode: default
+content:
+  field_assurance_page_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_icon: true
+  langcode: true

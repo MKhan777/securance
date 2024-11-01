@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.case_studies.body
     - field.field.node.case_studies.field_assurance_standards
     - field.field.node.case_studies.field_brand_image
+    - field.field.node.case_studies.field_brand_logo
     - field.field.node.case_studies.field_cta_text
     - field.field.node.case_studies.field_cta_text_2
     - field.field.node.case_studies.field_organisation
@@ -49,6 +50,13 @@ content:
   field_brand_image:
     type: media_library_widget
     weight: 8
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_brand_logo:
+    type: media_library_widget
+    weight: 28
     region: content
     settings:
       media_types: {  }

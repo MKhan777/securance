@@ -1,0 +1,19 @@
+uuid: 477d327a-d715-482a-b452-3c24ef0f15f8
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_risk_readiness_steps
+    - paragraphs.paragraphs_type.risk_readiness_scan_component
+id: paragraph.risk_readiness_scan_component.field_risk_readiness_steps
+field_name: field_risk_readiness_steps
+entity_type: paragraph
+bundle: risk_readiness_scan_component
+label: 'Risk Readiness Steps'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

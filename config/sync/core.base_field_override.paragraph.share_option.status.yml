@@ -1,0 +1,22 @@
+uuid: d7da72bc-25de-4d94-ad60-d613725815a8
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.share_option
+id: paragraph.share_option.status
+field_name: status
+entity_type: paragraph
+bundle: share_option
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

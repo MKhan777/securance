@@ -1,0 +1,22 @@
+uuid: 707b376e-a974-4dad-9882-998e78bd38c8
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_color
+    - paragraphs.paragraphs_type.multi_column_with_background_ima
+  module:
+    - color_field
+id: paragraph.multi_column_with_background_ima.field_background_color
+field_name: field_background_color
+entity_type: paragraph
+bundle: multi_column_with_background_ima
+label: 'Background Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

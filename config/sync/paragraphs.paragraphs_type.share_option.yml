@@ -1,0 +1,10 @@
+uuid: 79fb0fc8-b063-456a-81bd-2a45923e7766
+langcode: en-gb
+status: true
+dependencies: {  }
+id: share_option
+label: 'Share Option'
+icon_uuid: null
+icon_default: null
+description: 'This paragraph type is used for show different link option.'
+behavior_plugins: {  }

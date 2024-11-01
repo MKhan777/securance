@@ -1,0 +1,22 @@
+uuid: feccbf63-b5a2-41f0-9462-11f68daf08e8
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: cyber_security_listing_path
+label: 'About Content Path'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  21915dc3-ec56-4cc9-884d-6165613b9d63:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 21915dc3-ec56-4cc9-884d-6165613b9d63
+    context_mapping:
+      node: node
+    bundles:
+      about: about
+selection_logic: and
+weight: -5
+relationships: {  }

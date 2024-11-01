@@ -1,0 +1,18 @@
+uuid: 2ac45e2d-a9cb-4621-a9be-b6e8974d8c96
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.modal_card
+id: paragraph.modal_card.created
+field_name: created
+entity_type: paragraph
+bundle: modal_card
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

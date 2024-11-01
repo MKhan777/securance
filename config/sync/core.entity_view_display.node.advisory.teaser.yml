@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.advisory.body
     - field.field.node.advisory.field_advisory_page_content
+    - field.field.node.advisory.field_icon
     - node.type.advisory
   module:
     - text
@@ -30,4 +31,5 @@ content:
     region: content
 hidden:
   field_advisory_page_content: true
+  field_icon: true
   langcode: true

@@ -12,7 +12,7 @@ bundle: footer_country_column_first
 label: 'Email Label'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

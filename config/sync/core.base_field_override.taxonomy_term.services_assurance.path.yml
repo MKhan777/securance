@@ -1,0 +1,20 @@
+uuid: b3dd14c9-c6cc-43b6-8b85-df18925ce1e5
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.services_assurance
+  module:
+    - path
+id: taxonomy_term.services_assurance.path
+field_name: path
+entity_type: taxonomy_term
+bundle: services_assurance
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

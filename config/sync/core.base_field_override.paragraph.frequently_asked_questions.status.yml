@@ -1,0 +1,22 @@
+uuid: 578d95a9-b52b-4da7-aa04-bf9a8f517d08
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.frequently_asked_questions
+id: paragraph.frequently_asked_questions.status
+field_name: status
+entity_type: paragraph
+bundle: frequently_asked_questions
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

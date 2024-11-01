@@ -1,0 +1,21 @@
+uuid: 88ae04e6-51e9-415f-9581-94d12a6c0dad
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - views
+    - viewsreference
+id: paragraph.field_case_study
+field_name: field_case_study
+entity_type: paragraph
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

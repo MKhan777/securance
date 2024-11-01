@@ -1,0 +1,18 @@
+uuid: 289b29a6-0bf2-4250-acea-f52a8b535d4d
+langcode: sv
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.plans_card
+id: paragraph.plans_card.created
+field_name: created
+entity_type: paragraph
+bundle: plans_card
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

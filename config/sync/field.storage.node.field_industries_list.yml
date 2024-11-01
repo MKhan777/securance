@@ -1,0 +1,21 @@
+uuid: 4d036063-e25b-42cf-9fd6-5f12a2da2109
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_industries_list
+field_name: field_industries_list
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

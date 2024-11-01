@@ -3,8 +3,10 @@ langcode: en-gb
 status: true
 dependencies:
   config:
+    - field.field.paragraph.rich_image_text_component.field_adjust_content
     - field.field.paragraph.rich_image_text_component.field_background_color
     - field.field.paragraph.rich_image_text_component.field_body
+    - field.field.paragraph.rich_image_text_component.field_cta_text_2
     - field.field.paragraph.rich_image_text_component.field_description
     - field.field.paragraph.rich_image_text_component.field_description_color
     - field.field.paragraph.rich_image_text_component.field_figure
@@ -19,6 +21,7 @@ dependencies:
   module:
     - color_field
     - field_group
+    - link
     - media_library
     - text
 third_party_settings:
@@ -95,6 +98,13 @@ targetEntityType: paragraph
 bundle: rich_image_text_component
 mode: default
 content:
+  field_adjust_content:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_background_color:
     type: color_field_widget_default
     weight: 6
@@ -110,6 +120,14 @@ content:
     settings:
       rows: 5
       placeholder: ''
+    third_party_settings: {  }
+  field_cta_text_2:
+    type: link_default
+    weight: 9
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   field_description:
     type: string_textarea
@@ -185,6 +203,11 @@ content:
     settings:
       placeholder_color: ''
       placeholder_opacity: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

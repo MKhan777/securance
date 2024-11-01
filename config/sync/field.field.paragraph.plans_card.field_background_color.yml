@@ -1,0 +1,22 @@
+uuid: 09b07fb8-7a94-4299-a56c-f1a0c890813d
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_color
+    - paragraphs.paragraphs_type.plans_card
+  module:
+    - color_field
+id: paragraph.plans_card.field_background_color
+field_name: field_background_color
+entity_type: paragraph
+bundle: plans_card
+label: 'Background Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

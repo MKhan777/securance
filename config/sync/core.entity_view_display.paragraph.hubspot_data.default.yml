@@ -1,0 +1,39 @@
+uuid: 0b415f8e-9614-4b17-a04f-d4517cfe21f2
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hubspot_data.field_formid
+    - field.field.paragraph.hubspot_data.field_portalid
+    - field.field.paragraph.hubspot_data.field_region
+    - paragraphs.paragraphs_type.hubspot_data
+id: paragraph.hubspot_data.default
+targetEntityType: paragraph
+bundle: hubspot_data
+mode: default
+content:
+  field_formid:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_portalid:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_region:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

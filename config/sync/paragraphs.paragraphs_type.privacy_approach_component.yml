@@ -1,0 +1,10 @@
+uuid: e33c3984-0c5f-42fb-8ca3-269984ac4781
+langcode: en-gb
+status: true
+dependencies: {  }
+id: privacy_approach_component
+label: 'Privacy Approach Component'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

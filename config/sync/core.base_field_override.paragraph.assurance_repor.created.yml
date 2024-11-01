@@ -1,0 +1,18 @@
+uuid: f30041b0-0d90-414e-bbb6-105134fc6d73
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.assurance_repor
+id: paragraph.assurance_repor.created
+field_name: created
+entity_type: paragraph
+bundle: assurance_repor
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

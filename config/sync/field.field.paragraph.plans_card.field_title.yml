@@ -1,0 +1,19 @@
+uuid: c74dda0b-a255-404e-b42f-fcd1fa12e198
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.plans_card
+id: paragraph.plans_card.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: plans_card
+label: Title
+description: 'The title field which contains the title of the hero banner.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

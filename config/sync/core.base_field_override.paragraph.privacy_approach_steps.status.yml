@@ -1,0 +1,22 @@
+uuid: bbd25a4e-307f-493c-92bc-f18e10b4bb9c
+langcode: sv
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.privacy_approach_steps
+id: paragraph.privacy_approach_steps.status
+field_name: status
+entity_type: paragraph
+bundle: privacy_approach_steps
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

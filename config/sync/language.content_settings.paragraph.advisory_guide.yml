@@ -1,0 +1,18 @@
+uuid: 15b2e833-7a7a-463f-9be7-533937cb0cd7
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.advisory_guide
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: paragraph.advisory_guide
+target_entity_type_id: paragraph
+target_bundle: advisory_guide
+default_langcode: site_default
+language_alterable: true

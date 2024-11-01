@@ -1,0 +1,19 @@
+uuid: 0af6a612-b5d5-4d06-ae4e-80c1fbc47240
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_portalid
+    - paragraphs.paragraphs_type.hubspot_data
+id: paragraph.hubspot_data.field_portalid
+field_name: field_portalid
+entity_type: paragraph
+bundle: hubspot_data
+label: portalId
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

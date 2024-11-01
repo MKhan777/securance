@@ -1,0 +1,19 @@
+uuid: 18dbdae3-d9bd-4fa7-a3dd-073c51abf565
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_step_heading
+    - paragraphs.paragraphs_type.privacy_approach_steps
+id: paragraph.privacy_approach_steps.field_step_heading
+field_name: field_step_heading
+entity_type: paragraph
+bundle: privacy_approach_steps
+label: 'Step Heading'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

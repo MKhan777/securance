@@ -1,0 +1,29 @@
+uuid: b32dbb95-cd42-4458-b475-b512d052d006
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_figure
+    - media.type.image
+    - paragraphs.paragraphs_type.text_with_boolean
+id: paragraph.text_with_boolean.field_figure
+field_name: field_figure
+entity_type: paragraph
+bundle: text_with_boolean
+label: Figure
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,169 @@
+uuid: a2b43f4a-32c5-4004-8c4a-5e263905bf6c
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_overview_card
+    - node.type.ca
+    - paragraphs.paragraphs_type.job_card
+  module:
+    - entity_reference_revisions
+id: node.ca.field_job_overview_card
+field_name: field_job_overview_card
+entity_type: node
+bundle: ca
+label: 'Job Overview Card'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      job_card: job_card
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_with_subheading:
+        weight: 48
+        enabled: false
+      advisory_guide:
+        weight: 49
+        enabled: false
+      answer_question:
+        weight: 50
+        enabled: false
+      assurance_case_study_component:
+        weight: 51
+        enabled: false
+      assurance_repor:
+        weight: 52
+        enabled: false
+      assurance_type_difference_compon:
+        weight: 53
+        enabled: false
+      body:
+        weight: 54
+        enabled: false
+      cobit_compoent:
+        weight: 55
+        enabled: false
+      contact_block:
+        weight: 56
+        enabled: false
+      country_office:
+        weight: 57
+        enabled: false
+      frequently_asked_questions:
+        weight: 58
+        enabled: false
+      heading_with_description:
+        weight: 59
+        enabled: false
+      hero_banner:
+        weight: 60
+        enabled: false
+      image_with_caption:
+        weight: 61
+        enabled: false
+      job_card:
+        weight: 62
+        enabled: true
+      landing_banner:
+        weight: 63
+        enabled: false
+      modal_card:
+        weight: 64
+        enabled: false
+      multi_column_with_background_ima:
+        weight: 67
+        enabled: false
+      multicolumn_services:
+        weight: 65
+        enabled: false
+      multipurpose_block_reference:
+        weight: 66
+        enabled: false
+      organization_service_component:
+        weight: 68
+        enabled: false
+      parent_tab_component:
+        weight: 69
+        enabled: false
+      plans_card:
+        weight: 70
+        enabled: false
+      plans_component:
+        weight: 71
+        enabled: false
+      privacy_approach_component:
+        weight: 72
+        enabled: false
+      privacy_approach_steps:
+        weight: 73
+        enabled: false
+      quote:
+        weight: 74
+        enabled: false
+      readiness_scan_approach:
+        weight: 75
+        enabled: false
+      readiness_scan_component:
+        weight: 76
+        enabled: false
+      reference_a_view:
+        weight: 77
+        enabled: false
+      rich_image_text_component:
+        weight: 78
+        enabled: false
+      risk_readiness_scan_component:
+        weight: 79
+        enabled: false
+      securance_stats_component:
+        weight: 80
+        enabled: false
+      share_option:
+        weight: 81
+        enabled: false
+      social_link:
+        weight: 82
+        enabled: false
+      stats_number:
+        weight: 83
+        enabled: false
+      tab_component:
+        weight: 85
+        enabled: false
+      tabular_difference:
+        weight: 84
+        enabled: false
+      testimonial_card:
+        weight: 86
+        enabled: false
+      text_with_background_color:
+        weight: 87
+        enabled: false
+      text_with_boolean:
+        weight: 88
+        enabled: false
+      text_with_cta_section:
+        weight: 89
+        enabled: false
+      text_with_listing:
+        weight: 90
+        enabled: false
+      two_column_component:
+        weight: 91
+        enabled: false
+      value_with_description:
+        weight: 92
+        enabled: false
+      week_overview_component:
+        weight: 93
+        enabled: false
+      week_schedule:
+        weight: 94
+        enabled: false
+field_type: entity_reference_revisions

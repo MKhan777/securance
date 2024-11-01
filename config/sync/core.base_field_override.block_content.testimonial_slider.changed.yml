@@ -1,0 +1,18 @@
+uuid: 34160bc2-891a-45a3-8a97-535c7e6cb856
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - block_content.type.testimonial_slider
+id: block_content.testimonial_slider.changed
+field_name: changed
+entity_type: block_content
+bundle: testimonial_slider
+label: Changed
+description: 'The time that the content block was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

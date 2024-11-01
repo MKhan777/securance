@@ -1,0 +1,19 @@
+uuid: 1427baa3-09c4-4bd0-9af3-04a0e518f2bb
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.privacy_approach_component
+id: paragraph.privacy_approach_component.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: privacy_approach_component
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

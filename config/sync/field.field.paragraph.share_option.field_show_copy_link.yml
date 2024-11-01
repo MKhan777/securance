@@ -1,0 +1,21 @@
+uuid: 66ec3b1d-fcd6-496f-b250-87574a15a70f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_show_copy_link
+    - paragraphs.paragraphs_type.share_option
+id: paragraph.share_option.field_show_copy_link
+field_name: field_show_copy_link
+entity_type: paragraph
+bundle: share_option
+label: 'Show Copy Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

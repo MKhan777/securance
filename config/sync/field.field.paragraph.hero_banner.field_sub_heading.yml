@@ -12,7 +12,7 @@ bundle: hero_banner
 label: 'Sub Heading'
 description: 'The Field used for subheading it is bottom of main heading or top of heading.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

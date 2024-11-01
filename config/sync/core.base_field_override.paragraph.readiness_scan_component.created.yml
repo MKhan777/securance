@@ -1,0 +1,18 @@
+uuid: 68a5b627-7582-437d-9176-185f11038bdf
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.readiness_scan_component
+id: paragraph.readiness_scan_component.created
+field_name: created
+entity_type: paragraph
+bundle: readiness_scan_component
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

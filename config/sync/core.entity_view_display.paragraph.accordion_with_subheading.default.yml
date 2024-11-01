@@ -1,0 +1,42 @@
+uuid: 6480e527-9ea7-4785-9c1f-c063b1c8b954
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordion_with_subheading.field_faq
+    - field.field.paragraph.accordion_with_subheading.field_heading
+    - field.field.paragraph.accordion_with_subheading.field_sub_heading
+    - paragraphs.paragraphs_type.accordion_with_subheading
+  module:
+    - entity_reference_revisions
+id: paragraph.accordion_with_subheading.default
+targetEntityType: paragraph
+bundle: accordion_with_subheading
+mode: default
+content:
+  field_faq:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sub_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

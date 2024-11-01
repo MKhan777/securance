@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.text_with_cta_section.field_cta_text
     - field.field.paragraph.text_with_cta_section.field_cta_title
     - field.field.paragraph.text_with_cta_section.field_description
+    - field.field.paragraph.text_with_cta_section.field_figure
     - field.field.paragraph.text_with_cta_section.field_title
     - paragraphs.paragraphs_type.text_with_cta_section
   module:
@@ -48,6 +49,13 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_figure:
+    type: media_library_widget
+    weight: 10
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
   field_title:
     type: string_textfield
     weight: 0
@@ -55,6 +63,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

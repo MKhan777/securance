@@ -15,8 +15,10 @@ dependencies:
     - paragraphs.paragraphs_type.multipurpose_block_reference
     - paragraphs.paragraphs_type.organization_service_component
     - paragraphs.paragraphs_type.parent_tab_component
+    - paragraphs.paragraphs_type.privacy_approach_component
     - paragraphs.paragraphs_type.readiness_scan_approach
     - paragraphs.paragraphs_type.readiness_scan_component
+    - paragraphs.paragraphs_type.reference_a_view
     - paragraphs.paragraphs_type.rich_image_text_component
     - paragraphs.paragraphs_type.risk_readiness_scan_component
     - paragraphs.paragraphs_type.text_with_cta_section
@@ -30,7 +32,7 @@ bundle: advisory
 label: 'Advisory Page Content'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -53,14 +55,28 @@ settings:
       multi_column_with_background_ima: multi_column_with_background_ima
       week_overview_component: week_overview_component
       risk_readiness_scan_component: risk_readiness_scan_component
+      reference_a_view: reference_a_view
+      privacy_approach_component: privacy_approach_component
     negate: 0
     target_bundles_drag_drop:
+      accordion_with_subheading:
+        weight: 37
+        enabled: false
       advisory_guide:
         weight: 17
         enabled: true
       answer_question:
         weight: 18
         enabled: true
+      assurance_case_study_component:
+        weight: 40
+        enabled: false
+      assurance_repor:
+        weight: 41
+        enabled: false
+      assurance_type_difference_compon:
+        weight: 42
+        enabled: false
       cobit_compoent:
         weight: 28
         enabled: true
@@ -97,11 +113,20 @@ settings:
       parent_tab_component:
         weight: 18
         enabled: true
+      privacy_approach_component:
+        weight: 55
+        enabled: true
+      privacy_approach_steps:
+        weight: 56
+        enabled: false
       readiness_scan_approach:
         weight: 29
         enabled: true
       readiness_scan_component:
         weight: 33
+        enabled: true
+      reference_a_view:
+        weight: 45
         enabled: true
       rich_image_text_component:
         weight: 19
@@ -112,6 +137,9 @@ settings:
       securance_stats_component:
         weight: 20
         enabled: false
+      share_option:
+        weight: 63
+        enabled: false
       social_link:
         weight: 21
         enabled: false
@@ -120,6 +148,9 @@ settings:
         enabled: false
       tab_component:
         weight: 23
+        enabled: false
+      tabular_difference:
+        weight: 66
         enabled: false
       testimonial_card:
         weight: 31

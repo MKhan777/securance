@@ -1,0 +1,10 @@
+uuid: e62c562d-b882-4ed2-bdf4-b7e0d856c30e
+langcode: en-gb
+status: true
+dependencies: {  }
+id: heading_with_description
+label: 'Heading with description'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -12,7 +12,7 @@ bundle: client_testimonial
 label: 'Sub Heading'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

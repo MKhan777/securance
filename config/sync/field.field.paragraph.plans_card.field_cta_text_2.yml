@@ -1,0 +1,23 @@
+uuid: 9107d92f-3db2-4bd9-bcd4-64c2f86f8119
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_text_2
+    - paragraphs.paragraphs_type.plans_card
+  module:
+    - link
+id: paragraph.plans_card.field_cta_text_2
+field_name: field_cta_text_2
+entity_type: paragraph
+bundle: plans_card
+label: 'CTA text 2'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

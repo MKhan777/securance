@@ -10,9 +10,9 @@ third_party_settings:
   content_translation:
     enabled: false
     bundle_settings:
-      untranslatable_fields_hide: '0'
+      untranslatable_fields_hide: '1'
 id: paragraph.social_link
 target_entity_type_id: paragraph
 target_bundle: social_link
 default_langcode: site_default
-language_alterable: false
+language_alterable: true

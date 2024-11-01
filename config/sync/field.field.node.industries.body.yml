@@ -1,0 +1,24 @@
+uuid: c1668f3c-8d48-46b6-a516-58de6fb148b2
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.industries
+  module:
+    - text
+id: node.industries.body
+field_name: body
+entity_type: node
+bundle: industries
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

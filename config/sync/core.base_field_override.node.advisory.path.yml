@@ -1,0 +1,20 @@
+uuid: 3b7ae973-a768-4426-9870-9ea82abdf9dc
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.advisory
+  module:
+    - path
+id: node.advisory.path
+field_name: path
+entity_type: node
+bundle: advisory
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

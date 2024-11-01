@@ -1,0 +1,35 @@
+uuid: 2a726419-f4d8-4c73-a77c-1305d90f2bde
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.assurance.body
+    - field.field.node.assurance.field_assurance_page_content
+    - field.field.node.assurance.field_icon
+    - node.type.assurance
+  module:
+    - text
+    - user
+id: node.assurance.teaser
+targetEntityType: node
+bundle: assurance
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_assurance_page_content: true
+  field_icon: true
+  langcode: true

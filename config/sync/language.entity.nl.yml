@@ -1,9 +1,9 @@
 uuid: fa56e847-3d12-4e2b-a276-89b865c0bf8d
-langcode: en-gb
+langcode: nl
 status: true
 dependencies: {  }
 id: nl
-label: Dutch
+label: Nederlands
 direction: ltr
 weight: 1
 locked: false

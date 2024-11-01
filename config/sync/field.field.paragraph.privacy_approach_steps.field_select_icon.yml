@@ -1,0 +1,21 @@
+uuid: af5851f9-7836-42ba-be9a-a321dd7d0fd9
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_select_icon
+    - paragraphs.paragraphs_type.privacy_approach_steps
+  module:
+    - options
+id: paragraph.privacy_approach_steps.field_select_icon
+field_name: field_select_icon
+entity_type: paragraph
+bundle: privacy_approach_steps
+label: 'Select Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

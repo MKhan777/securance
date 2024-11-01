@@ -1,0 +1,31 @@
+uuid: f8adc234-5a0e-4c29-aa8b-d9707091580b
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_our_satisfied_customer
+    - node.type.industries
+  module:
+    - viewsreference
+id: node.industries.field_our_satisfied_customer
+field_name: field_our_satisfied_customer
+entity_type: node
+bundle: industries
+label: 'Our Satisfied Customer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+  preselect_views:
+    news: news
+  enabled_settings:
+    header: header
+field_type: viewsreference

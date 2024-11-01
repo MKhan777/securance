@@ -1,0 +1,49 @@
+uuid: 849a4914-c84e-4b91-99d9-5ae4398bbecd
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.privacy_approach_steps.field_select_icon
+    - field.field.paragraph.privacy_approach_steps.field_step_description
+    - field.field.paragraph.privacy_approach_steps.field_step_heading
+    - field.field.paragraph.privacy_approach_steps.field_step_number
+    - paragraphs.paragraphs_type.privacy_approach_steps
+  module:
+    - options
+id: paragraph.privacy_approach_steps.default
+targetEntityType: paragraph
+bundle: privacy_approach_steps
+mode: default
+content:
+  field_select_icon:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_step_description:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_step_heading:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_step_number:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

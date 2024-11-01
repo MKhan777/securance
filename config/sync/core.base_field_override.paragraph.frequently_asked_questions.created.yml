@@ -1,0 +1,18 @@
+uuid: 21145b5c-3be4-4f28-b55d-1938224a2e6b
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.frequently_asked_questions
+id: paragraph.frequently_asked_questions.created
+field_name: created
+entity_type: paragraph
+bundle: frequently_asked_questions
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.hero_banner.field_cta_text
     - field.field.paragraph.hero_banner.field_description
     - field.field.paragraph.hero_banner.field_figure
+    - field.field.paragraph.hero_banner.field_right_column_width
     - field.field.paragraph.hero_banner.field_set_position_left
     - field.field.paragraph.hero_banner.field_sub_heading
     - field.field.paragraph.hero_banner.field_title
@@ -55,9 +56,19 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_right_column_width:
+    type: boolean
+    label: hidden
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
   field_set_position_left:
     type: boolean
-    label: above
+    label: hidden
     settings:
       format: true-false
       format_custom_false: ''

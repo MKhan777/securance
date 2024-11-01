@@ -1,0 +1,22 @@
+uuid: b9fc8837-7bed-4435-b2de-7cfc1693c021
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.tabular_difference
+id: paragraph.tabular_difference.status
+field_name: status
+entity_type: paragraph
+bundle: tabular_difference
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

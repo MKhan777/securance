@@ -1,0 +1,10 @@
+uuid: a2f47856-6226-4a7f-b995-4f9f87f7ae2a
+langcode: en-gb
+status: true
+dependencies: {  }
+id: tabular_difference
+label: 'Tabular Difference'
+icon_uuid: null
+icon_default: null
+description: 'This paragraph type contains a difference of Type 1 and Type 2 with topic.'
+behavior_plugins: {  }

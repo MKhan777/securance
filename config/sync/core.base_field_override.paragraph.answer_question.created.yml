@@ -1,0 +1,18 @@
+uuid: 678f1f36-587d-4b19-8532-782c82091682
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.answer_question
+id: paragraph.answer_question.created
+field_name: created
+entity_type: paragraph
+bundle: answer_question
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

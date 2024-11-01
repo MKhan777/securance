@@ -1,0 +1,64 @@
+uuid: 90a0bd3a-6eb1-4ba5-ad6f-7a76607233f1
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.assurance_case_study_component.field_case_study
+    - field.field.paragraph.assurance_case_study_component.field_cta_text
+    - field.field.paragraph.assurance_case_study_component.field_description
+    - field.field.paragraph.assurance_case_study_component.field_heading
+    - field.field.paragraph.assurance_case_study_component.field_sub_heading
+    - paragraphs.paragraphs_type.assurance_case_study_component
+  module:
+    - link
+    - viewsreference
+id: paragraph.assurance_case_study_component.default
+targetEntityType: paragraph
+bundle: assurance_case_study_component
+mode: default
+content:
+  field_case_study:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_cta_text:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sub_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

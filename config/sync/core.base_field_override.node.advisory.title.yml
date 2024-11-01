@@ -1,0 +1,18 @@
+uuid: 97cc278f-5b0a-4261-adc9-3d70c589584b
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.advisory
+id: node.advisory.title
+field_name: title
+entity_type: node
+bundle: advisory
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

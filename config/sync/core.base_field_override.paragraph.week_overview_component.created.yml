@@ -1,0 +1,18 @@
+uuid: c6e82bdf-afd7-4885-833a-038ee7bef726
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.week_overview_component
+id: paragraph.week_overview_component.created
+field_name: created
+entity_type: paragraph
+bundle: week_overview_component
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,22 @@
+uuid: f34875c6-0fe0-462c-b3a7-92d5ce8c7871
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.risk_readiness_scan_component
+id: paragraph.risk_readiness_scan_component.status
+field_name: status
+entity_type: paragraph
+bundle: risk_readiness_scan_component
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

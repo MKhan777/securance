@@ -1,0 +1,19 @@
+uuid: 22b0b72e-2839-4ca1-bbc8-cacbd1388e5f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_type_1
+    - paragraphs.paragraphs_type.tabular_difference
+id: paragraph.tabular_difference.field_type_1
+field_name: field_type_1
+entity_type: paragraph
+bundle: tabular_difference
+label: 'Type 1'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

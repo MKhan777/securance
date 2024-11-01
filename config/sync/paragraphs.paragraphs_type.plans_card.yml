@@ -1,0 +1,10 @@
+uuid: 6f60dd80-5726-46b7-a947-cd55f375693b
+langcode: en-gb
+status: true
+dependencies: {  }
+id: plans_card
+label: 'Plans Card'
+icon_uuid: null
+icon_default: null
+description: 'The module which is used to show different plans that fit consumer scale.'
+behavior_plugins: {  }
