@@ -5,8 +5,7 @@
 	{% set formId = item.entity.field_formid.value %}
 
 {% endfor %} #}
-<div class="contact-block" style="background-image: url('{{ file_url(content.field_banner_image[0]['#media'].field_media_image.entity.uri.value) }}'); background-position: center; background-size: cover;">
-	<div class="container">
+	<div class="contact-block" style="background-image: url('{{ file_url(content.field_banner_image[0]['#media'].field_media_image.entity.uri.value) }}'); background-position: center; background-size: cover;"> <div class="container">
 		<div class="contact-content">
 			<h2>{{ content.field_title }}</h2>
 			<h2>{{ content.field_sub_title}}</h2>
@@ -14,39 +13,33 @@
 			<div class="form-section">
 				<div class="row">
 					<div class="col-md-6">
-						<img src="{{ file_url(content.field_industries_image[0]['#media'].field_media_image.entity.uri.value) }}" alt="industry-image">
+						<img src="{{ file_url(content.field_industries_image[0]['#media'].field_media_image.entity.uri.value) }}" alt="industry-image" style="width: 100%">
 					</div>
 					<div class="col-md-6">
-                        {% for item in content.field_hubspot_data['#items'] %}
-                            <div id="hub" class="js-hubspot-form"
-                                data-region="{{ item.entity.field_region.value }}"
-                                data-portal-id="{{ item.entity.field_portalid.value }}"
-                                data-form-id="{{ item.entity.field_formid.value }}">
-                            </div>
-                        {% endfor %}
+						{% for item in content.field_hubspot_data['#items'] %}
+							<div id="hub" class="js-hubspot-form" data-region="{{ item.entity.field_region.value }}" data-portal-id="{{ item.entity.field_portalid.value }}" data-form-id="{{ item.entity.field_formid.value }}"></div>
+						{% endfor %}
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-{{content.field_industries_list}}
-{{content.body}}
-
+<div class="industries-list-wrapper">
+	{{content.field_industries_list}}
+</div>
+{{content.field_industries_image_content}}
+<div class="industry-news-card-wrapper">
+	{{content.field_our_satisfied_customer}}
+</div>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
 <script>
-        // Fetch data attributes
-        const hubspotForm = document.querySelector('.js-hubspot-form');
-        const region = hubspotForm.getAttribute('data-region');
-        const portalId = hubspotForm.getAttribute('data-portal-id');
-        const formId = hubspotForm.getAttribute('data-form-id');
+	// Fetch data attributes
+const hubspotForm = document.querySelector('.js-hubspot-form');
+const region = hubspotForm.getAttribute('data-region');
+const portalId = hubspotForm.getAttribute('data-portal-id');
+const formId = hubspotForm.getAttribute('data-form-id');
 
 
-        hbspt.forms.create({
-            region: region,
-            portalId: portalId,
-            formId: formId,
-            target: '#hub'
-        });
+hbspt.forms.create({region: region, portalId: portalId, formId: formId, target: '#hub'});
 </script>
