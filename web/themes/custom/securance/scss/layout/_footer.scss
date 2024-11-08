@@ -165,8 +165,10 @@ footer.site-footer {
         }
       }
     }
-    .navbar-nav {
+    .nav {
       .nav-item {
+        display: block;
+        width: 100%;
         .nav-link {
           color: #444;
           font-size: 14px;
