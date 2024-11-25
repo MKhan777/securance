@@ -111,6 +111,13 @@
       padding: 0;
       border: none;
       font-size: 30px;
+      span{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       @media screen and (max-width: 767px) {
         right: -20px;
         top: -20px;

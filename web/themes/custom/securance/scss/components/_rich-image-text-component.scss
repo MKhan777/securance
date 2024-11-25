@@ -48,6 +48,7 @@
       font-size: 16px;
       line-height: 2;
       font-family: "Barlow-Regular";
+      white-space: pre-line;
     }
     .component-body:empty {
       display: none;
@@ -162,8 +163,12 @@
           .component-image {
             img {
               width: 100% !important;
+              height: 100% !important;
+              object-fit: cover;
             }
             padding: 0;
+            overflow: hidden;
+            max-height: 663px;
           }
         }
       }

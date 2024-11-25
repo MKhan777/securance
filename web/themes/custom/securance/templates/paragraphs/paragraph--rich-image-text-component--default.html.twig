@@ -28,9 +28,7 @@
 					{% endif %}
 
 					{% if content.field_description %}
-						<p class="component-description" style="color: {{ content.field_description_color.0['#markup']|striptags|trim }};">
-							{{ content.field_description.0['#context'].value}}
-						</p>
+						<p class="component-description" style="color: {{ content.field_description_color.0['#markup']|striptags|trim }};">{{content.field_description.0['#context'].value}}</p>
 					{% endif %}
 					{% if content.field_body %}
 						<div class="component-body">{{ content.field_body }}</div>
