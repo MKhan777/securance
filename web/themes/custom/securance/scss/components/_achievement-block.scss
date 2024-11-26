@@ -1,10 +1,15 @@
 .achievement-block {
   @include sectionSpace;
+  padding-bottom: 0;
+  .container{
+    max-width: 810px;
+  }
   .achievement-main-wrapper {
     @include displayColumn;
     gap: 40px;
     .row {
       width: 100%;
+      display: none;
       @media screen and (max-width: 991px) {
         width: auto;
         row-gap: 20px;
@@ -14,10 +19,16 @@
     .heading {
       @include heading;
       align-items: flex-start;
+      *{
+        font-family: "Poppins", serif !important;
+      }
       h6 {
         color: #a5253d;
         letter-spacing: normal;
-        font-family: "Barlow-Semibold";
+        font-weight: 600;
+      }
+      h2{
+        font-weight: 600;
       }
       p {
         color: #667085;
