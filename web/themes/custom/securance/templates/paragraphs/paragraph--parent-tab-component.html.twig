@@ -10,8 +10,8 @@
 					{% set tab_id = 'tab-' ~ item.entity.id.value %}
 					<li class="nav-item">
 						<a class="nav-link {% if loop.first %}active{% endif %}" id="{{ tab_id }}-tab" data-bs-toggle="tab" href="#{{ tab_id }}" role="tab" aria-controls="{{ tab_id }}" aria-selected="{% if loop.first %}true{% else %}false{% endif %}">
-							<h3>{{ item.entity.field_heading.value }}</h3>
-							<h4>{{ item.entity.field_sub_heading.value }}</h4>
+							<h3>{{ item.entity.getTranslation(lang).field_heading.value }}</h3>
+							<h4>{{ item.entity.getTranslation(lang).field_sub_heading.value }}</h4>
 						</a>
 					</li>
 				{% endfor %}
@@ -23,8 +23,8 @@
 						<div class="row">
 							<div class="col-12 col-xl-6">
 								<div class="tab-text-content">
-									<h4>{{ item.entity.field_description_heading.value }}</h4>
-									<p>{{ item.entity.field_description.value }}</p>
+									<h4>{{ item.entity.getTranslation(lang).field_description_heading.value }}</h4>
+									<p>{{ item.entity.getTranslation(lang).field_description.value  }}</p>
 								</div>
 							</div>
 							<div class="col-12 col-xl-6">
