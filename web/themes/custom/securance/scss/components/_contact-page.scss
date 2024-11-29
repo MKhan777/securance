@@ -1,0 +1,42 @@
+.field.field--name-field-contact-form.field--type-webform.field--label-hidden.field__item:has(.webform-submission-contact-form ) {
+    background: #F5F5F5;
+}
+.webform-submission-contact-form {
+    max-width: 1170px;
+    margin: auto;
+    padding: 50px 15px;
+    fieldset.webform-composite-hidden-title {
+        margin-top: 0 !important;
+    }
+    .form-control {
+        padding: 10px 15px;
+        border-radius: 0;
+    }
+    .form-check-input {
+        width: 22px;
+        height: 22px;
+        border-radius: 0!important;
+        margin-left: 0!important;
+    }
+    .form-check {
+        padding-left: 0px;
+        display: inline-flex !important;
+        gap: 15px;
+        align-items: center;
+        margin-bottom: 0!important;
+    }
+    .js-webform-checkboxes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .form-actions.webform-actions {
+        max-width: max-content;
+        float: right;
+        display: inline-block;
+        margin-bottom: 0!important;
+        input {
+            max-width: max-content;
+        }
+    }
+}

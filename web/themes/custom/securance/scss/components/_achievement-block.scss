@@ -1,6 +1,5 @@
 .achievement-block {
   @include sectionSpace;
-  padding-bottom: 0;
   .container{
     max-width: 810px;
   }
@@ -9,7 +8,6 @@
     gap: 40px;
     .row {
       width: 100%;
-      display: none;
       @media screen and (max-width: 991px) {
         width: auto;
         row-gap: 20px;

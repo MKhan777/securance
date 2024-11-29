@@ -24,6 +24,7 @@
 
 {% if content.field_modal_card['#items'] is not empty %}
 	<div class="modal-wrapper" id="modalWrapper">
+		<div class="modal-overlay"></div>
 		<div class="cards-wrapper">
 			<button class="close-modal-btn">
 				<span>×</span>
@@ -55,20 +56,23 @@
 	</div>
 	<script>
 		let modal = document.querySelector(".modal-wrapper");
-let contactBtn = document.querySelector('.contact-btn .cta-button[data-toggle="modal"]');
+		let contactBtn = document.querySelector('.contact-btn .cta-button[data-toggle="modal"]');
 
-if (contactBtn) {
-contactBtn.addEventListener('click', () => {
-if (modal) {
-modal.classList.toggle('modal-wrapper-show');
-}
-});
-}
+		if (contactBtn) {
+			contactBtn.addEventListener('click', () => {
+				if (modal) {
+					modal.classList.toggle('modal-wrapper-show');
+				}
+			});
+		}
 
-if (modal) {
-modal.querySelector(".close-modal-btn").addEventListener('click', () => {
-modal.classList.toggle('modal-wrapper-show');
-});
-}
+		if (modal) {
+			modal.querySelector(".close-modal-btn", ".modal-overlay").addEventListener('click', () => {
+				modal.classList.toggle('modal-wrapper-show');
+			});
+			modal.querySelector(".modal-overlay").addEventListener('click', () => {
+				modal.classList.toggle('modal-wrapper-show');
+			});
+		}
 	</script>
 {% endif %}
