@@ -1,28 +1,43 @@
-.landing-banner{
+.landing-banner {
     @include sectionSpace;
     padding-top: 60px;
     padding-bottom: 40px;
-    background-position: unset!important;
-    background-size: unset!important;
-    .heading{
+    background-position: unset !important;
+    background-size: unset !important;
+
+    .heading {
         @include heading;
         align-items: flex-start;
-        h6{
+
+        h6 {
             color: #ffc2ce;
             word-spacing: 3px;
             text-transform: uppercase;
         }
-        h2{
+
+        h2 {
             color: #ffffff;
         }
-        p{
+
+        p {
             color: #f9fafb;
             line-height: 2;
         }
+
+        .landing-banner-btn {
+            @include securance-btn-link(#F9FAFB, #a12844, transparent, #F9FAFB);
+
+            a {
+                &:after {
+                    display: none;
+                }
+            }
+        }
     }
 }
+
 .node--type-contact {
-    .landing-banner{
+    .landing-banner {
         padding: 150px 0;
         background-size: cover !important;
     }
