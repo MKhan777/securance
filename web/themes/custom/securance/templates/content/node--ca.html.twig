@@ -22,6 +22,7 @@
 				<div class="col-12 col-lg-8">
 					{{content.body}}
 					{{content.field_career_application}}
+					<div id="form-container"></div>
 				</div>
 				<div class="col-12 col-lg-4">
                     {{content.field_job_overview_card}}
@@ -30,3 +31,12 @@
 		</div>
 	</div>
 </div>
+
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "4395676",
+    formId: "b9cde9b0-ad5a-4687-85f3-f6a7153c9c10",
+    target: "#form-container" // Specify the target div
+  });
+</script>
