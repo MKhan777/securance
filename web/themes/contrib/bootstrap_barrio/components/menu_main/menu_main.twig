@@ -1,7 +1,7 @@
 {% import _self as menus %}
 
 {#
-  We call a macro which calls itself to render the full tree.
+  Recursive macro to render the full menu tree.
   @see http://twig.sensiolabs.org/doc/tags/macro.html
 #}
 {{ menus.menu_links(items, attributes, 0) }}
@@ -35,7 +35,12 @@
           ]
         %}
         {% if item.below %}
-          {{ link(item.title, item.url, {'class': link_classes, 'data-bs-toggle': 'dropdown', 'aria-expanded': 'false', 'aria-haspopup': 'true' }) }}
+          {# Add `data-bs-toggle` only for mobile devices via a CSS class #}
+          {{ link(item.title, item.url, {
+            'class': link_classes|merge(['mobile-toggle']), 
+            'aria-expanded': 'false', 
+            'aria-haspopup': 'true'
+          }) }}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% else %}
           {{ link(item.title, item.url, {'class': link_classes}) }}
@@ -45,3 +50,48 @@
     </ul>
   {% endif %}
 {% endmacro %}
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const mobileToggles = document.querySelectorAll('.mobile-toggle');
+
+  function updateToggleAttributes() {
+    mobileToggles.forEach(toggle => {
+      if (window.innerWidth < 992) {
+        toggle.setAttribute('data-bs-toggle', 'dropdown');
+      } else {
+        toggle.removeAttribute('data-bs-toggle');
+      }
+    });
+  }
+
+  // Initialize and handle window resizing
+  updateToggleAttributes();
+  window.addEventListener('resize', updateToggleAttributes);
+});
+const dropdownLinks = document.querySelectorAll(".dropdown-toggle");
+
+dropdownLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        console.log("clicked nav");
+        // Get the URL from the href attribute
+        const url = link.getAttribute("href");
+        if (url) {
+            event.preventDefault(); // Prevent the default dropdown behavior
+            window.location.href = url; // Redirect to the URL
+        } else {
+            console.warn("No href attribute found on link:", link);
+        }
+    });
+});
+</script>
+
+
+<style>
+@media (min-width: 992px) {
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+</style>
