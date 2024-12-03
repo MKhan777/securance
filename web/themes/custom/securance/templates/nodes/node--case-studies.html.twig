@@ -1,0 +1,113 @@
+<div class="case-studies-page career-page">
+    <div class="page-header">
+        <div class="container">
+            <div class="heading">
+                <h6>{{content.field_completed_date.0['#context'].value}}</h6>
+                <h2>{{node.label}}</h2>
+                <p>{{content.field_description.0['#context'].value}}</p>
+                <div class="heading-btn">
+                {% for item in content.field_assurance_standards %}
+                    {% if item['#title'] is defined %}
+                        <button>{{ item['#title'] }}</button>
+                    {% endif %}
+                {% endfor %}
+                    <button>{{content.field_service.0['#title']}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="career-body">
+		<div class="career-img-banner">
+			<img src="{{ file_url(content.field_brand_image[0]['#media'].field_media_image.entity.uri.value) }}" alt="career-img-banner">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					{{content.body}}
+				</div>
+                <div class="share-container">
+                <span class="share-text">Share this case study</span>
+                <div class="share-btn-wrapper">
+                    <button class="share-button">
+                        <span class="link-icon">🔗</span> Copy link
+                    </button>
+                    <button class="linkedin-button">
+                        <img src="./images/icons/images-linkedin.png" alt="LinkedIn" />
+                    </button>
+                </div>
+                </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{{content.field_related_case_studies}}
+
+<style>
+.case-studies-banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.texonomy-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.texonomy-item {
+    background: #FFF4F7;
+    border-radius: 10px;
+    padding: 10px;
+}
+.career-page .career-body .career-img-banner img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.share-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid #000;
+}
+
+.share-text {
+  font-size: 16px;
+  color: #333;
+}
+
+.share-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+.share-btn-wrapper{
+    display: flex;
+    gap: 25px;
+}
+
+.linkedin-button {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.linkedin-button img {
+  width: 20px;
+  height: 20px;
+}
+</style>
