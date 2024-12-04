@@ -112,6 +112,34 @@ footer.site-footer {
       }
     }
   }
+  .field--name-field-email-label{
+    color: #9aa8a8;
+      font-size: 12px;
+      font-family: "Barlow-Bold";
+      margin: 0;
+  }
+  .footer-email{
+    color: #992540;
+    font-size: 14px;
+    font-family: "Barlow-Regular";
+    position: relative;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 1px;
+      background: #a12844;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      transition: width .6s;
+    }
+    &:hover{
+      &:after{
+        width: 100%;
+      }
+    }
+  }
   .field--name-field-e-mail-all-locations {
     .field__label {
       color: #9aa8a8;
