@@ -52,7 +52,7 @@ header {
       }
       flex-direction: row;
       gap: 20px;
-
+      flex-wrap: nowrap;
       li.nav-item {
         &:not(:first-child){
           .dropdown-menu {
@@ -193,6 +193,9 @@ header {
               }
               &:hover {
                 background: #a12844 !important;
+                .is-active {
+                  color: #ffffff;
+                }
               }
             }
           }
@@ -228,6 +231,7 @@ header {
         .nav-link {
           padding: 0;
           color: #fff;
+          white-space: nowrap;
           &:hover {
             color: #fff !important;
           }

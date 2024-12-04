@@ -46,8 +46,7 @@
 							<h4>{{ item.entity.field_description.value }}</h4>
 						</div>
 						{% if item.entity.field_cta_text.value %}
-							{% set cta = item.entity.field_cta_text.value[0] %}
-							<a href="{{ item.entity.field_cta_link.uri }}" class="cta-button">{{ cta.title }}</a>
+							<a href="{{ item.entity.field_cta_text.0.url }}" class="cta-button">{{ item.entity.field_cta_text.0.title }}</a>
 						{% endif %}
 					</div>
 				</div>
