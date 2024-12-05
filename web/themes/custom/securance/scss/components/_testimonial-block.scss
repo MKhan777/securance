@@ -12,6 +12,34 @@
       row-gap: 20px;
     }
   }
+  .view-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 0;
+    max-width: 57%;
+    @media screen and (max-width: 1140px) {
+      max-width: 100%;
+    }
+    h3 {
+      font-size: 32px;
+      line-height: 45px;
+      font-family: "Barlow-SemiBold";
+      color: #54595f;
+      margin: 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+      font-family: "Poppins";
+      color: #7a7a7a;
+    }
+  }
+  .flickity-viewport{
+    height: 520px!important;
+  }
 }
 
 .view-content {

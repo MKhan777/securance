@@ -29,6 +29,7 @@
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
         "drupal/core-recommended": "^10.3",
+        "drupal/easy_breadcrumb": "^2.0",
         "drupal/eva": "3.1",
         "drupal/field_group": "3.6",
         "drupal/field_validation": "1.1",

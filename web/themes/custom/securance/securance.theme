@@ -32,5 +32,14 @@ function securance_form_system_theme_settings_alter(&$form, FormStateInterface $
 }
 
 function securance_preprocess_paragraph(&$variables) {
+ if(\Drupal::languageManager()->getCurrentLanguage()->getId()){
   $variables['lang'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
+ }
+ else{
+  $variables['lang'] = 'en-gb';
+  }
+}
+
+function securance_form_search_block_form_alter(&$form, &$form_state) {
+  $form['keys']['#attributes']['placeholder'][] = t('Search...');
 }

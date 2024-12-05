@@ -2,10 +2,10 @@
 	<div class="tabs">
 		<ul
 			class="nav nav-tabs">
-			{% if form.tid %}
-				{% for option_value, option_label in form.tid['#options'] %}
+			{% if form.service_type %}
+				{% for option_value, option_label in form.service_type['#options'] %}
 					<li class="nav-item">
-						<a class="nav-link {{ form.tid['#value'] == option_value ? 'active' : '' }}" href="#" data-value="{{ option_value }}">
+						<a class="nav-link {{ form.service_type['#value'] == option_value ? 'active' : '' }}" href="#" data-value="{{ option_value }}">
 							{% if option_label == '- Any -' %}
 								All
 							{% else %}
@@ -32,7 +32,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 	document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('active'));
 	this.classList.add('active');
 	const currentUrl = new URL(window.location.href);
-	currentUrl.searchParams.set('tid', selectedValue);
+	currentUrl.searchParams.set('service_type', selectedValue);
 	window.location.href = currentUrl;
 	});
 });

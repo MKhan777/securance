@@ -1,8 +1,9 @@
-<div class="advisory-guide-block {{ content.field_service_type.0['#markup']|lower }}" style="background: linear-gradient(180deg,#ffffff 50%,{{content.field_background_overlay.0['#markup']}} 50%)">
+{% set service_type = content.field_service_type['#items'].value %}
+<div class="advisory-guide-block {{ service_type }}" style="background: linear-gradient(180deg,#ffffff 50%,{{content.field_background_overlay.0['#markup']}} 50%)">
 	<div class="container">
-		<div class="advisory-content-wrapper {% if content.field_border_radius['#items'].value %}radius{% endif %}" style="{% if file_url(content.field_banner_background[0]['#media'].field_media_image.entity.uri.value) %}background-image: url('{{ file_url(content.field_banner_background[0]['#media'].field_media_image.entity.uri.value) }}'); background-position: center; background-size: cover;{% endif %} {% if content.field_background_color|render|striptags|trim %}background: {{ content.field_background_color|render|striptags|trim }}{% endif %}">
+		<div class="advisory-content-wrapper advisory-content-wrapper-{{service_type}} {% if content.field_border_radius['#items'].value %}radius{% endif %}" style="{% if file_url(content.field_banner_background[0]['#media'].field_media_image.entity.uri.value) %}background-image: url('{{ file_url(content.field_banner_background[0]['#media'].field_media_image.entity.uri.value) }}'); background-position: center; background-size: cover;{% endif %} {% if content.field_background_color|render|striptags|trim %}background: {{ content.field_background_color|render|striptags|trim }}{% endif %}">
 			<div class="advisory-row">
-				<div class="advisory-content-column {% if content.field_increase_content_width['#items'].value %}advisory-content-column-width{% endif %}">
+				<div class="advisory-content-column {% if content.field_increase_content_width['#items'].value %}advisory-content-column-width{% endif %} service-type-{{service_type}}">
 					<div class="advisory-content">
 						{% if content.field_sub_heading[0]['#context'].value %}
 							<h6 style="color: {{ content.field_sub_heading_color|render|striptags|trim }}">{{content.field_sub_heading[0]['#context'].value}}</h6>
@@ -40,11 +41,13 @@
 						</div>
 					</div>
 				</div>
+				{% if content.field_figure[0]['#media'].field_media_image.entity.uri.value %}
 				<div class="advisory-img-column {% if content.field_increase_content_width['#items'].value %}advisory-img-column-width{% endif %}">
 					<div class="advisory-img">
-						{{content.field_figure}}
+						<img src="{{ file_url(content.field_figure[0]['#media'].field_media_image.entity.uri.value) }}" alt="assurance-img">
 					</div>
 				</div>
+				{% endif %}
 			</div>
 		</div>
 	</div>

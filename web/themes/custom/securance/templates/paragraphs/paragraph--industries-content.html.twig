@@ -14,7 +14,9 @@
 			</div>
 			<div class="col-lg-5">
 				<div class="industry-img">
+				{% if content.field_figure[0]['#media'].field_media_image.entity.uri.value %}
 					<img src="{{ file_url(content.field_figure[0]['#media'].field_media_image.entity.uri.value) }}" alt="industry-img">
+				{% endif %}
 				</div>
 			</div>
 		</div>
