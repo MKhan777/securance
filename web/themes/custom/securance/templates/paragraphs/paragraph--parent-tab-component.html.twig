@@ -1,5 +1,7 @@
 {% set unique_id = content.field_tabs['#items'][0].entity.id.value %}
-<div class="tabs-block">
+{% set component_type = content.field_component_types['#items'].value %}
+
+<div class="tabs-block tab-type-{{component_type}}">
 	<div class="container">
 		<div class="heading">
 			<h2>{{ content.field_title }}</h2>
@@ -9,7 +11,7 @@
 				{% for item in content.field_tabs['#items'] %}
 					{% set tab_id = 'tab-' ~ item.entity.id.value %}
 					<li class="nav-item">
-						<a class="nav-link {% if loop.first %}active{% endif %}" id="{{ tab_id }}-tab" data-bs-toggle="tab" href="#{{ tab_id }}" role="tab" aria-controls="{{ tab_id }}" aria-selected="{% if loop.first %}true{% else %}false{% endif %}">
+						<a class="nav-link {% if loop.first %}active{% endif %} nav-link-{{component_type}}" id="{{ tab_id }}-tab" data-bs-toggle="tab" href="#{{ tab_id }}" role="tab" aria-controls="{{ tab_id }}" aria-selected="{% if loop.first %}true{% else %}false{% endif %}">
 							<h3>{{ item.entity.getTranslation(lang).field_heading.value }}</h3>
 							<h4>{{ item.entity.getTranslation(lang).field_sub_heading.value }}</h4>
 						</a>
@@ -21,16 +23,17 @@
 					{% set tab_id = 'tab-' ~ item.entity.id.value %}
 					<div class="tab-pane fade {% if loop.first %}show active{% endif %}" id="{{ tab_id }}" role="tabpanel" aria-labelledby="{{ tab_id }}-tab">
 						<div class="row">
-							<div class="col-12 col-xl-6">
-								<div class="tab-text-content">
+							{% set media_entity = item.entity.field_figure.entity %}
+							<div class="col-12 {% if media_entity.field_media_image.entity %}col-xl-6{% endif %}">
+								<div class="tab-text-content  tab-text-content-{{component_type}}">
 									<h4>{{ item.entity.getTranslation(lang).field_description_heading.value }}</h4>
 									<p>{{ item.entity.getTranslation(lang).field_description.value  }}</p>
 								</div>
 							</div>
+							{% if media_entity.field_media_image.entity %}
 							<div class="col-12 col-xl-6">
 								<div class="tab-img-content">
-									{% if item.entity.field_figure.entity %}
-										{% set media_entity = item.entity.field_figure.entity %}
+									{% if item.entity.field_figure.entity %}			
 										{% if media_entity.field_media_image.entity %}
 											{% set image = media_entity.field_media_image.entity %}
 											<div class="image-wrapper">
@@ -40,6 +43,7 @@
 									{% endif %}
 								</div>
 							</div>
+							{% endif %}
 						</div>
 					</div>
 				{% endfor %}
