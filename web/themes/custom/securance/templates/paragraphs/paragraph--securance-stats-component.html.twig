@@ -10,6 +10,9 @@
 		</div>
 		<div class="row stats-wrapper">
 			{% for item in content.field_securance_stats['#items'] %}
+				{% if not (item.entity.hasTranslation(lang)) %}
+					{% set lang = 'en-gb' %}
+				{% endif %}
 				<div class="col-3 stat-item">
 					<div class="stat-value">
 						{% if item.entity.field_stats_character.value == 'euro' %}

@@ -12,6 +12,9 @@
 				</div>
 				{% for item in content.field_text_with_listing['#items'] %}
 					<div class="multi-column-card">
+						{% if not (item.entity.hasTranslation(lang)) %}
+							{% set lang = 'en-gb' %}
+						{% endif %}
 						{% if item.entity.field_title.value is not empty %}
 							<h3>{{ item.entity.getTranslation(lang).field_title.value }}</h3>
 						{% endif %}

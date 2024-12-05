@@ -14,6 +14,9 @@
 							{% set accor_id = 'accor-' ~ item.entity.id.value %}
 							<h2 class="accordion-header" id="heading-{{accor_id}}">
 								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{accor_id}}" aria-expanded="true" aria-controls="collapse-{{accor_id}}">
+									{% if not (item.entity.hasTranslation(lang)) %}
+										{% set lang = 'en-gb' %}
+									{% endif %}
 									{{ item.entity.getTranslation(lang).field_question.value }}
 									<span class="open">
 										<svg class="e-font-icon-svg e-fas-minus" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
@@ -29,6 +32,9 @@
 							</h2>
 							<div id="collapse-{{accor_id}}" class="accordion-collapse collapse" aria-labelledby="heading-{{accor_id}}" data-bs-parent="#accordionExample">
 								<div class="accordion-body">
+									{% if not (item.entity.hasTranslation(lang)) %}
+										{% set lang = 'en-gb' %}
+									{% endif %}
 									{{ item.entity.getTranslation(lang).field_answer.value }}
 								</div>
 							</div>

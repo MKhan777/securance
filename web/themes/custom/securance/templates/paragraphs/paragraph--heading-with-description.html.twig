@@ -16,7 +16,9 @@
 										{{item.entity.field_value.value}}%
 									</div>
 								</div>
-
+								{% if not (item.entity.hasTranslation(lang)) %}
+									{% set lang = 'en-gb' %}
+								{% endif %}
 								<p>{{item.entity.getTranslation(lang).field_stats_description.value}}</p>
 							</div>
 						</div>

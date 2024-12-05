@@ -13,6 +13,9 @@
 						<ul class="nav nav-tabs" role="tablist">
 							{% for item in content.field_tabs['#items'] %}
 								{% set tab_id = 'tab-' ~ item.entity.id.value %}
+								{% if not (item.entity.hasTranslation(lang)) %}
+									{% set lang = 'en-gb' %}
+								{% endif %}
 								<li class="nav-item">
 									<a class="nav-link {% if loop.first %}active{% endif %}" id="{{ tab_id }}-tab" data-bs-toggle="tab" href="#{{ tab_id }}" role="tab" aria-controls="{{ tab_id }}" aria-selected="{% if loop.first %}true{% else %}false{% endif %}">
 										<h3>{{ item.entity.getTranslation(lang).field_heading.value }}</h3>
@@ -27,6 +30,9 @@
 								<div class="tab-pane fade {% if loop.first %}show active{% endif %}" id="{{ tab_id }}" role="tabpanel" aria-labelledby="{{ tab_id }}-tab">
 									<div class="row">
 										<div class="col-12">
+											{% if not (item.entity.hasTranslation(lang)) %}
+												{% set lang = 'en-gb' %}
+											{% endif %}
 											<div class="tab-text-content">
 												{% if item.entity.field_description_heading.value %}
 													<h4>{{ item.entity.getTranslation(lang).field_description_heading.value }}</h4>

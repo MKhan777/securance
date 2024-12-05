@@ -19,7 +19,9 @@
 									</div>
 								{% endif %}
 							{% endif %}
-
+							{% if not (item.entity.hasTranslation(lang)) %}
+								{% set lang = 'en-gb' %}
+							{% endif %}
 							<div class="service-content">
 								<h3 class="service-title">{{ item.entity.getTranslation(lang).field_service_title.value }}</h3>
 								<p class="service-description">{{ item.entity.getTranslation(lang).field_service_description.value }}</p>

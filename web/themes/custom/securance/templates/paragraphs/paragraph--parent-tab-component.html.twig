@@ -10,6 +10,9 @@
 			<ul class="nav nav-tabs" role="tablist">
 				{% for item in content.field_tabs['#items'] %}
 					{% set tab_id = 'tab-' ~ item.entity.id.value %}
+					{% if not (item.entity.hasTranslation(lang)) %}
+						{% set lang = 'en-gb' %}
+					{% endif %}
 					<li class="nav-item">
 						<a class="nav-link {% if loop.first %}active{% endif %} nav-link-{{component_type}}" id="{{ tab_id }}-tab" data-bs-toggle="tab" href="#{{ tab_id }}" role="tab" aria-controls="{{ tab_id }}" aria-selected="{% if loop.first %}true{% else %}false{% endif %}">
 							<h3>{{ item.entity.getTranslation(lang).field_heading.value }}</h3>
@@ -26,6 +29,9 @@
 							{% set media_entity = item.entity.field_figure.entity %}
 							<div class="col-12 {% if media_entity.field_media_image.entity %}col-xl-6{% endif %}">
 								<div class="tab-text-content  tab-text-content-{{component_type}}">
+									{% if not (item.entity.hasTranslation(lang)) %}
+										{% set lang = 'en-gb' %}
+									{% endif %}
 									<h4>{{ item.entity.getTranslation(lang).field_description_heading.value }}</h4>
 									<p>{{ item.entity.getTranslation(lang).field_description.value  }}</p>
 								</div>
