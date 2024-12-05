@@ -13,9 +13,9 @@
 				{% for item in content.field_text_with_listing['#items'] %}
 					<div class="multi-column-card">
 						{% if item.entity.field_title.value is not empty %}
-							<h3>{{ item.entity.field_title.value }}</h3>
+							<h3>{{ item.entity.getTranslation(lang).field_title.value }}</h3>
 						{% endif %}
-						{% for list_item in item.entity.field_list %}
+						{% for list_item in item.entity.getTranslation(lang).field_list %}
 							<div>{{ list_item.value|raw }}</div>
 						{% endfor %}
 					</div>

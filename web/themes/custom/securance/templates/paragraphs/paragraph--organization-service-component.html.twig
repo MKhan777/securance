@@ -21,8 +21,8 @@
 							{% endif %}
 
 							<div class="service-content">
-								<h3 class="service-title">{{ item.entity.field_service_title.value }}</h3>
-								<p class="service-description">{{ item.entity.field_service_description.value }}</p>
+								<h3 class="service-title">{{ item.entity.getTranslation(lang).field_service_title.value }}</h3>
+								<p class="service-description">{{ item.entity.getTranslation(lang).field_service_description.value }}</p>
 
 								{% if item.entity.field_cta_text.value %}
 									{% set cta = item.entity.field_cta_text.value[0] %}

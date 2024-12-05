@@ -87,6 +87,7 @@
   .testimonial-wrapper {
     flex-direction: column;
     height: 100%;
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.07);
     .testimonial-img-content {
       width: 100%;
       img {
@@ -106,10 +107,10 @@
         }
       }
       .description {
-        p {
-          color: #667085;
-          font-size: 16px;
-        }
+        font-family: 'Poppins', serif !important;
+        color: #667085;
+        font-size: 16px;
+
       }
       .organisation-content {
         a {
