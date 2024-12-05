@@ -10,9 +10,9 @@
 						{{ content.field_cta_text['#items'].title }}
 					</a>
 				{% endif %}
-				{% if content.field_cta_text_2['#items'].title %}
-					<a href="{{ content.field_cta_text_2['#items'].uri }}" class="cta-button">
-						{{ content.field_cta_text_2['#items'].title }}
+				{% if content.field_cta_text_2['#items'].0.title %}
+					<a href="{{ content.field_cta_text_2['#items'].0.url }}" class="cta-button">
+						{{ content.field_cta_text_2['#items'].0.title }}
 					</a>
 				{% endif %}
 
