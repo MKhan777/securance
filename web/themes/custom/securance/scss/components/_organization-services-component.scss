@@ -67,9 +67,17 @@
       }
 
       .image-wrapper {
+        width: 60px;
+        height: 60px;
+        background: #F6EAED;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         img {
-          width: 50px;
-          height: 50px;
+          width: 30px;
+          height: 30px;
         }
       }
 
@@ -79,19 +87,20 @@
         gap: 20px;
 
         h3.service-title {
-          font-size: 24px;
+          font-size: 20px;
           line-height: 1.5;
-          font-family: "Barlow-Bold";
-          color: #54595f;
+          font-family: "Poppins";
+          color: #000000;
           margin: 0;
         }
 
         p.service-description {
           font-size: 16px;
-          line-height: 1.5;
-          font-family: "Barlow-Regular";
-          color: #7a7a7a;
+          line-height: 1.8;
+          font-family: "Poppins";
+          color: #626262;
           margin: 0;
+          font-weight: 300;
         }
 
         a.cta-button {
@@ -128,6 +137,7 @@
   margin: auto;
   padding: 70px 12px;
   row-gap: 40px;
+
   @media screen and (max-width: 767px) {
     padding: 30px 12px;
     row-gap: 20px;
@@ -145,10 +155,10 @@
         font-family: "Poppins", serif !important;
       }
 
-      > div {
+      >div {
         height: 100%;
 
-       > div {
+        >div {
           height: 100%;
         }
       }
@@ -164,7 +174,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          img{
+
+          img {
             width: 30px;
             height: 30px;
             margin-bottom: 0;
@@ -173,14 +184,16 @@
 
         .service-title {
           color: #000;
+
           @media screen and (max-width: 767px) {
             font-size: 18px;
           }
         }
 
         .service-description {
-          p{
+          p {
             color: #626262;
+
             @media screen and (max-width: 767px) {
               font-size: 14px;
             }
@@ -193,6 +206,7 @@
 
           a {
             padding: 0;
+
             @media screen and (max-width: 767px) {
               font-size: 14px;
             }
