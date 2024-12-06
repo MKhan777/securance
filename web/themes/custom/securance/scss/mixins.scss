@@ -172,3 +172,16 @@
     }
   }
 }
+@mixin bg-rotate-style {
+  position: relative;
+  &:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    border-left: 100vw solid #fff;
+    border-top: 171px solid transparent;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}

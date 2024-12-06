@@ -125,8 +125,8 @@
 
       h3 {
         a {
-          font-size: 28px;
-          font-family: "Barlow-Bold";
+          @include h2;
+          font-family: "Poppins";
           line-height: 1.5;
         }
       }

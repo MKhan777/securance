@@ -18,8 +18,11 @@
 							</div>
 						</div>
 						<div class="approach-step-body">
-							<h6>{{item.entity.field_step_heading.value}}</h6>
-							<p>{{item.entity.field_step_description.value}}</p>
+							{% if not item.entity.hasTranslation(lang) %}
+								{% set lang = 'en-gb' %}
+							{% endif %}
+							<h6>{{item.entity.getTranslation(lang).field_step_heading.value}}</h6>
+							<p>{{item.entity.getTranslation(lang).field_step_description.value}}</p>
 						</div>
 					</div>
 				{% endfor %}

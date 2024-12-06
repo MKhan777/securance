@@ -26,18 +26,21 @@
 				<div class="container">
 					<div class="assurance-type-list-content-wrapper">
 						<div class="assurance-type-list-content topic">
+						{% if not item.entity.hasTranslation(lang) %}
+							{% set lang = 'en-gb' %}
+						{% endif %}
 							{% if item.entity.field_topic.value is not empty %}
-								<h6>{{ item.entity.field_topic.value }}</h6>
+								<h6>{{ item.entity.getTranslation(lang).field_topic.value }}</h6>
 							{% endif %}
 						</div>
 						<div class="assurance-type-list-content">
 							{% if item.entity.field_type_1.value is not empty %}
-								<p>{{ item.entity.field_type_1.value }}</p>
+								<p>{{ item.entity.getTranslation(lang).field_type_1.value }}</p>
 							{% endif %}
 						</div>
 						<div class="assurance-type-list-content">
 							{% if item.entity.field_type_2.value is not empty %}
-								<p>{{ item.entity.field_type_2.value }}</p>
+								<p>{{ item.entity.getTranslation(lang).field_type_2.value }}</p>
 							{% endif %}
 						</div>
 					</div>
