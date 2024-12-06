@@ -4,6 +4,33 @@
     .field--name-field-body {
       @include heading;
       align-items: flex-start;
+      gap: 15px;
+      h3{
+        font-family: "Barlow-Medium";
+        color: #344050;
+        margin-bottom: 5px;
+      }
+      p{
+        font-size: 14px;
+        font-family: "Poppins";
+        color: #667085;
+        a{
+          color: currentColor;
+        }
+      }
+      ul{
+        list-style: none;
+        padding-left: 0;
+        li{
+          div{
+            font-size: 14px;
+            font-family: "Poppins";
+            line-height: 2;
+            color: #667085;
+            margin-bottom: 10px;
+          }
+        }
+      }
       blockquote{
         p{
             font-size: 20px;

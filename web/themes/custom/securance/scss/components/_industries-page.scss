@@ -65,11 +65,12 @@
 .industry-news-card-wrapper {
 	padding-top: 30px;
 	.viewsreference--view-title{
-		@include h5;
+		@include h2;
 		max-width: 1200px;
 		margin: auto;
 		padding: 0 12px;
 		padding-bottom: 20px;
+    color: #444444;
 	}
   .views-view-responsive-grid__item {
     position: relative;
