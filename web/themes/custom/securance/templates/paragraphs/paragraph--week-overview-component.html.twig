@@ -7,15 +7,19 @@
 			</div>
 			<div class="week-overview-content-wrapper">
 				{% for item in content.field_week_schedule['#items'] %}
+					{% if not (item.entity.hasTranslation(lang)) %}
+						{% set lang = 'en-gb' %}
+					{% endif %}
 					<div class="week-overview-card">
 						<div class="card-header" style="background-image: url('{{ file_url(item.entity.field_week_background.entity.field_media_image.entity.uri.value) }}'); background-position: top; background-size: contain; background-repeat: no-repeat;">
 							<div class="week-number">{{ item.entity.field_week_number.value }}</div>
-							<div class="week-topic">{{ item.entity.field_week_topic.value }}</div>
+
+							<div class="week-topic">{{ item.entity.getTranslation(lang).field_week_topic.value }}</div>
 						</div>
 						<div class="card-body">
-							<h6>{{ item.entity.field_title.value }}</h6>
+							<h6>{{ item.entity.getTranslation(lang).field_title.value }}</h6>
 							{% if item.entity.field_description is not empty %}
-								{% for item in item.entity.field_description %}
+								{% for item in item.entity.getTranslation(lang).field_description %}
 									<p>{{ item.value}}</p>
 								{% endfor %}
 							{% endif %}

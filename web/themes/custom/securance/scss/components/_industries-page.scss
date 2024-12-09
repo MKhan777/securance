@@ -1,3 +1,22 @@
+.industries-background{
+  padding: 30px 60px 60px;
+  .container{
+    position: relative;
+    z-index: 1;
+  }
+  @include bg-rotate-style;
+  .form-section{
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    .row{
+      align-items: center;
+    }
+    img{
+      box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.5);
+    }
+  }
+}
 .industries-list-wrapper {
   padding: 30px;
   .field__items {
@@ -31,7 +50,6 @@
     }
   }
 }
-
 .industry-content-block {
   .heading {
     h2 {

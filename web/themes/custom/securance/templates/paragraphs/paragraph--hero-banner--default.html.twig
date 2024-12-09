@@ -11,15 +11,20 @@
 					{% if content.field_sub_heading[0]['#context'].value %}
 						<h6>{{content.field_sub_heading[0]['#context'].value}}</h6>
 					{% endif %}
-					{% if content.field_title[0]['#context'].value %}
-						<h1>{{content.field_title[0]['#context'].value}}</h1>
+					{% if content.field_title[0]['#context'].value or content.field_colored_title[0]['#context'].value %}	
+					<h1>
+						<span class="heading-2-{{content.field_color_post_heading[0]['#markup']}}">{{content.field_title[0]['#context'].value}}</span>
+						<span class="heading-1-{{content.field_color_post_heading[0]['#markup']}}">{{content.field_colored_title[0]['#context'].value}}</span>
+					</h1>
 					{% endif %}
 					{% if content.field_description[0]['#context'].value %}
 						<p>{{content.field_description[0]['#context'].value}}</p>
 					{% endif %}
+					{% if content.field_cta_text_2['#items'].title %}
 					<div class="securance-banner-link">	
 						<a class="cta-button" href="{{ content.field_cta_text_2['#items'].0.url }}" data-toggle="modal" data-target="#modalWrapper">{{ content.field_cta_text_2['#items'].title }}</a>
 					</div>
+					{% endif %}
 				</div>
 			</div>
 			<div class="col-12 col-md-6 {% if field_right_column_width['#items'].value %}col-right-width{% endif %}">

@@ -37,18 +37,31 @@
 								{% if content.field_connecter_line['#items'].value == 'solid' %}
 									{% for content_item in item.entity.field_card_content %}
 										{% if content_item.entity.field_question.value is not empty %}
-											<h4>{{ content_item.entity.field_question.value }}</h4>
+											{% if not (content_item.entity.hasTranslation(lang)) %}
+												{% set lang = 'en-gb' %}
+											{% endif %}
+											<h4>{{ content_item.entity.getTranslation(lang).field_question.value }}</h4>
 										{% endif %}
+
 										{% if content_item.entity.field_answer.value is not empty %}
-											<p>{{ content_item.entity.field_answer.value }}</p>
+										{% if not (content_item.entity.hasTranslation(lang)) %}
+											{% set lang = 'en-gb' %}
+										{% endif %}
+											<p>{{ content_item.entity.getTranslation(lang).field_answer.value }}</p>
 										{% endif %}
 									{% endfor %}
 								{% elseif content.field_connecter_line['#items'].value == 'dashes' %}
 									{% if item.entity.field_title.value is not empty %}
-										<h4>{{ item.entity.field_title.value }}</h4>
+										{% if not (item.entity.hasTranslation(lang)) %}
+											{% set lang = 'en-gb' %}
+										{% endif %}
+										<h4>{{ item.entity.getTranslation(lang).field_title.value }}</h4>
 									{% endif %}
 									{% if item.entity.field_description.value is not empty %}
-										<p>{{ item.entity.field_description.value }}</p>
+											{% if not (item.entity.hasTranslation(lang)) %}
+												{% set lang = 'en-gb' %}
+										{% endif %}
+										<p>{{ item.entity.getTranslation(lang).field_description.value }}</p>
 									{% endif %}
 								{% endif %}
 							</div>

@@ -54,6 +54,11 @@
       color: #24272a;
       font-size: 32px;
       font-family: "Poppins", serif !important;
+      text-transform: uppercase;
+      span.heading-1-On,
+      span.heading-2-Off {
+          color: #a12844;
+      }
     }
     p {
       @include securance-banner-description;
